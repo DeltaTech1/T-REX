@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,13 +16,88 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© Delta Tech" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoM-I3-jV6" userLabel="Copyright">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4kk-bc-Z7I"/>
+                                    <constraint firstAttribute="width" constant="150" id="g0Y-Ti-4Rp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4kk-bc-Z7I"/>
+                                        <exclude reference="g0Y-Ti-4Rp"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="4kk-bc-Z7I"/>
+                                        <include reference="g0Y-Ti-4Rp"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tyler_new" translatesAutoresizingMaskIntoConstraints="NO" id="KnQ-XB-h0K">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="xaW-dp-4IP"/>
+                                    <constraint firstAttribute="height" constant="200" id="z9B-O4-XzO"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="xaW-dp-4IP"/>
+                                        <exclude reference="z9B-O4-XzO"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="xaW-dp-4IP"/>
+                                        <include reference="z9B-O4-XzO"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KnQ-XB-h0K" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5Df-5R-LM6"/>
+                            <constraint firstItem="KnQ-XB-h0K" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="FEM-PY-5bF"/>
+                            <constraint firstAttribute="bottom" secondItem="eoM-I3-jV6" secondAttribute="bottom" constant="75" id="Fx5-k4-whm"/>
+                            <constraint firstItem="eoM-I3-jV6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Gtb-dx-7YO"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="eoM-I3-jV6"/>
+                                <exclude reference="KnQ-XB-h0K"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5Df-5R-LM6"/>
+                                <exclude reference="FEM-PY-5bF"/>
+                                <exclude reference="Fx5-k4-whm"/>
+                                <exclude reference="Gtb-dx-7YO"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="eoM-I3-jV6"/>
+                                <include reference="KnQ-XB-h0K"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="5Df-5R-LM6"/>
+                                <include reference="FEM-PY-5bF"/>
+                                <include reference="Fx5-k4-whm"/>
+                                <include reference="Gtb-dx-7YO"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tyler_new" width="400" height="400"/>
+    </resources>
 </document>
