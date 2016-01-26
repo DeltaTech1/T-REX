@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,6 +19,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© Delta Tech" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoM-I3-jV6" userLabel="Copyright">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="4kk-bc-Z7I"/>
                                     <constraint firstAttribute="width" constant="150" id="g0Y-Ti-4Rp"/>
@@ -41,6 +42,7 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tyler_new" translatesAutoresizingMaskIntoConstraints="NO" id="KnQ-XB-h0K">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="xaW-dp-4IP"/>
                                     <constraint firstAttribute="height" constant="200" id="z9B-O4-XzO"/>
@@ -59,6 +61,7 @@
                                 </variation>
                             </imageView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="KnQ-XB-h0K" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5Df-5R-LM6"/>
@@ -72,10 +75,10 @@
                                 <exclude reference="KnQ-XB-h0K"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="5Df-5R-LM6"/>
-                                <exclude reference="FEM-PY-5bF"/>
                                 <exclude reference="Fx5-k4-whm"/>
                                 <exclude reference="Gtb-dx-7YO"/>
+                                <exclude reference="5Df-5R-LM6"/>
+                                <exclude reference="FEM-PY-5bF"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -84,10 +87,10 @@
                                 <include reference="KnQ-XB-h0K"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="5Df-5R-LM6"/>
-                                <include reference="FEM-PY-5bF"/>
                                 <include reference="Fx5-k4-whm"/>
                                 <include reference="Gtb-dx-7YO"/>
+                                <include reference="5Df-5R-LM6"/>
+                                <include reference="FEM-PY-5bF"/>
                             </mask>
                         </variation>
                     </view>
