@@ -14,6 +14,8 @@
 		86BB14751C46033000BBF582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86BB14731C46033000BBF582 /* LaunchScreen.storyboard */; };
 		86BB14801C46033000BBF582 /* T_REXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BB147F1C46033000BBF582 /* T_REXTests.swift */; };
 		86BB148B1C46033000BBF582 /* T_REXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BB148A1C46033000BBF582 /* T_REXUITests.swift */; };
+		8BD15F271C5AA2BB0003C705 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD15F261C5AA2BB0003C705 /* LoginViewController.swift */; };
+		8BD15F291C5AA2CF0003C705 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD15F281C5AA2CF0003C705 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		86BB14861C46033000BBF582 /* T-REXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "T-REXUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86BB148A1C46033000BBF582 /* T_REXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T_REXUITests.swift; sourceTree = "<group>"; };
 		86BB148C1C46033000BBF582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BD15F261C5AA2BB0003C705 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8BD15F281C5AA2CF0003C705 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				86BB14711C46033000BBF582 /* Assets.xcassets */,
 				86BB14731C46033000BBF582 /* LaunchScreen.storyboard */,
 				86BB14761C46033000BBF582 /* Info.plist */,
+				8BD15F261C5AA2BB0003C705 /* LoginViewController.swift */,
+				8BD15F281C5AA2CF0003C705 /* CreateAccountViewController.swift */,
 			);
 			path = "T-REX";
 			sourceTree = "<group>";
@@ -256,6 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BD15F291C5AA2CF0003C705 /* CreateAccountViewController.swift in Sources */,
+				8BD15F271C5AA2BB0003C705 /* LoginViewController.swift in Sources */,
 				86BB146D1C46033000BBF582 /* ViewController.swift in Sources */,
 				86BB146B1C46033000BBF582 /* AppDelegate.swift in Sources */,
 			);
