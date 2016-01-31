@@ -10,6 +10,9 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var usernameTextfield: UITextField!
+    @IBOutlet weak var passwordTextfield: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,16 +23,35 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
+    @IBAction func loginButton(sender: AnyObject) {
+        
+        let username = usernameTextfield.text
+        let password = passwordTextfield.text
+        
+        let usernameStored = NSUserDefaults.standardUserDefaults().stringForKey("username")
+        let passwordStored = NSUserDefaults.standardUserDefaults().stringForKey("password")
+        
+        if (usernameStored == username) {
+            if (passwordStored == password) {
+                // Login successful
+                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn")
+                NSUserDefaults.standardUserDefaults().synchronize()
+                self.dismissViewControllerAnimated(true, completion: nil)
+            } else {
+                let alert = UIAlertController(title: "Alert", message: "Wrong password", preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+                alert.addAction(okAction)
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
+        } else {
+            let alert = UIAlertController(title: "Alert", message: "That username does not exist", preferredStyle: UIAlertControllerStyle.Alert)
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+            alert.addAction(okAction)
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
+   
 
 }
