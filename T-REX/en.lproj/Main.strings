@@ -1,0 +1,189 @@
+
+/* Class = "UIButton"; normalTitle = "Parent View"; ObjectID = "1E3-DF-6C2"; */
+"1E3-DF-6C2.normalTitle" = "Parent View";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "44n-cT-1W7"; */
+"44n-cT-1W7.normalTitle" = "Confirm";
+
+/* Class = "UILabel"; text = "Dairy"; ObjectID = "4Vr-aQ-48N"; */
+"4Vr-aQ-48N.text" = "Dairy";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "6Om-e9-kMU"; */
+"6Om-e9-kMU.placeholder" = "Password";
+
+/* Class = "UILabel"; text = "0%"; ObjectID = "6YI-qB-WVL"; */
+"6YI-qB-WVL.text" = "0%";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "7dt-Lp-4dD"; */
+"7dt-Lp-4dD.normalTitle" = "Sign Up";
+
+/* Class = "UILabel"; text = "Grains"; ObjectID = "8Fa-aS-bv0"; */
+"8Fa-aS-bv0.text" = "Grains";
+
+/* Class = "UIButton"; normalTitle = "Already have an account? Sign in."; ObjectID = "8n0-JA-hUW"; */
+"8n0-JA-hUW.normalTitle" = "Already have an account? Sign in.";
+
+/* Class = "UILabel"; text = "0%"; ObjectID = "92l-j7-j8J"; */
+"92l-j7-j8J.text" = "0%";
+
+/* Class = "UITextView"; text = "1 medium apple, banana, orange, pear\n½ cup of chopped, cooked, or canned fruit\n¾ cup of fruit juice"; ObjectID = "9sY-am-rKP"; */
+"9sY-am-rKP.text" = "1 medium apple, banana, orange, pear\n½ cup of chopped, cooked, or canned fruit\n¾ cup of fruit juice";
+
+/* Class = "UIButton"; normalTitle = "Eat"; ObjectID = "Afd-BA-e2F"; */
+"Afd-BA-e2F.normalTitle" = "Eat";
+
+/* Class = "UITextView"; text = "1 cup of milk or yogurt\n1½ ounces of natural cheese (Cheddar)\n2 ounces of processed cheese (American)"; ObjectID = "Ai7-t0-L1r"; */
+"Ai7-t0-L1r.text" = "1 cup of milk or yogurt\n1½ ounces of natural cheese (Cheddar)\n2 ounces of processed cheese (American)";
+
+/* Class = "UILabel"; text = "4"; ObjectID = "Bdr-Zw-hm5"; */
+"Bdr-Zw-hm5.text" = "4";
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "Bgg-6v-aHa"; */
+"Bgg-6v-aHa.text" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Logout"; ObjectID = "BiK-Pv-Sof"; */
+"BiK-Pv-Sof.normalTitle" = "Logout";
+
+/* Class = "UILabel"; text = "3"; ObjectID = "Cix-e6-J7a"; */
+"Cix-e6-J7a.text" = "3";
+
+/* Class = "UITextView"; text = "1 cup of raw leafy vegetables\n½ cup of other vegetables - cooked or raw\n¾ cup of vegetable juice"; ObjectID = "Csg-iP-IlE"; */
+"Csg-iP-IlE.text" = "1 cup of raw leafy vegetables\n½ cup of other vegetables - cooked or raw\n¾ cup of vegetable juice";
+
+/* Class = "UIButton"; normalTitle = "View Trophies"; ObjectID = "D0m-Mo-FA6"; */
+"D0m-Mo-FA6.normalTitle" = "View Trophies";
+
+/* Class = "UILabel"; text = "9"; ObjectID = "Fdp-2Y-S5N"; */
+"Fdp-2Y-S5N.text" = "9";
+
+/* Class = "UIButton"; normalTitle = "Read"; ObjectID = "FxB-oi-RWt"; */
+"FxB-oi-RWt.normalTitle" = "Read";
+
+/* Class = "UILabel"; text = "0%"; ObjectID = "HJA-Qd-To4"; */
+"HJA-Qd-To4.text" = "0%";
+
+/* Class = "UILabel"; text = "Your child's daily progress"; ObjectID = "Jnl-Az-vJy"; */
+"Jnl-Az-vJy.text" = "Your child's daily progress";
+
+/* Class = "UITextView"; text = "2–3 ounces of cooked meat, poultry or fish\n1 egg\n2 tablespoons of peanut butter\n1/3 cup of nuts"; ObjectID = "KgK-7S-lds"; */
+"KgK-7S-lds.text" = "2–3 ounces of cooked meat, poultry or fish\n1 egg\n2 tablespoons of peanut butter\n1/3 cup of nuts";
+
+/* Class = "UILabel"; text = "Welcome!"; ObjectID = "N4Q-od-M5V"; */
+"N4Q-od-M5V.text" = "Welcome!";
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "OGm-yD-Lvf"; */
+"OGm-yD-Lvf.title" = "Home";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "OOC-ya-grS"; */
+"OOC-ya-grS.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Grains"; ObjectID = "Ppw-8d-OO4"; */
+"Ppw-8d-OO4.normalTitle" = "Grains";
+
+/* Class = "UILabel"; text = "0%"; ObjectID = "QDS-z2-dhN"; */
+"QDS-z2-dhN.text" = "0%";
+
+/* Class = "UILabel"; text = "2"; ObjectID = "RkL-yc-Awb"; */
+"RkL-yc-Awb.text" = "2";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "Tdr-vT-2vw"; */
+"Tdr-vT-2vw.normalTitle" = "Sign In";
+
+/* Class = "UIButton"; normalTitle = "Create New Account"; ObjectID = "UEo-SN-YU3"; */
+"UEo-SN-YU3.normalTitle" = "Create New Account";
+
+/* Class = "UILabel"; text = "Vegetables"; ObjectID = "Xg0-Nq-dSB"; */
+"Xg0-Nq-dSB.text" = "Vegetables";
+
+/* Class = "UIButton"; normalTitle = "Vegetables"; ObjectID = "a70-99-3c4"; */
+"a70-99-3c4.normalTitle" = "Vegetables";
+
+/* Class = "UILabel"; text = "2"; ObjectID = "aTc-Fm-j4p"; */
+"aTc-Fm-j4p.text" = "2";
+
+/* Class = "UILabel"; text = "Grains"; ObjectID = "aZG-hb-UI2"; */
+"aZG-hb-UI2.text" = "Grains";
+
+/* Class = "UILabel"; text = "New Account"; ObjectID = "bB9-hy-lyx"; */
+"bB9-hy-lyx.text" = "New Account";
+
+/* Class = "UILabel"; text = "Enter Data"; ObjectID = "bzY-MN-6ZW"; */
+"bzY-MN-6ZW.text" = "Enter Data";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "eBP-0e-3BH"; */
+"eBP-0e-3BH.placeholder" = "Username";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "fjR-5k-S2R"; */
+"fjR-5k-S2R.normalTitle" = "Confirm";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "hQJ-ru-jB3"; */
+"hQJ-ru-jB3.placeholder" = "Username";
+
+/* Class = "UILabel"; text = "Apple"; ObjectID = "iHe-ZB-Rnx"; */
+"iHe-ZB-Rnx.text" = "Apple";
+
+/* Class = "UILabel"; text = "Eating"; ObjectID = "ijv-F5-1X1"; */
+"ijv-F5-1X1.text" = "Eating";
+
+/* Class = "UILabel"; text = "Fruits"; ObjectID = "imu-9V-cSo"; */
+"imu-9V-cSo.text" = "Fruits";
+
+/* Class = "UILabel"; text = "Fruits"; ObjectID = "jpn-2m-nsg"; */
+"jpn-2m-nsg.text" = "Fruits";
+
+/* Class = "UILabel"; text = "Vegetables"; ObjectID = "kCS-V3-eFj"; */
+"kCS-V3-eFj.text" = "Vegetables";
+
+/* Class = "UILabel"; text = "0%"; ObjectID = "kwT-Vz-uvs"; */
+"kwT-Vz-uvs.text" = "0%";
+
+/* Class = "UIButton"; normalTitle = "Protein"; ObjectID = "liE-sg-Pep"; */
+"liE-sg-Pep.normalTitle" = "Protein";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "lqB-1D-vao"; */
+"lqB-1D-vao.normalTitle" = "Continue";
+
+/* Class = "UITextView"; text = "1 slice of bread\nabout 1 cup of ready-to-eat cereal\n½ cup of cooked cereal, rice or pasta"; ObjectID = "mSv-gA-rCC"; */
+"mSv-gA-rCC.text" = "1 slice of bread\nabout 1 cup of ready-to-eat cereal\n½ cup of cooked cereal, rice or pasta";
+
+/* Class = "UIButton"; normalTitle = "Fruits"; ObjectID = "ocX-Nc-Qe3"; */
+"ocX-Nc-Qe3.normalTitle" = "Fruits";
+
+/* Class = "UIButton"; normalTitle = "Return to Child View"; ObjectID = "pCP-Zf-hZL"; */
+"pCP-Zf-hZL.normalTitle" = "Return to Child View";
+
+/* Class = "UILabel"; text = "Protein"; ObjectID = "ppH-5w-fQb"; */
+"ppH-5w-fQb.text" = "Protein";
+
+/* Class = "UILabel"; text = "Recommended daily serving size"; ObjectID = "s8A-JR-QJe"; */
+"s8A-JR-QJe.text" = "Recommended daily serving size";
+
+/* Class = "UILabel"; text = "Choose Food Group"; ObjectID = "sST-i2-sfU"; */
+"sST-i2-sfU.text" = "Choose Food Group";
+
+/* Class = "UILabel"; text = "0%"; ObjectID = "t7q-NT-bGB"; */
+"t7q-NT-bGB.text" = "0%";
+
+/* Class = "UITableViewSection"; headerTitle = "Fruits"; ObjectID = "uwy-mu-xlc"; */
+"uwy-mu-xlc.headerTitle" = "Fruits";
+
+/* Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "vcr-fV-6PJ"; */
+"vcr-fV-6PJ.placeholder" = "Confirm Password";
+
+/* Class = "UILabel"; text = "Dairy"; ObjectID = "weZ-7J-Uis"; */
+"weZ-7J-Uis.text" = "Dairy";
+
+/* Class = "UIViewController"; title = "Home"; ObjectID = "wpx-eU-9tS"; */
+"wpx-eU-9tS.title" = "Home";
+
+/* Class = "UILabel"; text = "Reading"; ObjectID = "yUh-3s-5eH"; */
+"yUh-3s-5eH.text" = "Reading";
+
+/* Class = "UIButton"; normalTitle = "Exercise"; ObjectID = "yZq-04-dlc"; */
+"yZq-04-dlc.normalTitle" = "Exercise";
+
+/* Class = "UIButton"; normalTitle = "Dairy"; ObjectID = "z2a-at-BDj"; */
+"z2a-at-BDj.normalTitle" = "Dairy";
+
+/* Class = "UILabel"; text = "Protein"; ObjectID = "zhD-Zh-OM0"; */
+"zhD-Zh-OM0.text" = "Protein";

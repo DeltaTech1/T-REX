@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -247,7 +247,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="c9J-Ma-KkC" kind="show" id="Zgf-Hh-X40"/>
+                                    <segue destination="B9g-k9-llD" kind="presentation" id="WW4-kh-LRt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZq-04-dlc">
@@ -336,26 +336,6 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1E3-DF-6C2">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="ptX-cs-VnQ"/>
-                                </constraints>
-                                <state key="normal" title="Parent View">
-                                    <color key="titleColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="ptX-cs-VnQ"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="ptX-cs-VnQ"/>
-                                    </mask>
-                                </variation>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tyler_new" translatesAutoresizingMaskIntoConstraints="NO" id="TZY-45-z8a">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
@@ -378,9 +358,6 @@
                             <constraint firstItem="TZY-45-z8a" firstAttribute="centerX" secondItem="bzY-MN-6ZW" secondAttribute="centerX" id="1C4-Yi-wMP"/>
                             <constraint firstItem="FxB-oi-RWt" firstAttribute="leading" secondItem="m3N-0X-etN" secondAttribute="leading" constant="25" id="7zf-Ke-rVZ">
                                 <variation key="heightClass=regular-widthClass=compact" constant="20"/>
-                            </constraint>
-                            <constraint firstAttribute="trailing" secondItem="1E3-DF-6C2" secondAttribute="trailing" constant="20" id="9Lx-nu-Ei0">
-                                <variation key="heightClass=regular-widthClass=compact" constant="25"/>
                             </constraint>
                             <constraint firstItem="FxB-oi-RWt" firstAttribute="top" secondItem="m3N-0X-etN" secondAttribute="top" constant="450" id="A48-PX-NQ9">
                                 <variation key="heightClass=regular-widthClass=compact" constant="428"/>
@@ -405,9 +382,6 @@
                             <constraint firstItem="D0m-Mo-FA6" firstAttribute="centerX" secondItem="BiK-Pv-Sof" secondAttribute="centerX" id="sWn-Ca-HV7"/>
                             <constraint firstItem="gIk-oU-eUH" firstAttribute="top" secondItem="BiK-Pv-Sof" secondAttribute="bottom" constant="40" id="sdL-ud-hYF"/>
                             <constraint firstItem="TZY-45-z8a" firstAttribute="top" secondItem="m3N-0X-etN" secondAttribute="top" constant="150" id="u3f-Y5-q6b"/>
-                            <constraint firstItem="1E3-DF-6C2" firstAttribute="top" secondItem="m3N-0X-etN" secondAttribute="top" constant="50" id="w0B-4U-rFA">
-                                <variation key="heightClass=regular-widthClass=compact" constant="77"/>
-                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -418,13 +392,10 @@
                                 <exclude reference="N4Q-od-M5V"/>
                                 <exclude reference="BiK-Pv-Sof"/>
                                 <exclude reference="D0m-Mo-FA6"/>
-                                <exclude reference="1E3-DF-6C2"/>
                                 <exclude reference="TZY-45-z8a"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="sdL-ud-hYF"/>
-                                <exclude reference="9Lx-nu-Ei0"/>
-                                <exclude reference="w0B-4U-rFA"/>
                                 <exclude reference="Idv-NN-6Aa"/>
                                 <exclude reference="QLk-lK-sFv"/>
                                 <exclude reference="BEH-Ho-gUG"/>
@@ -452,13 +423,10 @@
                                 <include reference="N4Q-od-M5V"/>
                                 <include reference="BiK-Pv-Sof"/>
                                 <include reference="D0m-Mo-FA6"/>
-                                <include reference="1E3-DF-6C2"/>
                                 <include reference="TZY-45-z8a"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="sdL-ud-hYF"/>
-                                <include reference="9Lx-nu-Ei0"/>
-                                <include reference="w0B-4U-rFA"/>
                                 <include reference="Idv-NN-6Aa"/>
                                 <include reference="QLk-lK-sFv"/>
                                 <include reference="BEH-Ho-gUG"/>
@@ -478,7 +446,18 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="OGm-yD-Lvf"/>
+                    <navigationItem key="navigationItem" title="Home" id="OGm-yD-Lvf">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="aoL-68-8r9">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="78X-d2-Hgk">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <state key="normal" image="switch_user.png"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m79-Dh-dab" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1083,6 +1062,245 @@
             <point key="canvasLocation" x="-69" y="1842"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="hQK-QE-K7N">
+            <objects>
+                <viewController id="B9g-k9-llD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VGA-nd-R7C"/>
+                        <viewControllerLayoutGuide type="bottom" id="U5m-52-vyD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uCj-VC-fSg">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommended daily serving size" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8A-JR-QJe">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.44682770967483521" green="0.91272860765457153" blue="0.072605274617671967" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="50" width="360" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpn-2m-nsg">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.94117653369999998" blue="0.92549026010000002" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="26" y="100" width="100" height="20"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vegetables" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCS-V3-eFj">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.94117653369999998" blue="0.92549026010000002" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="26" y="200" width="105" height="20"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grains" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZG-hb-UI2">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.94117653369999998" blue="0.92549026010000002" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="26" y="300" width="100" height="20"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protein" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhD-Zh-OM0">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.94117653369999998" blue="0.92549026010000002" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="26" y="400" width="100" height="20"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dairy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Vr-aQ-48N">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.94117653369999998" blue="0.92549026010000002" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="26" y="500" width="100" height="20"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqB-1D-vao">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.44682770967483521" green="0.91272860765457153" blue="0.072605274617671967" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.21113741397857666" green="0.29055362939834595" blue="0.97750931978225708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="160" y="630" width="80" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="37w-5Z-bf1" kind="presentation" id="ixU-h7-OUr"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9sY-am-rKP">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">1 medium apple, banana, orange, pear
+½ cup of chopped, cooked, or canned fruit
+¾ cup of fruit juice</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="85" y="124" width="295" height="62"/>
+                                </variation>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Csg-iP-IlE">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">1 cup of raw leafy vegetables
+½ cup of other vegetables - cooked or raw
+¾ cup of vegetable juice</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="85" y="223" width="295" height="64"/>
+                                </variation>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mSv-gA-rCC">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">1 slice of bread
+about 1 cup of ready-to-eat cereal
+½ cup of cooked cereal, rice or pasta</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="85" y="328" width="295" height="64"/>
+                                </variation>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ai7-t0-L1r">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">1 cup of milk or yogurt
+1½ ounces of natural cheese (Cheddar)
+2 ounces of processed cheese (American)</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="85" y="522" width="295" height="62"/>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cix-e6-J7a">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.44682770967483521" green="0.91272860765457153" blue="0.072605274617671967" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="37" y="130" width="30" height="50"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdr-Zw-hm5">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.44682770967483521" green="0.91272860765457153" blue="0.072605274617671967" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="36" y="230" width="30" height="50"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdp-2Y-S5N">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.44682770967483521" green="0.91272860765457153" blue="0.072605274617671967" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="37" y="336" width="30" height="50"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkL-yc-Awb">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.44682770967483521" green="0.91272860765457153" blue="0.072605274617671967" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="36" y="428" width="30" height="50"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTc-Fm-j4p">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.44682770967483521" green="0.91272860765457153" blue="0.072605274617671967" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="37" y="528" width="30" height="50"/>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KgK-7S-lds">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">2–3 ounces of cooked meat, poultry or fish
+1 egg
+2 tablespoons of peanut butter
+1/3 cup of nuts</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="85" y="417" width="295" height="72"/>
+                                </variation>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="s8A-JR-QJe"/>
+                                <exclude reference="jpn-2m-nsg"/>
+                                <exclude reference="kCS-V3-eFj"/>
+                                <exclude reference="aZG-hb-UI2"/>
+                                <exclude reference="zhD-Zh-OM0"/>
+                                <exclude reference="4Vr-aQ-48N"/>
+                                <exclude reference="lqB-1D-vao"/>
+                                <exclude reference="9sY-am-rKP"/>
+                                <exclude reference="Csg-iP-IlE"/>
+                                <exclude reference="mSv-gA-rCC"/>
+                                <exclude reference="Ai7-t0-L1r"/>
+                                <exclude reference="Cix-e6-J7a"/>
+                                <exclude reference="Bdr-Zw-hm5"/>
+                                <exclude reference="Fdp-2Y-S5N"/>
+                                <exclude reference="RkL-yc-Awb"/>
+                                <exclude reference="aTc-Fm-j4p"/>
+                                <exclude reference="KgK-7S-lds"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="s8A-JR-QJe"/>
+                                <include reference="jpn-2m-nsg"/>
+                                <include reference="kCS-V3-eFj"/>
+                                <include reference="aZG-hb-UI2"/>
+                                <include reference="zhD-Zh-OM0"/>
+                                <include reference="4Vr-aQ-48N"/>
+                                <include reference="lqB-1D-vao"/>
+                                <include reference="9sY-am-rKP"/>
+                                <include reference="Csg-iP-IlE"/>
+                                <include reference="mSv-gA-rCC"/>
+                                <include reference="Ai7-t0-L1r"/>
+                                <include reference="Cix-e6-J7a"/>
+                                <include reference="Bdr-Zw-hm5"/>
+                                <include reference="Fdp-2Y-S5N"/>
+                                <include reference="RkL-yc-Awb"/>
+                                <include reference="aTc-Fm-j4p"/>
+                                <include reference="KgK-7S-lds"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ddT-u1-7dF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1581" y="1029.75"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="uwB-Ci-aYN">
             <objects>
                 <viewController id="c9J-Ma-KkC" sceneMemberID="viewController">
@@ -1123,7 +1341,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="bJC-es-WSg" kind="show" id="qvr-ER-wBd"/>
+                                    <segue destination="bJC-es-WSg" kind="show" id="E3J-93-VdU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ppw-8d-OO4">
@@ -1283,12 +1501,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="DLP-TZ-EXH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INk-wJ-zlU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1986" y="1029.75"/>
+            <point key="canvasLocation" x="3216" y="1029.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Fruits-->
         <scene sceneID="lo4-gJ-H18">
             <objects>
                 <viewController id="bJC-es-WSg" sceneMemberID="viewController">
@@ -1299,12 +1518,46 @@
                     <view key="view" contentMode="scaleToFill" id="VKK-SC-iaf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="5kn-5r-SZJ">
+                                <rect key="frame" x="-47" y="-14" width="94" height="29"/>
+                                <color key="backgroundColor" red="0.44682770967483521" green="0.91272860765457153" blue="0.072605274617671967" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.21113741397857666" green="0.29055362939834595" blue="0.97750931978225708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="138" width="94" height="29"/>
+                                </variation>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqN-GO-xji">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.94117653369999998" blue="0.92549026010000002" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="40" y="94" width="55" height="23"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="5kn-5r-SZJ"/>
+                                <exclude reference="WqN-GO-xji"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="5kn-5r-SZJ"/>
+                                <include reference="WqN-GO-xji"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Fruits" id="X2v-UW-gzv">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="jG1-oh-feP"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vHA-tB-hrQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3156" y="1029.75"/>
+            <point key="canvasLocation" x="4029" y="1029.75"/>
         </scene>
         <!--Create Account View Controller-->
         <scene sceneID="lfU-k7-B9F">
@@ -1556,11 +1809,33 @@
             </objects>
             <point key="canvasLocation" x="-69" y="1029.75"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="h2P-Ma-X8I">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="37w-5Z-bf1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="70I-Br-4Cf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="1U5-Qh-46A">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="c9J-Ma-KkC" kind="relationship" relationship="rootViewController" id="fzb-gI-qM2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ydj-G8-sg6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2374.5" y="1029.75"/>
+        </scene>
     </scenes>
     <resources>
         <image name="apple600" width="600" height="600"/>
         <image name="book600" width="600" height="600"/>
         <image name="dumbell600" width="600" height="600"/>
+        <image name="switch_user.png" width="128" height="128"/>
         <image name="tyler_new" width="400" height="400"/>
     </resources>
 </document>
