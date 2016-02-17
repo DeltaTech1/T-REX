@@ -16,7 +16,6 @@
 		86BB148B1C46033000BBF582 /* T_REXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BB148A1C46033000BBF582 /* T_REXUITests.swift */; };
 		8BD15F271C5AA2BB0003C705 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD15F261C5AA2BB0003C705 /* LoginViewController.swift */; };
 		8BD15F291C5AA2CF0003C705 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD15F281C5AA2CF0003C705 /* CreateAccountViewController.swift */; };
-		FBA7CCF81C73995400C0168E /* switch_user.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA7CCF71C73995400C0168E /* switch_user.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,6 @@
 		86BB148C1C46033000BBF582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BD15F261C5AA2BB0003C705 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8BD15F281C5AA2CF0003C705 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
-		FBA7CCF71C73995400C0168E /* switch_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = switch_user.png; path = ../../../../Downloads/switch_user.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +105,6 @@
 				86BB146C1C46033000BBF582 /* HomeViewController.swift */,
 				86BB146E1C46033000BBF582 /* Main.storyboard */,
 				86BB14711C46033000BBF582 /* Assets.xcassets */,
-				FBA7CCF71C73995400C0168E /* switch_user.png */,
 				86BB14731C46033000BBF582 /* LaunchScreen.storyboard */,
 				86BB14761C46033000BBF582 /* Info.plist */,
 				8BD15F261C5AA2BB0003C705 /* LoginViewController.swift */,
@@ -240,7 +237,6 @@
 			files = (
 				86BB14751C46033000BBF582 /* LaunchScreen.storyboard in Resources */,
 				86BB14721C46033000BBF582 /* Assets.xcassets in Resources */,
-				FBA7CCF81C73995400C0168E /* switch_user.png in Resources */,
 				86BB14701C46033000BBF582 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

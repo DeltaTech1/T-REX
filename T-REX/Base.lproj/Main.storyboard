@@ -447,14 +447,11 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="OGm-yD-Lvf">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="aoL-68-8r9">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="78X-d2-Hgk">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="REb-Dc-aXW">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YRF-uk-5jw">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                </accessibility>
-                                <state key="normal" image="switch_user.png"/>
+                                <state key="normal" image="switch_user"/>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -1070,6 +1067,7 @@
                         <viewControllerLayoutGuide type="bottom" id="U5m-52-vyD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uCj-VC-fSg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommended daily serving size" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8A-JR-QJe">
@@ -1835,7 +1833,7 @@ about 1 cup of ready-to-eat cereal
         <image name="apple600" width="600" height="600"/>
         <image name="book600" width="600" height="600"/>
         <image name="dumbell600" width="600" height="600"/>
-        <image name="switch_user.png" width="128" height="128"/>
+        <image name="switch_user" width="128" height="128"/>
         <image name="tyler_new" width="400" height="400"/>
     </resources>
 </document>
