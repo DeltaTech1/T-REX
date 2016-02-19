@@ -37,7 +37,7 @@ class LoginViewController: UIViewController {
                 // Login successful
                 NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn")
                 NSUserDefaults.standardUserDefaults().synchronize()
-                self.dismissViewControllerAnimated(true, completion: nil)
+                performSegueWithIdentifier("segueToHomeScreen", sender: nil)
             } else {
                 let alert = UIAlertController(title: "Alert", message: "Wrong password", preferredStyle: UIAlertControllerStyle.Alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
