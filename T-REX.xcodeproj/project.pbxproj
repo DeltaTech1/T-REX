@@ -14,6 +14,10 @@
 		86BB14751C46033000BBF582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86BB14731C46033000BBF582 /* LaunchScreen.storyboard */; };
 		86BB14801C46033000BBF582 /* T_REXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BB147F1C46033000BBF582 /* T_REXTests.swift */; };
 		86BB148B1C46033000BBF582 /* T_REXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BB148A1C46033000BBF582 /* T_REXUITests.swift */; };
+		8B6EB96D1C883A72000B8737 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6EB96C1C883A72000B8737 /* FoodViewController.swift */; };
+		8B6EB9711C8840EE000B8737 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6EB9701C8840EE000B8737 /* FoodTableViewCell.swift */; };
+		8B6EB9751C885410000B8737 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6EB9741C885410000B8737 /* Food.swift */; };
+		8B6EB9761C885410000B8737 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6EB9741C885410000B8737 /* Food.swift */; };
 		8BD15F271C5AA2BB0003C705 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD15F261C5AA2BB0003C705 /* LoginViewController.swift */; };
 		8BD15F291C5AA2CF0003C705 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD15F281C5AA2CF0003C705 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +53,9 @@
 		86BB14861C46033000BBF582 /* T-REXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "T-REXUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86BB148A1C46033000BBF582 /* T_REXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T_REXUITests.swift; sourceTree = "<group>"; };
 		86BB148C1C46033000BBF582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B6EB96C1C883A72000B8737 /* FoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
+		8B6EB9701C8840EE000B8737 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		8B6EB9741C885410000B8737 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		8BD15F261C5AA2BB0003C705 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8BD15F281C5AA2CF0003C705 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +116,9 @@
 				86BB14761C46033000BBF582 /* Info.plist */,
 				8BD15F261C5AA2BB0003C705 /* LoginViewController.swift */,
 				8BD15F281C5AA2CF0003C705 /* CreateAccountViewController.swift */,
+				8B6EB96C1C883A72000B8737 /* FoodViewController.swift */,
+				8B6EB9701C8840EE000B8737 /* FoodTableViewCell.swift */,
+				8B6EB9741C885410000B8737 /* Food.swift */,
 			);
 			path = "T-REX";
 			sourceTree = "<group>";
@@ -262,10 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B6EB9751C885410000B8737 /* Food.swift in Sources */,
 				8BD15F291C5AA2CF0003C705 /* CreateAccountViewController.swift in Sources */,
+				8B6EB96D1C883A72000B8737 /* FoodViewController.swift in Sources */,
 				8BD15F271C5AA2BB0003C705 /* LoginViewController.swift in Sources */,
 				86BB146D1C46033000BBF582 /* HomeViewController.swift in Sources */,
 				86BB146B1C46033000BBF582 /* AppDelegate.swift in Sources */,
+				8B6EB9711C8840EE000B8737 /* FoodTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86BB14801C46033000BBF582 /* T_REXTests.swift in Sources */,
+				8B6EB9761C885410000B8737 /* Food.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,6 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +31,7 @@ class LoginViewController: UIViewController {
         let usernameStored = NSUserDefaults.standardUserDefaults().stringForKey("username")
         let passwordStored = NSUserDefaults.standardUserDefaults().stringForKey("password")
         
+        // Check if usernames and passwords match
         if (usernameStored == username) {
             if (passwordStored == password) {
                 // Login successful
@@ -39,12 +39,14 @@ class LoginViewController: UIViewController {
                 NSUserDefaults.standardUserDefaults().synchronize()
                 performSegueWithIdentifier("segueToHomeScreen", sender: nil)
             } else {
+                // Display alert for wrong password
                 let alert = UIAlertController(title: "Alert", message: "Wrong password", preferredStyle: UIAlertControllerStyle.Alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
                 alert.addAction(okAction)
                 self.presentViewController(alert, animated: true, completion: nil)
             }
         } else {
+            // Display alert if username does not exist
             let alert = UIAlertController(title: "Alert", message: "That username does not exist", preferredStyle: UIAlertControllerStyle.Alert)
             let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
             alert.addAction(okAction)
