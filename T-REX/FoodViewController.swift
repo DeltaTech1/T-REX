@@ -12,20 +12,14 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var foodTableView: UITableView!
 
-    var food = [Food]()
+    var fruit: [(String, String)] = [("Apple", "apple600.png")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        loadFruits()
+        
+        foodTableView.registerClass(FoodTableViewCell.self, forCellReuseIdentifier: "FoodCell")
     }
     
-    func loadFruits() {
-        let applePhoto = UIImage(named: "apple600")!
-        let apple = Food(name: "Apple", photo: applePhoto)!
-        
-        food += [apple]
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -39,20 +33,22 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return food.count
+        return fruit.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cellIdentifier = "FoodTableViewCell"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! FoodTableViewCell
-        let foods = food[indexPath.row]
-        
-        cell.foodLabel.text = foods.name
-        cell.foodImage.image = foods.photo
+        let cell:FoodTableViewCell = tableView.dequeueReusableCellWithIdentifier("FoodCell") as! FoodTableViewCell
+        let (title, image) = fruit[indexPath.row]
+        cell.loadItem(title: title, image: image)
         
         return cell
     }
     
+    // MARK:  UITableViewDelegate Methods
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        print("You selected cell #\(indexPath.row)")
+    }
     
 
     /*

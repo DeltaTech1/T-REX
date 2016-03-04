@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -850,40 +851,40 @@ About 1 cup of ready-to-eat cereal
                                 <exclude reference="lqB-1D-vao"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="peK-d5-adc"/>
-                                <exclude reference="yuI-WW-h8U"/>
-                                <exclude reference="XAW-qS-kwO"/>
-                                <exclude reference="n3k-B4-4GV"/>
-                                <exclude reference="02j-Mv-5DH"/>
-                                <exclude reference="5tb-8q-RF1"/>
-                                <exclude reference="5j6-7U-MmL"/>
-                                <exclude reference="HHP-1b-Xf6"/>
-                                <exclude reference="X3a-UI-8Lu"/>
-                                <exclude reference="fOM-rc-CTb"/>
-                                <exclude reference="knP-dj-YiX"/>
-                                <exclude reference="zvC-Cc-GEH"/>
-                                <exclude reference="lL6-AK-Rqi"/>
-                                <exclude reference="oAp-Dh-9h8"/>
-                                <exclude reference="GaP-2y-YL6"/>
-                                <exclude reference="wvw-vz-5ma"/>
-                                <exclude reference="ZUi-cC-Fh2"/>
-                                <exclude reference="tq3-vz-vtC"/>
-                                <exclude reference="Llt-B0-8eG"/>
-                                <exclude reference="QtL-ar-vaP"/>
-                                <exclude reference="1Fd-Jg-Iz0"/>
-                                <exclude reference="VPn-F6-4h2"/>
-                                <exclude reference="8RR-Mt-LYn"/>
-                                <exclude reference="aqB-CK-oCf"/>
-                                <exclude reference="Fmn-u1-Kmv"/>
-                                <exclude reference="Mfb-1z-voJ"/>
-                                <exclude reference="0Le-Ui-lrf"/>
-                                <exclude reference="I8a-7L-FOH"/>
-                                <exclude reference="aMB-0u-mHc"/>
-                                <exclude reference="pfo-ew-hfH"/>
-                                <exclude reference="Azh-ff-mdc"/>
-                                <exclude reference="oli-Kf-Qtd"/>
                                 <exclude reference="D3k-oz-Gvo"/>
                                 <exclude reference="yUs-gg-gZz"/>
+                                <exclude reference="0Le-Ui-lrf"/>
+                                <exclude reference="I8a-7L-FOH"/>
+                                <exclude reference="knP-dj-YiX"/>
+                                <exclude reference="zvC-Cc-GEH"/>
+                                <exclude reference="02j-Mv-5DH"/>
+                                <exclude reference="5tb-8q-RF1"/>
+                                <exclude reference="ZUi-cC-Fh2"/>
+                                <exclude reference="tq3-vz-vtC"/>
+                                <exclude reference="8RR-Mt-LYn"/>
+                                <exclude reference="aqB-CK-oCf"/>
+                                <exclude reference="aMB-0u-mHc"/>
+                                <exclude reference="pfo-ew-hfH"/>
+                                <exclude reference="GaP-2y-YL6"/>
+                                <exclude reference="wvw-vz-5ma"/>
+                                <exclude reference="XAW-qS-kwO"/>
+                                <exclude reference="n3k-B4-4GV"/>
+                                <exclude reference="X3a-UI-8Lu"/>
+                                <exclude reference="fOM-rc-CTb"/>
+                                <exclude reference="peK-d5-adc"/>
+                                <exclude reference="yuI-WW-h8U"/>
+                                <exclude reference="1Fd-Jg-Iz0"/>
+                                <exclude reference="VPn-F6-4h2"/>
+                                <exclude reference="5j6-7U-MmL"/>
+                                <exclude reference="HHP-1b-Xf6"/>
+                                <exclude reference="Azh-ff-mdc"/>
+                                <exclude reference="oli-Kf-Qtd"/>
+                                <exclude reference="lL6-AK-Rqi"/>
+                                <exclude reference="oAp-Dh-9h8"/>
+                                <exclude reference="Fmn-u1-Kmv"/>
+                                <exclude reference="Mfb-1z-voJ"/>
+                                <exclude reference="Llt-B0-8eG"/>
+                                <exclude reference="QtL-ar-vaP"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -907,40 +908,40 @@ About 1 cup of ready-to-eat cereal
                                 <include reference="lqB-1D-vao"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="peK-d5-adc"/>
-                                <include reference="yuI-WW-h8U"/>
-                                <include reference="XAW-qS-kwO"/>
-                                <include reference="n3k-B4-4GV"/>
-                                <include reference="02j-Mv-5DH"/>
-                                <include reference="5tb-8q-RF1"/>
-                                <include reference="5j6-7U-MmL"/>
-                                <include reference="HHP-1b-Xf6"/>
-                                <include reference="X3a-UI-8Lu"/>
-                                <include reference="fOM-rc-CTb"/>
-                                <include reference="knP-dj-YiX"/>
-                                <include reference="zvC-Cc-GEH"/>
-                                <include reference="lL6-AK-Rqi"/>
-                                <include reference="oAp-Dh-9h8"/>
-                                <include reference="GaP-2y-YL6"/>
-                                <include reference="wvw-vz-5ma"/>
-                                <include reference="ZUi-cC-Fh2"/>
-                                <include reference="tq3-vz-vtC"/>
-                                <include reference="Llt-B0-8eG"/>
-                                <include reference="QtL-ar-vaP"/>
-                                <include reference="1Fd-Jg-Iz0"/>
-                                <include reference="VPn-F6-4h2"/>
-                                <include reference="8RR-Mt-LYn"/>
-                                <include reference="aqB-CK-oCf"/>
-                                <include reference="Fmn-u1-Kmv"/>
-                                <include reference="Mfb-1z-voJ"/>
-                                <include reference="0Le-Ui-lrf"/>
-                                <include reference="I8a-7L-FOH"/>
-                                <include reference="aMB-0u-mHc"/>
-                                <include reference="pfo-ew-hfH"/>
-                                <include reference="Azh-ff-mdc"/>
-                                <include reference="oli-Kf-Qtd"/>
                                 <include reference="D3k-oz-Gvo"/>
                                 <include reference="yUs-gg-gZz"/>
+                                <include reference="0Le-Ui-lrf"/>
+                                <include reference="I8a-7L-FOH"/>
+                                <include reference="knP-dj-YiX"/>
+                                <include reference="zvC-Cc-GEH"/>
+                                <include reference="02j-Mv-5DH"/>
+                                <include reference="5tb-8q-RF1"/>
+                                <include reference="ZUi-cC-Fh2"/>
+                                <include reference="tq3-vz-vtC"/>
+                                <include reference="8RR-Mt-LYn"/>
+                                <include reference="aqB-CK-oCf"/>
+                                <include reference="aMB-0u-mHc"/>
+                                <include reference="pfo-ew-hfH"/>
+                                <include reference="GaP-2y-YL6"/>
+                                <include reference="wvw-vz-5ma"/>
+                                <include reference="XAW-qS-kwO"/>
+                                <include reference="n3k-B4-4GV"/>
+                                <include reference="X3a-UI-8Lu"/>
+                                <include reference="fOM-rc-CTb"/>
+                                <include reference="peK-d5-adc"/>
+                                <include reference="yuI-WW-h8U"/>
+                                <include reference="1Fd-Jg-Iz0"/>
+                                <include reference="VPn-F6-4h2"/>
+                                <include reference="5j6-7U-MmL"/>
+                                <include reference="HHP-1b-Xf6"/>
+                                <include reference="Azh-ff-mdc"/>
+                                <include reference="oli-Kf-Qtd"/>
+                                <include reference="lL6-AK-Rqi"/>
+                                <include reference="oAp-Dh-9h8"/>
+                                <include reference="Fmn-u1-Kmv"/>
+                                <include reference="Mfb-1z-voJ"/>
+                                <include reference="Llt-B0-8eG"/>
+                                <include reference="QtL-ar-vaP"/>
                             </mask>
                         </variation>
                     </view>
@@ -962,56 +963,6 @@ About 1 cup of ready-to-eat cereal
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Food Group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sST-i2-sfU">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple600" translatesAutoresizingMaskIntoConstraints="NO" id="Zao-YH-iEP">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="cdg-hs-GyC"/>
-                                    <constraint firstAttribute="width" constant="80" id="dEV-oO-Xb7"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="cdg-hs-GyC"/>
-                                        <exclude reference="dEV-oO-Xb7"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="cdg-hs-GyC"/>
-                                        <include reference="dEV-oO-Xb7"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuB-Na-Uuw">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Vegetables"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="broccoli600px" translatesAutoresizingMaskIntoConstraints="NO" id="N0Y-fE-RWb">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="NEi-Au-3nq"/>
-                                    <constraint firstAttribute="height" constant="80" id="faJ-4a-sre"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="NEi-Au-3nq"/>
-                                        <exclude reference="faJ-4a-sre"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="NEi-Au-3nq"/>
-                                        <include reference="faJ-4a-sre"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKZ-ia-zmR">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -1022,19 +973,16 @@ About 1 cup of ready-to-eat cereal
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milkbox600px" translatesAutoresizingMaskIntoConstraints="NO" id="A1f-Ll-3q7">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="V9U-Jy-Meo"/>
-                                    <constraint firstAttribute="height" constant="80" id="w7d-de-kQC"/>
+                                    <constraint firstAttribute="width" secondItem="A1f-Ll-3q7" secondAttribute="height" multiplier="1:1" id="vyj-ks-Jxd"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="V9U-Jy-Meo"/>
-                                        <exclude reference="w7d-de-kQC"/>
+                                        <exclude reference="vyj-ks-Jxd"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="V9U-Jy-Meo"/>
-                                        <include reference="w7d-de-kQC"/>
+                                        <include reference="vyj-ks-Jxd"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -1048,19 +996,19 @@ About 1 cup of ready-to-eat cereal
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grain600px" translatesAutoresizingMaskIntoConstraints="NO" id="w5Q-ei-QEJ">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="HDc-PU-vUD"/>
-                                    <constraint firstAttribute="height" constant="80" id="QB1-bZ-zpO"/>
+                                    <constraint firstAttribute="height" constant="80" id="8fP-RJ-i6A"/>
+                                    <constraint firstAttribute="width" secondItem="w5Q-ei-QEJ" secondAttribute="height" multiplier="1:1" id="dZv-SQ-F44"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="HDc-PU-vUD"/>
-                                        <exclude reference="QB1-bZ-zpO"/>
+                                        <exclude reference="8fP-RJ-i6A"/>
+                                        <exclude reference="dZv-SQ-F44"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="HDc-PU-vUD"/>
-                                        <include reference="QB1-bZ-zpO"/>
+                                        <include reference="8fP-RJ-i6A"/>
+                                        <include reference="dZv-SQ-F44"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -1074,87 +1022,125 @@ About 1 cup of ready-to-eat cereal
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steak600px" translatesAutoresizingMaskIntoConstraints="NO" id="iAY-F1-Xdc">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="J8A-Pz-h92"/>
-                                    <constraint firstAttribute="height" constant="80" id="gLO-VO-FKh"/>
+                                    <constraint firstAttribute="width" secondItem="iAY-F1-Xdc" secondAttribute="height" multiplier="1:1" id="AEd-B6-Xcw"/>
+                                    <constraint firstAttribute="width" constant="80" id="ZjN-4a-RHp"/>
+                                    <constraint firstAttribute="height" constant="80" id="sDC-g0-KMW"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="J8A-Pz-h92"/>
-                                        <exclude reference="gLO-VO-FKh"/>
+                                        <exclude reference="AEd-B6-Xcw"/>
+                                        <exclude reference="ZjN-4a-RHp"/>
+                                        <exclude reference="sDC-g0-KMW"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="J8A-Pz-h92"/>
-                                        <include reference="gLO-VO-FKh"/>
+                                        <include reference="AEd-B6-Xcw"/>
+                                        <include reference="ZjN-4a-RHp"/>
+                                        <include reference="sDC-g0-KMW"/>
                                     </mask>
                                 </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z2d-er-IQV">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="9XT-co-zPJ"/>
-                                    <constraint firstAttribute="width" constant="300" id="DjO-eS-PVL"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <inset key="contentEdgeInsets" minX="100" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="Fruits"/>
+                                <connections>
+                                    <segue destination="bVZ-kM-hJ6" kind="show" id="uZm-JI-Xff"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple600" translatesAutoresizingMaskIntoConstraints="NO" id="Zao-YH-iEP">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="8LP-ED-Gse"/>
+                                    <constraint firstAttribute="width" secondItem="Zao-YH-iEP" secondAttribute="height" multiplier="1:1" id="DBy-bK-jWM"/>
+                                    <constraint firstAttribute="height" constant="80" id="SJW-le-evl"/>
+                                </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="9XT-co-zPJ"/>
-                                        <exclude reference="DjO-eS-PVL"/>
+                                        <exclude reference="8LP-ED-Gse"/>
+                                        <exclude reference="DBy-bK-jWM"/>
+                                        <exclude reference="SJW-le-evl"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="9XT-co-zPJ"/>
-                                        <include reference="DjO-eS-PVL"/>
+                                        <include reference="8LP-ED-Gse"/>
+                                        <include reference="DBy-bK-jWM"/>
+                                        <include reference="SJW-le-evl"/>
                                     </mask>
                                 </variation>
-                                <connections>
-                                    <segue destination="bVZ-kM-hJ6" kind="show" identifier="fruitsSegue" id="B7e-fo-7qy"/>
-                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuB-Na-Uuw">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="100" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Vegetables"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="broccoli600px" translatesAutoresizingMaskIntoConstraints="NO" id="N0Y-fE-RWb">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="AWG-ug-CWy"/>
+                                    <constraint firstAttribute="width" constant="80" id="G7d-Mu-lF2"/>
+                                    <constraint firstAttribute="width" secondItem="N0Y-fE-RWb" secondAttribute="height" multiplier="1:1" id="rl4-RZ-wPY"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="AWG-ug-CWy"/>
+                                        <exclude reference="G7d-Mu-lF2"/>
+                                        <exclude reference="rl4-RZ-wPY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="AWG-ug-CWy"/>
+                                        <include reference="G7d-Mu-lF2"/>
+                                        <include reference="rl4-RZ-wPY"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Zao-YH-iEP" firstAttribute="leading" secondItem="Vy6-yL-N2Q" secondAttribute="leading" constant="50" id="044-Mg-re1"/>
-                            <constraint firstItem="nHZ-UD-6Er" firstAttribute="centerX" secondItem="Vy6-yL-N2Q" secondAttribute="centerX" id="3RW-68-anA"/>
-                            <constraint firstItem="nHZ-UD-6Er" firstAttribute="bottom" secondItem="w5Q-ei-QEJ" secondAttribute="bottom" id="58O-6O-ZaM"/>
-                            <constraint firstItem="N0Y-fE-RWb" firstAttribute="leading" secondItem="Vy6-yL-N2Q" secondAttribute="leading" constant="50" id="7bs-Ew-Iiq"/>
-                            <constraint firstItem="LuB-Na-Uuw" firstAttribute="bottom" secondItem="N0Y-fE-RWb" secondAttribute="bottom" id="7h0-t7-SwB"/>
-                            <constraint firstItem="5bA-jk-nNF" firstAttribute="leading" secondItem="iAY-F1-Xdc" secondAttribute="leading" id="BaJ-bX-Ie2"/>
-                            <constraint firstItem="LuB-Na-Uuw" firstAttribute="top" secondItem="Zao-YH-iEP" secondAttribute="bottom" constant="15" id="EfJ-wp-4yP"/>
-                            <constraint firstItem="LuB-Na-Uuw" firstAttribute="leading" secondItem="N0Y-fE-RWb" secondAttribute="leading" id="Euo-WO-d7X"/>
-                            <constraint firstItem="5bA-jk-nNF" firstAttribute="trailing" secondItem="EKZ-ia-zmR" secondAttribute="trailing" id="HV0-l4-Mfv"/>
-                            <constraint firstItem="nHZ-UD-6Er" firstAttribute="leading" secondItem="LuB-Na-Uuw" secondAttribute="leading" id="J0I-1K-5Jr"/>
-                            <constraint firstItem="5bA-jk-nNF" firstAttribute="bottom" secondItem="iAY-F1-Xdc" secondAttribute="bottom" id="K7V-Gp-5WD"/>
-                            <constraint firstItem="Z2d-er-IQV" firstAttribute="top" secondItem="cp1-0E-1Vj" secondAttribute="bottom" constant="117" id="Kc6-j0-tRY"/>
-                            <constraint firstItem="A1f-Ll-3q7" firstAttribute="leading" secondItem="Vy6-yL-N2Q" secondAttribute="leading" constant="50" id="Lbq-Ux-KBd"/>
-                            <constraint firstItem="Z2d-er-IQV" firstAttribute="trailing" secondItem="LuB-Na-Uuw" secondAttribute="trailing" id="NGp-lI-HxZ"/>
-                            <constraint firstItem="nHZ-UD-6Er" firstAttribute="trailing" secondItem="LuB-Na-Uuw" secondAttribute="trailing" id="OgA-sO-fYw"/>
-                            <constraint firstItem="5bA-jk-nNF" firstAttribute="top" secondItem="iAY-F1-Xdc" secondAttribute="top" id="QsO-Vq-4Nd"/>
-                            <constraint firstItem="w5Q-ei-QEJ" firstAttribute="leading" secondItem="Vy6-yL-N2Q" secondAttribute="leading" constant="60" id="Sf9-S6-CiE"/>
-                            <constraint firstItem="Z2d-er-IQV" firstAttribute="top" secondItem="Zao-YH-iEP" secondAttribute="top" id="TFH-xU-esC"/>
-                            <constraint firstItem="w5Q-ei-QEJ" firstAttribute="top" secondItem="Zao-YH-iEP" secondAttribute="bottom" constant="110" id="c0M-xJ-YkV"/>
-                            <constraint firstItem="nHZ-UD-6Er" firstAttribute="top" secondItem="w5Q-ei-QEJ" secondAttribute="top" id="cQj-gw-FY5"/>
-                            <constraint firstItem="EKZ-ia-zmR" firstAttribute="bottom" secondItem="A1f-Ll-3q7" secondAttribute="bottom" id="dru-BZ-X1a"/>
-                            <constraint firstItem="iAY-F1-Xdc" firstAttribute="leading" secondItem="Vy6-yL-N2Q" secondAttribute="leading" constant="50" id="g6q-Na-VL7"/>
-                            <constraint firstItem="EKZ-ia-zmR" firstAttribute="leading" secondItem="A1f-Ll-3q7" secondAttribute="leading" id="leI-2g-MQ7"/>
-                            <constraint firstItem="Z2d-er-IQV" firstAttribute="bottom" secondItem="Zao-YH-iEP" secondAttribute="bottom" id="rAx-e3-F2q"/>
-                            <constraint firstItem="LuB-Na-Uuw" firstAttribute="top" secondItem="N0Y-fE-RWb" secondAttribute="top" id="rhL-62-RbQ"/>
-                            <constraint firstItem="EKZ-ia-zmR" firstAttribute="top" secondItem="A1f-Ll-3q7" secondAttribute="top" id="sUT-8e-vTB"/>
-                            <constraint firstItem="5bA-jk-nNF" firstAttribute="trailing" secondItem="nHZ-UD-6Er" secondAttribute="trailing" id="sZk-jX-14M"/>
-                            <constraint firstItem="Z2d-er-IQV" firstAttribute="leading" secondItem="Zao-YH-iEP" secondAttribute="leading" id="tG5-lL-w2e"/>
-                            <constraint firstItem="iAY-F1-Xdc" firstAttribute="top" secondItem="N0Y-fE-RWb" secondAttribute="bottom" constant="110" id="tyh-d6-Spn"/>
-                            <constraint firstItem="A1f-Ll-3q7" firstAttribute="top" secondItem="w5Q-ei-QEJ" secondAttribute="bottom" constant="110" id="uEs-3v-CLK"/>
+                            <constraint firstItem="N0Y-fE-RWb" firstAttribute="top" secondItem="Zao-YH-iEP" secondAttribute="bottom" constant="15" id="0LY-sf-qBd"/>
+                            <constraint firstItem="nHZ-UD-6Er" firstAttribute="trailing" secondItem="5bA-jk-nNF" secondAttribute="trailing" id="6I3-7p-SnG"/>
+                            <constraint firstItem="Zao-YH-iEP" firstAttribute="leading" secondItem="Vy6-yL-N2Q" secondAttribute="leadingMargin" constant="30" id="7kv-Yo-wqU"/>
+                            <constraint firstItem="nHZ-UD-6Er" firstAttribute="bottom" secondItem="w5Q-ei-QEJ" secondAttribute="bottom" id="8uj-gq-Tb7"/>
+                            <constraint firstItem="nHZ-UD-6Er" firstAttribute="leading" secondItem="LuB-Na-Uuw" secondAttribute="leading" id="Ahe-mi-Zj6"/>
+                            <constraint firstItem="EKZ-ia-zmR" firstAttribute="centerX" secondItem="Vy6-yL-N2Q" secondAttribute="centerX" id="E8y-ev-yK0"/>
+                            <constraint firstItem="A1f-Ll-3q7" firstAttribute="top" secondItem="5bA-jk-nNF" secondAttribute="bottom" constant="15" id="HiI-zF-NeX"/>
+                            <constraint firstItem="iAY-F1-Xdc" firstAttribute="trailing" secondItem="w5Q-ei-QEJ" secondAttribute="trailing" id="Iw9-q8-CT1"/>
+                            <constraint firstItem="EKZ-ia-zmR" firstAttribute="top" secondItem="A1f-Ll-3q7" secondAttribute="top" id="Luw-6n-STC"/>
+                            <constraint firstItem="A1f-Ll-3q7" firstAttribute="trailing" secondItem="iAY-F1-Xdc" secondAttribute="trailing" id="Ot1-fr-Gef"/>
+                            <constraint firstItem="EKZ-ia-zmR" firstAttribute="leading" secondItem="A1f-Ll-3q7" secondAttribute="leading" id="Sd3-3R-7PQ"/>
+                            <constraint firstItem="nHZ-UD-6Er" firstAttribute="top" secondItem="w5Q-ei-QEJ" secondAttribute="top" id="UY4-Va-COd"/>
+                            <constraint firstItem="LuB-Na-Uuw" firstAttribute="trailing" secondItem="nHZ-UD-6Er" secondAttribute="trailing" id="Urm-mI-5S2"/>
+                            <constraint firstItem="w5Q-ei-QEJ" firstAttribute="top" secondItem="N0Y-fE-RWb" secondAttribute="bottom" constant="15" id="XHX-br-hn1"/>
+                            <constraint firstItem="Z2d-er-IQV" firstAttribute="trailing" secondItem="LuB-Na-Uuw" secondAttribute="trailing" id="XlV-cC-xa2"/>
+                            <constraint firstItem="iAY-F1-Xdc" firstAttribute="top" secondItem="w5Q-ei-QEJ" secondAttribute="bottom" constant="15" id="Ykg-4r-nDw"/>
+                            <constraint firstItem="5bA-jk-nNF" firstAttribute="top" secondItem="iAY-F1-Xdc" secondAttribute="top" id="bNR-Na-v96"/>
+                            <constraint firstItem="LuB-Na-Uuw" firstAttribute="bottom" secondItem="N0Y-fE-RWb" secondAttribute="bottom" id="cf3-Xd-d9W"/>
+                            <constraint firstItem="EKZ-ia-zmR" firstAttribute="leading" secondItem="5bA-jk-nNF" secondAttribute="leading" id="gLa-yh-SJm"/>
+                            <constraint firstItem="Z2d-er-IQV" firstAttribute="bottom" secondItem="Zao-YH-iEP" secondAttribute="bottom" id="h4r-UN-rAy"/>
+                            <constraint firstItem="5bA-jk-nNF" firstAttribute="trailing" secondItem="EKZ-ia-zmR" secondAttribute="trailing" id="ipg-B2-2k6"/>
+                            <constraint firstItem="LuB-Na-Uuw" firstAttribute="leading" secondItem="N0Y-fE-RWb" secondAttribute="leading" id="kDm-Eq-ODx"/>
+                            <constraint firstItem="nHZ-UD-6Er" firstAttribute="leading" secondItem="w5Q-ei-QEJ" secondAttribute="leading" id="m2W-bY-U2n"/>
+                            <constraint firstItem="N0Y-fE-RWb" firstAttribute="trailing" secondItem="Zao-YH-iEP" secondAttribute="trailing" id="mId-1g-mtJ"/>
+                            <constraint firstItem="5bA-jk-nNF" firstAttribute="bottom" secondItem="iAY-F1-Xdc" secondAttribute="bottom" id="mpK-Lp-wPm"/>
+                            <constraint firstItem="N0Y-fE-RWb" firstAttribute="top" secondItem="Zao-YH-iEP" secondAttribute="bottom" constant="15" id="nAf-YB-D1G"/>
+                            <constraint firstItem="w5Q-ei-QEJ" firstAttribute="top" secondItem="N0Y-fE-RWb" secondAttribute="bottom" constant="15" id="nrZ-pA-TK7"/>
+                            <constraint firstItem="Zao-YH-iEP" firstAttribute="top" secondItem="cp1-0E-1Vj" secondAttribute="bottom" constant="71" id="oAf-2B-Bi5"/>
+                            <constraint firstItem="EKZ-ia-zmR" firstAttribute="bottom" secondItem="A1f-Ll-3q7" secondAttribute="bottom" id="q8g-Pj-c0x"/>
+                            <constraint firstItem="LuB-Na-Uuw" firstAttribute="top" secondItem="N0Y-fE-RWb" secondAttribute="top" id="qPk-Lq-kMr"/>
+                            <constraint firstItem="Z2d-er-IQV" firstAttribute="leading" secondItem="Zao-YH-iEP" secondAttribute="leading" id="tL7-ay-cqH"/>
+                            <constraint firstItem="5bA-jk-nNF" firstAttribute="leading" secondItem="iAY-F1-Xdc" secondAttribute="leading" id="z2K-rM-rdJ"/>
+                            <constraint firstItem="Z2d-er-IQV" firstAttribute="top" secondItem="Zao-YH-iEP" secondAttribute="top" id="zw8-HJ-k4G"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Zao-YH-iEP"/>
-                                <exclude reference="LuB-Na-Uuw"/>
-                                <exclude reference="N0Y-fE-RWb"/>
                                 <exclude reference="EKZ-ia-zmR"/>
                                 <exclude reference="A1f-Ll-3q7"/>
                                 <exclude reference="nHZ-UD-6Er"/>
@@ -1162,45 +1148,48 @@ About 1 cup of ready-to-eat cereal
                                 <exclude reference="5bA-jk-nNF"/>
                                 <exclude reference="iAY-F1-Xdc"/>
                                 <exclude reference="Z2d-er-IQV"/>
+                                <exclude reference="Zao-YH-iEP"/>
+                                <exclude reference="LuB-Na-Uuw"/>
+                                <exclude reference="N0Y-fE-RWb"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="BaJ-bX-Ie2"/>
-                                <exclude reference="HV0-l4-Mfv"/>
-                                <exclude reference="K7V-Gp-5WD"/>
-                                <exclude reference="QsO-Vq-4Nd"/>
-                                <exclude reference="sZk-jX-14M"/>
-                                <exclude reference="dru-BZ-X1a"/>
-                                <exclude reference="leI-2g-MQ7"/>
-                                <exclude reference="sUT-8e-vTB"/>
-                                <exclude reference="7h0-t7-SwB"/>
-                                <exclude reference="EfJ-wp-4yP"/>
-                                <exclude reference="Euo-WO-d7X"/>
-                                <exclude reference="rhL-62-RbQ"/>
-                                <exclude reference="Kc6-j0-tRY"/>
-                                <exclude reference="NGp-lI-HxZ"/>
-                                <exclude reference="TFH-xU-esC"/>
-                                <exclude reference="rAx-e3-F2q"/>
-                                <exclude reference="tG5-lL-w2e"/>
-                                <exclude reference="3RW-68-anA"/>
-                                <exclude reference="58O-6O-ZaM"/>
-                                <exclude reference="J0I-1K-5Jr"/>
-                                <exclude reference="OgA-sO-fYw"/>
-                                <exclude reference="cQj-gw-FY5"/>
-                                <exclude reference="Lbq-Ux-KBd"/>
-                                <exclude reference="uEs-3v-CLK"/>
-                                <exclude reference="7bs-Ew-Iiq"/>
-                                <exclude reference="044-Mg-re1"/>
-                                <exclude reference="g6q-Na-VL7"/>
-                                <exclude reference="tyh-d6-Spn"/>
-                                <exclude reference="Sf9-S6-CiE"/>
-                                <exclude reference="c0M-xJ-YkV"/>
+                                <exclude reference="XlV-cC-xa2"/>
+                                <exclude reference="h4r-UN-rAy"/>
+                                <exclude reference="tL7-ay-cqH"/>
+                                <exclude reference="zw8-HJ-k4G"/>
+                                <exclude reference="7kv-Yo-wqU"/>
+                                <exclude reference="oAf-2B-Bi5"/>
+                                <exclude reference="Urm-mI-5S2"/>
+                                <exclude reference="cf3-Xd-d9W"/>
+                                <exclude reference="kDm-Eq-ODx"/>
+                                <exclude reference="qPk-Lq-kMr"/>
+                                <exclude reference="0LY-sf-qBd"/>
+                                <exclude reference="mId-1g-mtJ"/>
+                                <exclude reference="nAf-YB-D1G"/>
+                                <exclude reference="6I3-7p-SnG"/>
+                                <exclude reference="8uj-gq-Tb7"/>
+                                <exclude reference="Ahe-mi-Zj6"/>
+                                <exclude reference="UY4-Va-COd"/>
+                                <exclude reference="m2W-bY-U2n"/>
+                                <exclude reference="XHX-br-hn1"/>
+                                <exclude reference="nrZ-pA-TK7"/>
+                                <exclude reference="bNR-Na-v96"/>
+                                <exclude reference="ipg-B2-2k6"/>
+                                <exclude reference="mpK-Lp-wPm"/>
+                                <exclude reference="z2K-rM-rdJ"/>
+                                <exclude reference="Iw9-q8-CT1"/>
+                                <exclude reference="Ykg-4r-nDw"/>
+                                <exclude reference="HiI-zF-NeX"/>
+                                <exclude reference="Ot1-fr-Gef"/>
+                                <exclude reference="E8y-ev-yK0"/>
+                                <exclude reference="Luw-6n-STC"/>
+                                <exclude reference="Sd3-3R-7PQ"/>
+                                <exclude reference="gLa-yh-SJm"/>
+                                <exclude reference="q8g-Pj-c0x"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="Zao-YH-iEP"/>
-                                <include reference="LuB-Na-Uuw"/>
-                                <include reference="N0Y-fE-RWb"/>
                                 <include reference="EKZ-ia-zmR"/>
                                 <include reference="A1f-Ll-3q7"/>
                                 <include reference="nHZ-UD-6Er"/>
@@ -1208,38 +1197,44 @@ About 1 cup of ready-to-eat cereal
                                 <include reference="5bA-jk-nNF"/>
                                 <include reference="iAY-F1-Xdc"/>
                                 <include reference="Z2d-er-IQV"/>
+                                <include reference="Zao-YH-iEP"/>
+                                <include reference="LuB-Na-Uuw"/>
+                                <include reference="N0Y-fE-RWb"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="BaJ-bX-Ie2"/>
-                                <include reference="HV0-l4-Mfv"/>
-                                <include reference="K7V-Gp-5WD"/>
-                                <include reference="QsO-Vq-4Nd"/>
-                                <include reference="sZk-jX-14M"/>
-                                <include reference="dru-BZ-X1a"/>
-                                <include reference="leI-2g-MQ7"/>
-                                <include reference="sUT-8e-vTB"/>
-                                <include reference="7h0-t7-SwB"/>
-                                <include reference="EfJ-wp-4yP"/>
-                                <include reference="Euo-WO-d7X"/>
-                                <include reference="rhL-62-RbQ"/>
-                                <include reference="Kc6-j0-tRY"/>
-                                <include reference="NGp-lI-HxZ"/>
-                                <include reference="TFH-xU-esC"/>
-                                <include reference="rAx-e3-F2q"/>
-                                <include reference="tG5-lL-w2e"/>
-                                <include reference="3RW-68-anA"/>
-                                <include reference="58O-6O-ZaM"/>
-                                <include reference="J0I-1K-5Jr"/>
-                                <include reference="OgA-sO-fYw"/>
-                                <include reference="cQj-gw-FY5"/>
-                                <include reference="Lbq-Ux-KBd"/>
-                                <include reference="uEs-3v-CLK"/>
-                                <include reference="7bs-Ew-Iiq"/>
-                                <include reference="044-Mg-re1"/>
-                                <include reference="g6q-Na-VL7"/>
-                                <include reference="tyh-d6-Spn"/>
-                                <include reference="Sf9-S6-CiE"/>
-                                <include reference="c0M-xJ-YkV"/>
+                                <include reference="XlV-cC-xa2"/>
+                                <include reference="h4r-UN-rAy"/>
+                                <include reference="tL7-ay-cqH"/>
+                                <include reference="zw8-HJ-k4G"/>
+                                <include reference="7kv-Yo-wqU"/>
+                                <include reference="oAf-2B-Bi5"/>
+                                <include reference="Urm-mI-5S2"/>
+                                <include reference="cf3-Xd-d9W"/>
+                                <include reference="kDm-Eq-ODx"/>
+                                <include reference="qPk-Lq-kMr"/>
+                                <include reference="0LY-sf-qBd"/>
+                                <include reference="mId-1g-mtJ"/>
+                                <include reference="nAf-YB-D1G"/>
+                                <include reference="6I3-7p-SnG"/>
+                                <include reference="8uj-gq-Tb7"/>
+                                <include reference="Ahe-mi-Zj6"/>
+                                <include reference="UY4-Va-COd"/>
+                                <include reference="m2W-bY-U2n"/>
+                                <include reference="XHX-br-hn1"/>
+                                <include reference="nrZ-pA-TK7"/>
+                                <include reference="bNR-Na-v96"/>
+                                <include reference="ipg-B2-2k6"/>
+                                <include reference="mpK-Lp-wPm"/>
+                                <include reference="z2K-rM-rdJ"/>
+                                <include reference="Iw9-q8-CT1"/>
+                                <include reference="Ykg-4r-nDw"/>
+                                <include reference="HiI-zF-NeX"/>
+                                <include reference="Ot1-fr-Gef"/>
+                                <include reference="E8y-ev-yK0"/>
+                                <include reference="Luw-6n-STC"/>
+                                <include reference="Sd3-3R-7PQ"/>
+                                <include reference="gLa-yh-SJm"/>
+                                <include reference="q8g-Pj-c0x"/>
                             </mask>
                         </variation>
                     </view>
@@ -1258,94 +1253,58 @@ About 1 cup of ready-to-eat cereal
                         <viewControllerLayoutGuide type="bottom" id="8Y6-vp-DZF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Zjt-GO-gLb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n7B-Eq-pFl">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="80" sectionHeaderHeight="20" sectionFooterHeight="20" translatesAutoresizingMaskIntoConstraints="NO" id="n7B-Eq-pFl">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FoodTableViewCell" id="Elv-Il-fJe" customClass="FoodTableViewCell" customModule="T_REX" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FoodCell" id="jY8-NN-9em" customClass="FoodTableViewCell" customModule="T_REX" customModuleProvider="target">
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Elv-Il-fJe" id="JEu-GO-uu6">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jY8-NN-9em" id="d3w-DF-Y5n">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x77-KM-NTd">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQ0-eZ-sps">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gwo-Xk-eI3">
-                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="79" id="DqQ-Ee-Cmh"/>
-                                                    </constraints>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="DqQ-Ee-Cmh"/>
-                                                        </mask>
+                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="88" y="8" width="312" height="21"/>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
-                                                        <mask key="constraints">
-                                                            <include reference="DqQ-Ee-Cmh"/>
-                                                        </mask>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8my-B0-vVn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                     </variation>
                                                 </imageView>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="gwo-Xk-eI3" firstAttribute="leading" secondItem="JEu-GO-uu6" secondAttribute="leadingMargin" constant="-8" id="5sJ-wj-fgD"/>
-                                                <constraint firstItem="x77-KM-NTd" firstAttribute="leading" secondItem="gwo-Xk-eI3" secondAttribute="trailing" constant="8" symbolic="YES" id="B2m-LC-sM0"/>
-                                                <constraint firstItem="gwo-Xk-eI3" firstAttribute="leading" secondItem="JEu-GO-uu6" secondAttribute="leading" id="KeF-9M-kFD"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="x77-KM-NTd" secondAttribute="bottom" constant="42" id="NAg-N8-asY"/>
-                                                <constraint firstItem="x77-KM-NTd" firstAttribute="top" secondItem="JEu-GO-uu6" secondAttribute="topMargin" id="Pb6-u2-j5e"/>
-                                                <constraint firstItem="gwo-Xk-eI3" firstAttribute="top" secondItem="JEu-GO-uu6" secondAttribute="topMargin" constant="-8" id="Ucx-92-xU0"/>
-                                                <constraint firstAttribute="bottom" secondItem="gwo-Xk-eI3" secondAttribute="bottom" id="apt-h3-Sif"/>
-                                                <constraint firstItem="gwo-Xk-eI3" firstAttribute="top" secondItem="JEu-GO-uu6" secondAttribute="top" id="rZY-sN-jzt"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="gwo-Xk-eI3" secondAttribute="bottom" constant="-8" id="w8L-dM-lZI"/>
-                                                <constraint firstAttribute="trailing" secondItem="x77-KM-NTd" secondAttribute="trailing" id="zoQ-bs-wdk"/>
-                                            </constraints>
                                             <variation key="default">
                                                 <mask key="subviews">
-                                                    <exclude reference="x77-KM-NTd"/>
-                                                    <exclude reference="gwo-Xk-eI3"/>
-                                                </mask>
-                                                <mask key="constraints">
-                                                    <exclude reference="5sJ-wj-fgD"/>
-                                                    <exclude reference="KeF-9M-kFD"/>
-                                                    <exclude reference="Ucx-92-xU0"/>
-                                                    <exclude reference="apt-h3-Sif"/>
-                                                    <exclude reference="rZY-sN-jzt"/>
-                                                    <exclude reference="w8L-dM-lZI"/>
-                                                    <exclude reference="B2m-LC-sM0"/>
-                                                    <exclude reference="NAg-N8-asY"/>
-                                                    <exclude reference="Pb6-u2-j5e"/>
-                                                    <exclude reference="zoQ-bs-wdk"/>
+                                                    <exclude reference="eQ0-eZ-sps"/>
+                                                    <exclude reference="8my-B0-vVn"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
                                                 <mask key="subviews">
-                                                    <include reference="x77-KM-NTd"/>
-                                                    <include reference="gwo-Xk-eI3"/>
-                                                </mask>
-                                                <mask key="constraints">
-                                                    <include reference="5sJ-wj-fgD"/>
-                                                    <include reference="KeF-9M-kFD"/>
-                                                    <include reference="Ucx-92-xU0"/>
-                                                    <include reference="apt-h3-Sif"/>
-                                                    <include reference="rZY-sN-jzt"/>
-                                                    <include reference="w8L-dM-lZI"/>
-                                                    <include reference="B2m-LC-sM0"/>
-                                                    <include reference="NAg-N8-asY"/>
-                                                    <include reference="Pb6-u2-j5e"/>
-                                                    <include reference="zoQ-bs-wdk"/>
+                                                    <include reference="eQ0-eZ-sps"/>
+                                                    <include reference="8my-B0-vVn"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="foodImage" destination="gwo-Xk-eI3" id="HD9-yc-KZ0"/>
-                                            <outlet property="foodLabel" destination="x77-KM-NTd" id="K6K-lm-dx5"/>
+                                            <outlet property="foodImage" destination="8my-B0-vVn" id="6ZQ-Wo-8Iq"/>
+                                            <outlet property="foodLabel" destination="eQ0-eZ-sps" id="5Yq-ha-2FM"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="bVZ-kM-hJ6" id="N9G-TN-fdi"/>
+                                    <outlet property="delegate" destination="bVZ-kM-hJ6" id="MfC-K3-1Pb"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1378,10 +1337,13 @@ About 1 cup of ready-to-eat cereal
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="foodTableView" destination="n7B-Eq-pFl" id="s1N-QE-pgG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRe-9O-H63" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4374" y="1029"/>
+            <point key="canvasLocation" x="4461" y="1029.75"/>
         </scene>
         <!--Create Account View Controller-->
         <scene sceneID="lfU-k7-B9F">
