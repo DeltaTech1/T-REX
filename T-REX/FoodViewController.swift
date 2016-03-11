@@ -10,46 +10,48 @@ import UIKit
 
 class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var foodTableView: UITableView!
+    @IBOutlet weak var FoodTableView: UITableView!
 
-    var fruit: [(String, String)] = [("Apple", "apple600.png")]
+    var fruit = ["Apple", "Banana", "Orange", "Strawberries", "Pear"]
+    var images = [UIImage(named: "apple600.png"),UIImage(named: "Bananas.png"),UIImage(named: "Orange.png"),UIImage(named: "Strawberry.png"),UIImage(named: "Pear.png"),]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    /*
         foodTableView.registerClass(FoodTableViewCell.self, forCellReuseIdentifier: "FoodCell")
+    */
     }
     
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    
+    /*
     // MARK:  UITextFieldDelegate Methods
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
-    
+    */
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return fruit.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell:FoodTableViewCell = tableView.dequeueReusableCellWithIdentifier("FoodCell") as! FoodTableViewCell
-        let (title, image) = fruit[indexPath.row]
-        cell.loadItem(title: title, image: image)
+        let cell = tableView.dequeueReusableCellWithIdentifier("FoodCell", forIndexPath: indexPath) as! FoodTableViewCell
+
+        cell.foodImage.image = images[indexPath.row]
+        cell.foodLabel.text = fruit[indexPath.row]
         
         return cell
     }
-    
+    /*
     // MARK:  UITableViewDelegate Methods
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         print("You selected cell #\(indexPath.row)")
     }
-    
+    */
 
     /*
     // MARK: - Navigation
@@ -62,3 +64,4 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
     */
 
 }
+

@@ -12,9 +12,11 @@ class FoodTableViewCell: UITableViewCell {
 
     @IBOutlet weak var foodLabel: UILabel!
     @IBOutlet weak var foodImage: UIImageView!
+    @IBOutlet weak var foodStepper: UIStepper!
     
     func loadItem(title title: String, image: String) {
         foodImage?.image = UIImage(named: image)
+       
         foodLabel?.text = title
     }
     
