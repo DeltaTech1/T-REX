@@ -25,6 +25,8 @@ class HomeViewController: UIViewController {
         NSUserDefaults.standardUserDefaults().synchronize()
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    
 
 }
 

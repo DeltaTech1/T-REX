@@ -18,6 +18,7 @@
 		8B9019BF1C89BD7100F66C41 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9019BE1C89BD7100F66C41 /* FoodTableViewCell.swift */; };
 		8BD15F271C5AA2BB0003C705 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD15F261C5AA2BB0003C705 /* LoginViewController.swift */; };
 		8BD15F291C5AA2CF0003C705 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD15F281C5AA2CF0003C705 /* CreateAccountViewController.swift */; };
+		FBE728301C98B287000E4EE4 /* FoodGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE7282F1C98B287000E4EE4 /* FoodGroupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		8B9019BE1C89BD7100F66C41 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 		8BD15F261C5AA2BB0003C705 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8BD15F281C5AA2CF0003C705 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		FBE7282F1C98B287000E4EE4 /* FoodGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodGroupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				8BD15F281C5AA2CF0003C705 /* CreateAccountViewController.swift */,
 				8B6EB96C1C883A72000B8737 /* FoodViewController.swift */,
 				8B9019BE1C89BD7100F66C41 /* FoodTableViewCell.swift */,
+				FBE7282F1C98B287000E4EE4 /* FoodGroupViewController.swift */,
 			);
 			path = "T-REX";
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BD15F291C5AA2CF0003C705 /* CreateAccountViewController.swift in Sources */,
+				FBE728301C98B287000E4EE4 /* FoodGroupViewController.swift in Sources */,
 				8B6EB96D1C883A72000B8737 /* FoodViewController.swift in Sources */,
 				8BD15F271C5AA2BB0003C705 /* LoginViewController.swift in Sources */,
 				86BB146D1C46033000BBF582 /* HomeViewController.swift in Sources */,

@@ -12,8 +12,8 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var FoodTableView: UITableView!
 
-    var fruit = ["Apple", "Banana", "Orange", "Strawberries", "Pear"]
-    var images = [UIImage(named: "apple600.png"),UIImage(named: "Bananas.png"),UIImage(named: "Orange.png"),UIImage(named: "Strawberry.png"),UIImage(named: "Pear.png"),]
+    var foods = [String]()
+    var images = [UIImage]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,14 +34,14 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     */
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fruit.count
+        return foods.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("FoodCell", forIndexPath: indexPath) as! FoodTableViewCell
-
-        cell.foodImage.image = images[indexPath.row]
-        cell.foodLabel.text = fruit[indexPath.row]
+        cell.loadItem(title: foods[indexPath.row], image: images[indexPath.row])
+        //cell.foodImage.image = images[indexPath.row]
+        //cell.foodLabel.text = fruit[indexPath.row]
         
         return cell
     }
@@ -53,15 +53,12 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+
 
 }
 
