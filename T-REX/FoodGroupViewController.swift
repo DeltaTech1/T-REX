@@ -11,12 +11,16 @@ import UIKit
 class FoodGroupViewController: UIViewController {
 
     var fruits = ["Apple", "Banana", "Orange", "Strawberries", "Pear"]
-    var vegetables = ["Broccoli", "Carrots", "Spinach"]
-    var proteins = ["Beef", "Chicken", "Fish"]
-    var dairy = ["Milk", "Cheese", "Yogurt"]
-    var grains = ["Cereal", "Rice"]
+    var vegetables = ["Broccoli", "Carrots", "Spinach", "Cucumber", "Potato"]
+    var proteins = ["Beef", "Chicken", "Fish", "Turkey", "Eggs"]
+    var dairy = ["Milk", "Cheese", "Yogurt", "Ice Cream"]
+    var grains = ["Cereal", "Rice", "Bread", "Oatmeal", "Pasta"]
     
-    var images = [UIImage(named: "apple600.png")!,UIImage(named: "Bananas.png")!,UIImage(named: "Orange.png")!,UIImage(named: "Strawberry.png")!,UIImage(named: "Pear.png")!]
+    var fruitsimage = [UIImage(named: "apple1")!,UIImage(named: "Bananas")!,UIImage(named: "Orange")!,UIImage(named: "Strawberry")!,UIImage(named: "Pear")!]
+    var vegetablesimage = [UIImage(named: "broccoli1")!,UIImage(named: "carrots")!,UIImage(named: "spinach")!,UIImage(named: "cucumber")!,UIImage(named: "potato")!]
+    var proteinsimage = [UIImage(named: "beef1")!,UIImage(named: "chicken")!,UIImage(named: "fish")!,UIImage(named: "turkey")!,UIImage(named: "eggs")!]
+    var dairyimage = [UIImage(named: "milk")!,UIImage(named: "Cheese")!,UIImage(named: "yogurt")!,UIImage(named: "icecream")!]
+    var grainsimage = [UIImage(named: "cereal")!,UIImage(named: "rice")!,UIImage(named: "bread")!,UIImage(named: "oatmeal")!,UIImage(named: "pasta")!]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,23 +61,23 @@ class FoodGroupViewController: UIViewController {
         let foods = sender as! [String]
         viewController.foods = foods
         if foods == fruits {
-            viewController.images = images
+            viewController.images = fruitsimage
         }
         
         else if foods == vegetables {
-            viewController.images = images
+            viewController.images = vegetablesimage
         }
         
         else if foods == grains {
-            viewController.images = images
+            viewController.images = grainsimage
         }
         
         else if foods == proteins {
-            viewController.images = images
+            viewController.images = proteinsimage
         }
         
         else {
-            viewController.images = images
+            viewController.images = dairyimage
         }
         
     }
