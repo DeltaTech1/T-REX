@@ -1243,7 +1243,7 @@ About 1 cup of ready-to-eat cereal
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snack" translatesAutoresizingMaskIntoConstraints="NO" id="6pc-Dq-BM7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana" translatesAutoresizingMaskIntoConstraints="NO" id="6pc-Dq-BM7">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Efo-pD-JBx"/>
@@ -1338,28 +1338,28 @@ About 1 cup of ready-to-eat cereal
                                 <exclude reference="jDi-2V-vzf"/>
                                 <exclude reference="kyK-LH-rks"/>
                                 <exclude reference="lqK-al-uf6"/>
+                                <exclude reference="du1-qN-1Ig"/>
+                                <exclude reference="snQ-Gq-6uH"/>
+                                <exclude reference="y2m-uh-NMP"/>
+                                <exclude reference="4Vg-rJ-UgJ"/>
+                                <exclude reference="Yw8-oI-3tr"/>
+                                <exclude reference="4ap-pT-v1N"/>
+                                <exclude reference="WJs-J7-qCr"/>
+                                <exclude reference="ddy-1M-ldx"/>
+                                <exclude reference="lZS-ZM-chT"/>
+                                <exclude reference="oqh-T5-x3Y"/>
+                                <exclude reference="ce9-Ra-isv"/>
+                                <exclude reference="mpQ-d9-9oV"/>
+                                <exclude reference="udu-Zk-NcM"/>
+                                <exclude reference="3SG-S9-0kH"/>
+                                <exclude reference="NWX-2n-QpO"/>
                                 <exclude reference="0A7-0h-mLW"/>
                                 <exclude reference="7aY-1V-1rj"/>
                                 <exclude reference="CgS-cz-tVM"/>
                                 <exclude reference="NrQ-Pj-REj"/>
                                 <exclude reference="ODM-Yf-GIl"/>
                                 <exclude reference="pHp-Zk-aos"/>
-                                <exclude reference="du1-qN-1Ig"/>
-                                <exclude reference="snQ-Gq-6uH"/>
-                                <exclude reference="y2m-uh-NMP"/>
                                 <exclude reference="gQU-D4-wbw"/>
-                                <exclude reference="3SG-S9-0kH"/>
-                                <exclude reference="NWX-2n-QpO"/>
-                                <exclude reference="4Vg-rJ-UgJ"/>
-                                <exclude reference="Yw8-oI-3tr"/>
-                                <exclude reference="ce9-Ra-isv"/>
-                                <exclude reference="mpQ-d9-9oV"/>
-                                <exclude reference="udu-Zk-NcM"/>
-                                <exclude reference="4ap-pT-v1N"/>
-                                <exclude reference="WJs-J7-qCr"/>
-                                <exclude reference="ddy-1M-ldx"/>
-                                <exclude reference="lZS-ZM-chT"/>
-                                <exclude reference="oqh-T5-x3Y"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1382,28 +1382,28 @@ About 1 cup of ready-to-eat cereal
                                 <include reference="jDi-2V-vzf"/>
                                 <include reference="kyK-LH-rks"/>
                                 <include reference="lqK-al-uf6"/>
+                                <include reference="du1-qN-1Ig"/>
+                                <include reference="snQ-Gq-6uH"/>
+                                <include reference="y2m-uh-NMP"/>
+                                <include reference="4Vg-rJ-UgJ"/>
+                                <include reference="Yw8-oI-3tr"/>
+                                <include reference="4ap-pT-v1N"/>
+                                <include reference="WJs-J7-qCr"/>
+                                <include reference="ddy-1M-ldx"/>
+                                <include reference="lZS-ZM-chT"/>
+                                <include reference="oqh-T5-x3Y"/>
+                                <include reference="ce9-Ra-isv"/>
+                                <include reference="mpQ-d9-9oV"/>
+                                <include reference="udu-Zk-NcM"/>
+                                <include reference="3SG-S9-0kH"/>
+                                <include reference="NWX-2n-QpO"/>
                                 <include reference="0A7-0h-mLW"/>
                                 <include reference="7aY-1V-1rj"/>
                                 <include reference="CgS-cz-tVM"/>
                                 <include reference="NrQ-Pj-REj"/>
                                 <include reference="ODM-Yf-GIl"/>
                                 <include reference="pHp-Zk-aos"/>
-                                <include reference="du1-qN-1Ig"/>
-                                <include reference="snQ-Gq-6uH"/>
-                                <include reference="y2m-uh-NMP"/>
                                 <include reference="gQU-D4-wbw"/>
-                                <include reference="3SG-S9-0kH"/>
-                                <include reference="NWX-2n-QpO"/>
-                                <include reference="4Vg-rJ-UgJ"/>
-                                <include reference="Yw8-oI-3tr"/>
-                                <include reference="ce9-Ra-isv"/>
-                                <include reference="mpQ-d9-9oV"/>
-                                <include reference="udu-Zk-NcM"/>
-                                <include reference="4ap-pT-v1N"/>
-                                <include reference="WJs-J7-qCr"/>
-                                <include reference="ddy-1M-ldx"/>
-                                <include reference="lZS-ZM-chT"/>
-                                <include reference="oqh-T5-x3Y"/>
                             </mask>
                         </variation>
                     </view>
@@ -2667,6 +2667,7 @@ About 1 cup of ready-to-eat cereal
     </scenes>
     <resources>
         <image name="apple600" width="600" height="600"/>
+        <image name="banana" width="300" height="212"/>
         <image name="book600" width="600" height="600"/>
         <image name="breakfast" width="300" height="300"/>
         <image name="broccoli600px" width="600" height="600"/>
@@ -2674,7 +2675,6 @@ About 1 cup of ready-to-eat cereal
         <image name="grain600px" width="600" height="600"/>
         <image name="lunch" width="300" height="241"/>
         <image name="milkbox600px" width="600" height="600"/>
-        <image name="snack" width="300" height="237"/>
         <image name="soccerball600px" width="600" height="600"/>
         <image name="steak600px" width="600" height="600"/>
         <image name="trophy600px" width="600" height="600"/>
@@ -2682,6 +2682,6 @@ About 1 cup of ready-to-eat cereal
         <image name="user.png" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Vpu-VK-dks"/>
+        <segue reference="3Oc-dW-dhV"/>
     </inferredMetricsTieBreakers>
 </document>
