@@ -1114,6 +1114,7 @@ About 1 cup of ready-to-eat cereal
                         <viewControllerLayoutGuide type="bottom" id="8Xg-Dr-gIr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Y1a-O4-4tz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ey-Ao-Qbj">
@@ -1242,6 +1243,47 @@ About 1 cup of ready-to-eat cereal
                                     </mask>
                                 </variation>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snack" translatesAutoresizingMaskIntoConstraints="NO" id="6pc-Dq-BM7">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Efo-pD-JBx"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Efo-pD-JBx"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Efo-pD-JBx"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htm-KK-GJn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="1Iz-Mc-mys"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="100" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Snack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1Iz-Mc-mys"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="1Iz-Mc-mys"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="c9J-Ma-KkC" kind="show" id="3Oc-dW-dhV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.56862745100000001" green="0.78039215689999997" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1250,6 +1292,7 @@ About 1 cup of ready-to-eat cereal
                             <constraint firstItem="8ey-Ao-Qbj" firstAttribute="centerX" secondItem="Y1a-O4-4tz" secondAttribute="centerX" id="3Bq-RN-nFL"/>
                             <constraint firstItem="AhJ-Um-Nqk" firstAttribute="bottom" secondItem="ZFK-PR-UFE" secondAttribute="bottom" id="3SG-S9-0kH"/>
                             <constraint firstItem="ZFK-PR-UFE" firstAttribute="top" secondItem="AhJ-Um-Nqk" secondAttribute="top" id="4Vg-rJ-UgJ"/>
+                            <constraint firstItem="htm-KK-GJn" firstAttribute="top" secondItem="6pc-Dq-BM7" secondAttribute="top" id="4ap-pT-v1N"/>
                             <constraint firstItem="mBm-og-dDA" firstAttribute="trailing" secondItem="zLz-qe-oc3" secondAttribute="trailing" id="7aY-1V-1rj"/>
                             <constraint firstItem="mBm-og-dDA" firstAttribute="leading" secondItem="Y1a-O4-4tz" secondAttribute="leadingMargin" constant="30" id="CgS-cz-tVM"/>
                             <constraint firstItem="AhJ-Um-Nqk" firstAttribute="top" secondItem="AOv-4A-AKv" secondAttribute="bottom" constant="36" id="NWX-2n-QpO"/>
@@ -1257,15 +1300,22 @@ About 1 cup of ready-to-eat cereal
                             <constraint firstItem="mBm-og-dDA" firstAttribute="top" secondItem="8ey-Ao-Qbj" secondAttribute="top" id="ODM-Yf-GIl"/>
                             <constraint firstItem="8ey-Ao-Qbj" firstAttribute="top" secondItem="CbN-mK-ZJJ" secondAttribute="bottom" constant="91" id="ObO-sV-6mp"/>
                             <constraint firstItem="8ey-Ao-Qbj" firstAttribute="trailing" secondItem="AOv-4A-AKv" secondAttribute="trailing" id="URb-Dc-cxZ"/>
+                            <constraint firstItem="htm-KK-GJn" firstAttribute="bottom" secondItem="6pc-Dq-BM7" secondAttribute="bottom" id="WJs-J7-qCr"/>
                             <constraint firstItem="ZFK-PR-UFE" firstAttribute="top" secondItem="zLz-qe-oc3" secondAttribute="bottom" constant="36" id="Yw8-oI-3tr"/>
                             <constraint firstItem="8ey-Ao-Qbj" firstAttribute="leading" secondItem="mBm-og-dDA" secondAttribute="leading" id="agJ-C5-hmb"/>
+                            <constraint firstItem="6pc-Dq-BM7" firstAttribute="top" secondItem="AhJ-Um-Nqk" secondAttribute="bottom" constant="34" id="ce9-Ra-isv"/>
+                            <constraint firstItem="htm-KK-GJn" firstAttribute="trailing" secondItem="ZFK-PR-UFE" secondAttribute="trailing" id="ddy-1M-ldx"/>
                             <constraint firstItem="AOv-4A-AKv" firstAttribute="top" secondItem="zLz-qe-oc3" secondAttribute="top" id="du1-qN-1Ig"/>
                             <constraint firstItem="zLz-qe-oc3" firstAttribute="top" secondItem="8ey-Ao-Qbj" secondAttribute="bottom" constant="35" id="gQU-D4-wbw"/>
                             <constraint firstItem="8ey-Ao-Qbj" firstAttribute="bottom" secondItem="mBm-og-dDA" secondAttribute="bottom" id="jDi-2V-vzf"/>
                             <constraint firstItem="8ey-Ao-Qbj" firstAttribute="leading" secondItem="ZFK-PR-UFE" secondAttribute="leading" id="kyK-LH-rks"/>
+                            <constraint firstItem="htm-KK-GJn" firstAttribute="leading" secondItem="6pc-Dq-BM7" secondAttribute="leading" id="lZS-ZM-chT"/>
                             <constraint firstItem="8ey-Ao-Qbj" firstAttribute="trailing" secondItem="ZFK-PR-UFE" secondAttribute="trailing" id="lqK-al-uf6"/>
+                            <constraint firstItem="6pc-Dq-BM7" firstAttribute="trailing" secondItem="AhJ-Um-Nqk" secondAttribute="trailing" id="mpQ-d9-9oV"/>
+                            <constraint firstItem="htm-KK-GJn" firstAttribute="top" secondItem="AhJ-Um-Nqk" secondAttribute="bottom" constant="34" id="oqh-T5-x3Y"/>
                             <constraint firstItem="mBm-og-dDA" firstAttribute="leading" secondItem="zLz-qe-oc3" secondAttribute="leading" id="pHp-Zk-aos"/>
                             <constraint firstItem="AOv-4A-AKv" firstAttribute="top" secondItem="mBm-og-dDA" secondAttribute="bottom" constant="35" id="snQ-Gq-6uH"/>
+                            <constraint firstItem="6pc-Dq-BM7" firstAttribute="leading" secondItem="AhJ-Um-Nqk" secondAttribute="leading" id="udu-Zk-NcM"/>
                             <constraint firstItem="AOv-4A-AKv" firstAttribute="bottom" secondItem="zLz-qe-oc3" secondAttribute="bottom" id="y2m-uh-NMP"/>
                         </constraints>
                         <variation key="default">
@@ -1276,6 +1326,8 @@ About 1 cup of ready-to-eat cereal
                                 <exclude reference="mBm-og-dDA"/>
                                 <exclude reference="zLz-qe-oc3"/>
                                 <exclude reference="AhJ-Um-Nqk"/>
+                                <exclude reference="6pc-Dq-BM7"/>
+                                <exclude reference="htm-KK-GJn"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="2LM-qX-lGx"/>
@@ -1300,6 +1352,14 @@ About 1 cup of ready-to-eat cereal
                                 <exclude reference="NWX-2n-QpO"/>
                                 <exclude reference="4Vg-rJ-UgJ"/>
                                 <exclude reference="Yw8-oI-3tr"/>
+                                <exclude reference="ce9-Ra-isv"/>
+                                <exclude reference="mpQ-d9-9oV"/>
+                                <exclude reference="udu-Zk-NcM"/>
+                                <exclude reference="4ap-pT-v1N"/>
+                                <exclude reference="WJs-J7-qCr"/>
+                                <exclude reference="ddy-1M-ldx"/>
+                                <exclude reference="lZS-ZM-chT"/>
+                                <exclude reference="oqh-T5-x3Y"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -1310,6 +1370,8 @@ About 1 cup of ready-to-eat cereal
                                 <include reference="mBm-og-dDA"/>
                                 <include reference="zLz-qe-oc3"/>
                                 <include reference="AhJ-Um-Nqk"/>
+                                <include reference="6pc-Dq-BM7"/>
+                                <include reference="htm-KK-GJn"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="2LM-qX-lGx"/>
@@ -1334,6 +1396,14 @@ About 1 cup of ready-to-eat cereal
                                 <include reference="NWX-2n-QpO"/>
                                 <include reference="4Vg-rJ-UgJ"/>
                                 <include reference="Yw8-oI-3tr"/>
+                                <include reference="ce9-Ra-isv"/>
+                                <include reference="mpQ-d9-9oV"/>
+                                <include reference="udu-Zk-NcM"/>
+                                <include reference="4ap-pT-v1N"/>
+                                <include reference="WJs-J7-qCr"/>
+                                <include reference="ddy-1M-ldx"/>
+                                <include reference="lZS-ZM-chT"/>
+                                <include reference="oqh-T5-x3Y"/>
                             </mask>
                         </variation>
                     </view>
@@ -2604,6 +2674,7 @@ About 1 cup of ready-to-eat cereal
         <image name="grain600px" width="600" height="600"/>
         <image name="lunch" width="300" height="241"/>
         <image name="milkbox600px" width="600" height="600"/>
+        <image name="snack" width="300" height="237"/>
         <image name="soccerball600px" width="600" height="600"/>
         <image name="steak600px" width="600" height="600"/>
         <image name="trophy600px" width="600" height="600"/>
