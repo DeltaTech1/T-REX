@@ -48,6 +48,7 @@ class FoodGroupViewController: UIViewController {
         performSegueWithIdentifier("showTable", sender: dairy)
     }
     
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -56,7 +57,6 @@ class FoodGroupViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         let viewController = segue.destinationViewController as! FoodViewController
-        
         
         let foods = sender as! [String]
         viewController.foods = foods

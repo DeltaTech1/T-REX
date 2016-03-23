@@ -21,6 +21,7 @@
 		8B9019BF1C89BD7100F66C41 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9019BE1C89BD7100F66C41 /* FoodTableViewCell.swift */; };
 		8BD15F271C5AA2BB0003C705 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD15F261C5AA2BB0003C705 /* LoginViewController.swift */; };
 		8BD15F291C5AA2CF0003C705 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD15F281C5AA2CF0003C705 /* CreateAccountViewController.swift */; };
+		8BEF59DA1CA2757600120F9B /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEF59D91CA2757500120F9B /* MealViewController.swift */; };
 		FB91F1131CA22459006A7C3C /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91F1121CA22459006A7C3C /* StatusViewController.swift */; };
 		FB91F1151CA23D4E006A7C3C /* ServingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91F1141CA23D4E006A7C3C /* ServingViewController.swift */; };
 		FBE728301C98B287000E4EE4 /* FoodGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE7282F1C98B287000E4EE4 /* FoodGroupViewController.swift */; };
@@ -64,6 +65,7 @@
 		8B9019BE1C89BD7100F66C41 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 		8BD15F261C5AA2BB0003C705 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8BD15F281C5AA2CF0003C705 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		8BEF59D91CA2757500120F9B /* MealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		FB91F1121CA22459006A7C3C /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		FB91F1141CA23D4E006A7C3C /* ServingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServingViewController.swift; sourceTree = "<group>"; };
 		FBE7282F1C98B287000E4EE4 /* FoodGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodGroupViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				86D5DFE71CA0DB5B00CE8B2D /* CollectionViewCell.swift */,
 				86D5DFE91CA0DB7F00CE8B2D /* RequirementsViewController.swift */,
 				86D5DFEB1CA0DBA200CE8B2D /* TrophiesViewController.swift */,
+				8BEF59D91CA2757500120F9B /* MealViewController.swift */,
 			);
 			path = "T-REX";
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				8BD15F271C5AA2BB0003C705 /* LoginViewController.swift in Sources */,
 				FB91F1151CA23D4E006A7C3C /* ServingViewController.swift in Sources */,
 				86BB146D1C46033000BBF582 /* HomeViewController.swift in Sources */,
+				8BEF59DA1CA2757600120F9B /* MealViewController.swift in Sources */,
 				86BB146B1C46033000BBF582 /* AppDelegate.swift in Sources */,
 				FB91F1131CA22459006A7C3C /* StatusViewController.swift in Sources */,
 				8B9019BF1C89BD7100F66C41 /* FoodTableViewCell.swift in Sources */,
