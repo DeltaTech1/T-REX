@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -83,14 +83,14 @@
                                 <exclude reference="la2-3s-EoL"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Fx5-k4-whm"/>
+                                <exclude reference="Gtb-dx-7YO"/>
                                 <exclude reference="aHz-9P-bOU"/>
                                 <exclude reference="bfW-I3-RyR"/>
                                 <exclude reference="gsI-g8-XWy"/>
                                 <exclude reference="0ss-nN-UEX"/>
                                 <exclude reference="5Df-5R-LM6"/>
                                 <exclude reference="FEM-PY-5bF"/>
-                                <exclude reference="Fx5-k4-whm"/>
-                                <exclude reference="Gtb-dx-7YO"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -100,14 +100,14 @@
                                 <include reference="la2-3s-EoL"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Fx5-k4-whm"/>
+                                <include reference="Gtb-dx-7YO"/>
                                 <include reference="aHz-9P-bOU"/>
                                 <include reference="bfW-I3-RyR"/>
                                 <include reference="gsI-g8-XWy"/>
                                 <include reference="0ss-nN-UEX"/>
                                 <include reference="5Df-5R-LM6"/>
                                 <include reference="FEM-PY-5bF"/>
-                                <include reference="Fx5-k4-whm"/>
-                                <include reference="Gtb-dx-7YO"/>
                             </mask>
                         </variation>
                     </view>
