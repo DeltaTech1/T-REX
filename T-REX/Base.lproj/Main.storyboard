@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -1217,7 +1217,7 @@ About 1 cup of ready-to-eat cereal
                                     <segue destination="c9J-Ma-KkC" kind="show" id="3Oc-dW-dhV"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="breakfast" translatesAutoresizingMaskIntoConstraints="NO" id="mBm-og-dDA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cereal" translatesAutoresizingMaskIntoConstraints="NO" id="mBm-og-dDA">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="9Ft-ol-sj3"/>
@@ -1268,7 +1268,7 @@ About 1 cup of ready-to-eat cereal
                                     </mask>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana" translatesAutoresizingMaskIntoConstraints="NO" id="6pc-Dq-BM7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yogurt" translatesAutoresizingMaskIntoConstraints="NO" id="6pc-Dq-BM7">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Efo-pD-JBx"/>
@@ -1968,9 +1968,6 @@ About 1 cup of ready-to-eat cereal
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="64" width="400" height="736"/>
-                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="bVZ-kM-hJ6" id="N9G-TN-fdi"/>
                                     <outlet property="delegate" destination="bVZ-kM-hJ6" id="MfC-K3-1Pb"/>
@@ -2676,19 +2673,19 @@ About 1 cup of ready-to-eat cereal
     </scenes>
     <resources>
         <image name="apple600" width="600" height="600"/>
-        <image name="banana" width="300" height="300"/>
         <image name="book600" width="600" height="600"/>
-        <image name="breakfast" width="300" height="300"/>
         <image name="broccoli600px" width="600" height="600"/>
-        <image name="dinner" width="300" height="151"/>
+        <image name="cereal" width="300" height="300"/>
+        <image name="dinner" width="320" height="320"/>
         <image name="grain600px" width="600" height="600"/>
-        <image name="lunch" width="300" height="241"/>
+        <image name="lunch" width="300" height="300"/>
         <image name="milkbox600px" width="600" height="600"/>
         <image name="soccerball600px" width="600" height="600"/>
         <image name="steak600px" width="600" height="600"/>
         <image name="trophy600px" width="600" height="600"/>
         <image name="tyler_new" width="400" height="400"/>
         <image name="user.png" width="600" height="600"/>
+        <image name="yogurt" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="3Oc-dW-dhV"/>
