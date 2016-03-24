@@ -565,7 +565,7 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="D81-Rv-2Gp" id="Fay-Ha-B7b"/>
+                        <outlet property="collectionView" destination="D81-Rv-2Gp" id="jI0-Gw-Zc6"/>
                         <segue destination="UdR-dN-D3B" kind="show" identifier="showRequirements" id="T31-Q3-XjU"/>
                     </connections>
                 </viewController>
