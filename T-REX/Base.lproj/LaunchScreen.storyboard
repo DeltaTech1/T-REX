@@ -58,36 +58,56 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Training to Read, Eat &amp; eXercise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="la2-3s-EoL">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="KnQ-XB-h0K" firstAttribute="top" secondItem="la2-3s-EoL" secondAttribute="bottom" constant="96" id="0ss-nN-UEX"/>
                             <constraint firstItem="KnQ-XB-h0K" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5Df-5R-LM6"/>
                             <constraint firstItem="KnQ-XB-h0K" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="FEM-PY-5bF"/>
                             <constraint firstAttribute="bottom" secondItem="eoM-I3-jV6" secondAttribute="bottom" constant="75" id="Fx5-k4-whm"/>
                             <constraint firstItem="eoM-I3-jV6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Gtb-dx-7YO"/>
+                            <constraint firstItem="la2-3s-EoL" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="125" id="aHz-9P-bOU"/>
+                            <constraint firstItem="la2-3s-EoL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="bfW-I3-RyR"/>
+                            <constraint firstItem="la2-3s-EoL" firstAttribute="centerX" secondItem="KnQ-XB-h0K" secondAttribute="centerX" id="gsI-g8-XWy"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="eoM-I3-jV6"/>
                                 <exclude reference="KnQ-XB-h0K"/>
+                                <exclude reference="la2-3s-EoL"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Fx5-k4-whm"/>
-                                <exclude reference="Gtb-dx-7YO"/>
+                                <exclude reference="aHz-9P-bOU"/>
+                                <exclude reference="bfW-I3-RyR"/>
+                                <exclude reference="gsI-g8-XWy"/>
+                                <exclude reference="0ss-nN-UEX"/>
                                 <exclude reference="5Df-5R-LM6"/>
                                 <exclude reference="FEM-PY-5bF"/>
+                                <exclude reference="Fx5-k4-whm"/>
+                                <exclude reference="Gtb-dx-7YO"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="eoM-I3-jV6"/>
                                 <include reference="KnQ-XB-h0K"/>
+                                <include reference="la2-3s-EoL"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Fx5-k4-whm"/>
-                                <include reference="Gtb-dx-7YO"/>
+                                <include reference="aHz-9P-bOU"/>
+                                <include reference="bfW-I3-RyR"/>
+                                <include reference="gsI-g8-XWy"/>
+                                <include reference="0ss-nN-UEX"/>
                                 <include reference="5Df-5R-LM6"/>
                                 <include reference="FEM-PY-5bF"/>
+                                <include reference="Fx5-k4-whm"/>
+                                <include reference="Gtb-dx-7YO"/>
                             </mask>
                         </variation>
                     </view>
