@@ -10,17 +10,17 @@ import UIKit
 
 class FoodGroupViewController: UIViewController {
 
-    var fruits = ["Apple", "Banana", "Orange", "Strawberries", "Pear"]
-    var vegetables = ["Broccoli", "Carrots", "Spinach", "Cucumber", "Potato"]
-    var proteins = ["Beef", "Chicken", "Fish", "Turkey", "Eggs"]
-    var dairy = ["Milk", "Cheese", "Yogurt", "Ice Cream"]
-    var grains = ["Cereal", "Rice", "Bread", "Oatmeal", "Pasta"]
+    var fruits = ["Apple", "Banana", "Grapes", "Orange", "Strawberry"]
+    var vegetables = ["Broccoli", "Carrot", "Cucumber", "Potato", "Spinach"]
+    var proteins = ["Beef", "Chicken", "Egg", "Fish", "Pork"]
+    var dairy = ["Milk", "Cheese", "Yogurt"]
+    var grains = ["Bread", "Cereal", "Pasta", "Rice"]
     
-    var fruitsimage = [UIImage(named: "apple1")!,UIImage(named: "Bananas")!,UIImage(named: "Orange")!,UIImage(named: "Strawberry")!,UIImage(named: "Pear")!]
-    var vegetablesimage = [UIImage(named: "broccoli1")!,UIImage(named: "carrots")!,UIImage(named: "spinach")!,UIImage(named: "cucumber")!,UIImage(named: "potato")!]
-    var proteinsimage = [UIImage(named: "beef1")!,UIImage(named: "chicken")!,UIImage(named: "fish")!,UIImage(named: "turkey")!,UIImage(named: "eggs")!]
-    var dairyimage = [UIImage(named: "milk")!,UIImage(named: "Cheese")!,UIImage(named: "yogurt")!,UIImage(named: "icecream")!]
-    var grainsimage = [UIImage(named: "cereal")!,UIImage(named: "rice")!,UIImage(named: "bread")!,UIImage(named: "oatmeal")!,UIImage(named: "pasta")!]
+    var fruitsimage = [UIImage(named: "apple600")!, UIImage(named: "banana")!, UIImage(named: "grapes")!, UIImage(named: "orange")!, UIImage(named: "strawberry")!]
+    var vegetablesimage = [UIImage(named: "broccoli600px")!, UIImage(named: "carrot")!, UIImage(named: "cucumber")!, UIImage(named: "potato")!, UIImage(named: "spinach")!]
+    var proteinsimage = [UIImage(named: "steak600px")!, UIImage(named: "chicken")!, UIImage(named: "egg")!, UIImage(named: "fish")!, UIImage(named: "bacon")!]
+    var dairyimage = [UIImage(named: "milkbox600px")!, UIImage(named: "cheese")!, UIImage(named: "yogurt")!]
+    var grainsimage = [UIImage(named: "bread")!, UIImage(named: "cereal")!, UIImage(named: "pasta")!, UIImage(named: "rice")!]
     
     override func viewDidLoad() {
         super.viewDidLoad()

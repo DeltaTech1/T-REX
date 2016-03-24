@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -1103,7 +1103,7 @@ About 1 cup of ready-to-eat cereal
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ddT-u1-7dF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2769" y="222"/>
+            <point key="canvasLocation" x="2943" y="201"/>
         </scene>
         <!--Meal-->
         <scene sceneID="aYk-I3-2N3">
@@ -1192,6 +1192,31 @@ About 1 cup of ready-to-eat cereal
                                     <segue destination="c9J-Ma-KkC" kind="show" id="peU-56-zax"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htm-KK-GJn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="1Iz-Mc-mys"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="contentEdgeInsets" minX="100" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Snack">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1Iz-Mc-mys"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="1Iz-Mc-mys"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="c9J-Ma-KkC" kind="show" id="3Oc-dW-dhV"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="breakfast" translatesAutoresizingMaskIntoConstraints="NO" id="mBm-og-dDA">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
@@ -1259,31 +1284,6 @@ About 1 cup of ready-to-eat cereal
                                     </mask>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htm-KK-GJn">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="1Iz-Mc-mys"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <inset key="contentEdgeInsets" minX="100" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Snack">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="1Iz-Mc-mys"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="1Iz-Mc-mys"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <segue destination="c9J-Ma-KkC" kind="show" id="3Oc-dW-dhV"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.56862745100000001" green="0.78039215689999997" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1323,11 +1323,11 @@ About 1 cup of ready-to-eat cereal
                                 <exclude reference="8ey-Ao-Qbj"/>
                                 <exclude reference="AOv-4A-AKv"/>
                                 <exclude reference="ZFK-PR-UFE"/>
+                                <exclude reference="htm-KK-GJn"/>
                                 <exclude reference="mBm-og-dDA"/>
                                 <exclude reference="zLz-qe-oc3"/>
                                 <exclude reference="AhJ-Um-Nqk"/>
                                 <exclude reference="6pc-Dq-BM7"/>
-                                <exclude reference="htm-KK-GJn"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="2LM-qX-lGx"/>
@@ -1367,11 +1367,11 @@ About 1 cup of ready-to-eat cereal
                                 <include reference="8ey-Ao-Qbj"/>
                                 <include reference="AOv-4A-AKv"/>
                                 <include reference="ZFK-PR-UFE"/>
+                                <include reference="htm-KK-GJn"/>
                                 <include reference="mBm-og-dDA"/>
                                 <include reference="zLz-qe-oc3"/>
                                 <include reference="AhJ-Um-Nqk"/>
                                 <include reference="6pc-Dq-BM7"/>
-                                <include reference="htm-KK-GJn"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="2LM-qX-lGx"/>
@@ -2236,7 +2236,7 @@ About 1 cup of ready-to-eat cereal
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XGX-H1-Sjn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="858" y="201"/>
+            <point key="canvasLocation" x="951" y="201"/>
         </scene>
         <!--Status View Controller-->
         <scene sceneID="d0x-Fh-UXF">
@@ -2644,7 +2644,7 @@ About 1 cup of ready-to-eat cereal
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hSa-eQ-C0f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1768.5" y="222"/>
+            <point key="canvasLocation" x="1876.5" y="201"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1PB-em-9q4">
@@ -2667,7 +2667,7 @@ About 1 cup of ready-to-eat cereal
     </scenes>
     <resources>
         <image name="apple600" width="600" height="600"/>
-        <image name="banana" width="300" height="212"/>
+        <image name="banana" width="300" height="300"/>
         <image name="book600" width="600" height="600"/>
         <image name="breakfast" width="300" height="300"/>
         <image name="broccoli600px" width="600" height="600"/>
