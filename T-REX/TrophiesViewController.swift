@@ -13,9 +13,9 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
     @IBOutlet weak var collectionView: UICollectionView!
     
     
-    let trophies = ["5-A-Day", "Strong Bones"]
-    let imageArray = [UIImage(named: "trophy600px"), UIImage(named: "trophy600px")]
-    let reqImages = [UIImage(named: "apple600"), UIImage(named: "milkbox600px")]
+    let trophies = ["5-A-Day", "Strong Bones", "Superfoods!"]
+    let imageArray = [UIImage(named: "trophy600px"), UIImage(named: "trophy600px"), UIImage(named: "trophy600px")]
+    let reqImages = [UIImage(named: "apple600"), UIImage(named: "milkbox600px"), UIImage(named: "broccoli600px")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
