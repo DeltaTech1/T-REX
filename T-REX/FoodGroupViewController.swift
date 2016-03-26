@@ -16,10 +16,10 @@ class FoodGroupViewController: UIViewController {
     var dairy = ["Milk", "Cheese", "Yogurt"]
     var grains = ["Bread", "Cereal", "Pasta", "Rice"]
     
-    var fruitsimage = [UIImage(named: "apple600")!, UIImage(named: "banana")!, UIImage(named: "grapes")!, UIImage(named: "orange")!, UIImage(named: "strawberry")!]
-    var vegetablesimage = [UIImage(named: "broccoli600px")!, UIImage(named: "carrot")!, UIImage(named: "cucumber")!, UIImage(named: "potato")!, UIImage(named: "spinach")!]
-    var proteinsimage = [UIImage(named: "steak600px")!, UIImage(named: "chicken")!, UIImage(named: "egg")!, UIImage(named: "fish")!, UIImage(named: "bacon")!]
-    var dairyimage = [UIImage(named: "milkbox600px")!, UIImage(named: "cheese")!, UIImage(named: "yogurt")!]
+    var fruitsimage = [UIImage(named: "apple")!, UIImage(named: "banana")!, UIImage(named: "grapes")!, UIImage(named: "orange")!, UIImage(named: "strawberry")!]
+    var vegetablesimage = [UIImage(named: "broccoli")!, UIImage(named: "carrot")!, UIImage(named: "cucumber")!, UIImage(named: "potato")!, UIImage(named: "spinach")!]
+    var proteinsimage = [UIImage(named: "steak")!, UIImage(named: "chicken")!, UIImage(named: "egg")!, UIImage(named: "fish")!, UIImage(named: "bacon")!]
+    var dairyimage = [UIImage(named: "milkbox")!, UIImage(named: "cheese")!, UIImage(named: "yogurt")!]
     var grainsimage = [UIImage(named: "bread")!, UIImage(named: "cereal")!, UIImage(named: "pasta")!, UIImage(named: "rice")!]
     
     override func viewDidLoad() {
