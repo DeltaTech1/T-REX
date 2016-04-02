@@ -14,7 +14,7 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     
     let trophies = ["5-A-Day", "Strong Bones", "Superfoods!"]
-    let imageArray = [UIImage(named: "trophy"), UIImage(named: "trophy"), UIImage(named: "trophy")]
+    let imageArray = [UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies")]
     let reqImages = [UIImage(named: "apple"), UIImage(named: "milkbox"), UIImage(named: "broccoli")]
     
     override func viewDidLoad() {
