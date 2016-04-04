@@ -48,6 +48,11 @@ class FoodGroupViewController: UIViewController {
         performSegueWithIdentifier("showTable", sender: dairy)
     }
     
+//    @IBAction func infoPressed(sender: AnyObject) {
+//        performSegueWithIdentifier("showInfo", sender: self)
+//    }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lZr-wa-5ds">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lZr-wa-5ds">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -158,6 +158,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="owg-RB-CTU"/>
+                                    <segue destination="E1T-9X-RkC" kind="show" identifier="segueToHomeScreen" id="6PZ-Zy-Eoi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEo-SN-YU3" userLabel="New User">
@@ -252,7 +253,6 @@
                     <connections>
                         <outlet property="passwordTextfield" destination="OOC-ya-grS" id="6Nl-Pv-ZaK"/>
                         <outlet property="usernameTextfield" destination="eBP-0e-3BH" id="9PM-pu-XZu"/>
-                        <segue destination="LnX-4c-O32" kind="show" identifier="segueToHomeScreen" id="yGg-Dp-MSU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -318,7 +318,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="fB5-Si-Qzq" kind="show" id="zvn-cX-mRm"/>
+                                    <segue destination="fB5-Si-Qzq" kind="show" id="h5P-pb-yRk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZq-04-dlc">
@@ -363,7 +363,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="Ham-bx-dSP" kind="show" id="khS-lb-J1s"/>
+                                    <segue destination="Ham-bx-dSP" kind="show" id="ZWb-2m-3Qb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiK-Pv-Sof" userLabel="Logout">
@@ -550,12 +550,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m79-Dh-dab" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="537" y="1034.25"/>
+            <point key="canvasLocation" x="1455" y="1034.25"/>
         </scene>
-        <!--Info2-->
+        <!--View Controller-->
         <scene sceneID="weE-Sn-2rM">
             <objects>
-                <viewController title="Info2" id="cKt-DX-oYW" sceneMemberID="viewController">
+                <viewController id="cKt-DX-oYW" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vSy-Un-qiJ"/>
                         <viewControllerLayoutGuide type="bottom" id="Z6x-MT-JD5"/>
@@ -854,9 +854,20 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="VmP-eg-ZHa">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="LO5-Mk-M3R">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="BwJ-RV-ydf">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="cKt-DX-oYW" kind="show" id="LzE-hb-W5E"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="D81-Rv-2Gp" id="jI0-Gw-Zc6"/>
-                        <segue destination="UdR-dN-D3B" kind="show" identifier="showRequirements" id="T31-Q3-XjU"/>
+                        <segue destination="UdR-dN-D3B" kind="show" identifier="showRequirements" id="OEJ-oI-fA4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EjO-OQ-QXa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1221,6 +1232,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPX-ND-lq1">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="more"/>
+                                <connections>
+                                    <segue destination="B0u-Qx-X5l" kind="show" id="O2K-Va-QOx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -1376,6 +1390,9 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="fHE-AF-jLV">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="messagewithtyler" translatesAutoresizingMaskIntoConstraints="NO" id="KOu-sn-2q1">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -1763,7 +1780,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="c9J-Ma-KkC" kind="show" id="ncF-J0-X4v"/>
+                                    <segue destination="c9J-Ma-KkC" kind="show" id="Vc3-9S-IVi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHc-Xv-vI7" userLabel="Lunch">
@@ -1786,7 +1803,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="c9J-Ma-KkC" kind="show" id="hlr-7b-ooY"/>
+                                    <segue destination="c9J-Ma-KkC" kind="show" id="i78-UV-gXl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mg-YD-y5j" userLabel="Dinner">
@@ -1809,7 +1826,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="c9J-Ma-KkC" kind="show" id="ac4-2A-kwu"/>
+                                    <segue destination="c9J-Ma-KkC" kind="show" id="xNo-3L-udM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pz-x7-ggQ" userLabel="Snack">
@@ -1832,7 +1849,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="c9J-Ma-KkC" kind="show" id="GLB-4t-NQZ"/>
+                                    <segue destination="c9J-Ma-KkC" kind="show" id="qMP-gT-3Xf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breakfast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bq-rA-8av" userLabel="breakfast">
@@ -1973,7 +1990,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6XX-Lk-SKV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1369.5" y="1029.75"/>
+            <point key="canvasLocation" x="2287.5" y="1029.75"/>
         </scene>
         <!--Food Groups-->
         <scene sceneID="uwB-Ci-aYN">
@@ -2469,25 +2486,26 @@
                         </variation>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="klh-1a-vJU">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="TZA-Us-DQM">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="98k-8J-onS">
+                    <navigationItem key="navigationItem" id="bmd-ri-f4C">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="3mR-rM-Uup">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="ak8-J6-Esw">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="B9g-k9-llD" kind="show" id="hzM-Su-Pnz"/>
+                                    <action selector="infoPressed:" destination="c9J-Ma-KkC" eventType="touchUpInside" id="8Fm-4A-CcC"/>
+                                    <segue destination="B9g-k9-llD" kind="show" identifier="showInfo" id="mdq-fQ-JZW"/>
                                 </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="bVZ-kM-hJ6" kind="show" identifier="showTable" id="77l-zs-ZOf"/>
+                        <segue destination="bVZ-kM-hJ6" kind="show" identifier="showTable" id="kls-Ey-cdy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INk-wJ-zlU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2178" y="1029.75"/>
+            <point key="canvasLocation" x="3096" y="1029.75"/>
         </scene>
         <!--Food View Controller-->
         <scene sceneID="Xep-kf-9ZV">
@@ -2692,7 +2710,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRe-9O-H63" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2943" y="1029.75"/>
+            <point key="canvasLocation" x="3861" y="1029.75"/>
         </scene>
         <!--Create Account View Controller-->
         <scene sceneID="lfU-k7-B9F">
@@ -2919,22 +2937,22 @@
             <point key="canvasLocation" x="1369.5" y="201"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="1PB-em-9q4">
+        <scene sceneID="hTm-Bu-dt9">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LnX-4c-O32" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E1T-9X-RkC" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wk0-nH-R4X">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wzy-NY-TOG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="wpx-eU-9tS" kind="relationship" relationship="rootViewController" id="my7-oC-iQp"/>
+                        <segue destination="wpx-eU-9tS" kind="relationship" relationship="rootViewController" id="JFC-vd-yFi"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b00-2r-DWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RyN-EW-pae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-301.5" y="1034.25"/>
+            <point key="canvasLocation" x="537" y="1034.25"/>
         </scene>
     </scenes>
     <resources>
@@ -2968,6 +2986,6 @@
         <image name="veggiesbutton" width="330" height="120"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ncF-J0-X4v"/>
+        <segue reference="xNo-3L-udM"/>
     </inferredMetricsTieBreakers>
 </document>
