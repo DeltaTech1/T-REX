@@ -8,14 +8,39 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var usernameTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     
+    // when username textfield is pressed, show keyboard
+    @IBAction func usernameKeyboard(sender: AnyObject) {
+        self.usernameTextfield.becomeFirstResponder()
+    }
+    
+    // when password textfield is pressed, show keyboard
+    @IBAction func passwordKeyboard(sender: AnyObject) {
+        self.passwordTextfield.becomeFirstResponder()
+    }
+
+    // while keyboard is showing, touch outside textfields to dismiss keyboard
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.usernameTextfield.resignFirstResponder()
+        self.passwordTextfield.resignFirstResponder()
+    }
+    
+    // while keyboard is showing, tap return key to dismiss keyboard
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        usernameTextfield.resignFirstResponder()
+        passwordTextfield.resignFirstResponder()
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.usernameTextfield.delegate = self
+        self.passwordTextfield.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,18 +48,21 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // action when login button is pressed
     @IBAction func loginButton(sender: AnyObject) {
         
+        // entered username, password
         let username = usernameTextfield.text
         let password = passwordTextfield.text
         
+        // stored username, password
         let usernameStored = NSUserDefaults.standardUserDefaults().stringForKey("username")
         let passwordStored = NSUserDefaults.standardUserDefaults().stringForKey("password")
         
         // Check if usernames and passwords match
         if (usernameStored == username) {
             if (passwordStored == password) {
-                // Login successful
+                // Login successful, go to home screen
                 NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isUserLoggedIn")
                 NSUserDefaults.standardUserDefaults().synchronize()
                 performSegueWithIdentifier("segueToHomeScreen", sender: nil)

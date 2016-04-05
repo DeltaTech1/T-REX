@@ -10,17 +10,24 @@ import UIKit
 
 class FoodGroupViewController: UIViewController {
 
+    @IBOutlet weak var fruitsProgress: UIProgressView!
+    @IBOutlet weak var veggiesProgress: UIProgressView!
+    @IBOutlet weak var grainsProgress: UIProgressView!
+    @IBOutlet weak var proteinProgress: UIProgressView!
+    @IBOutlet weak var dairyProgress: UIProgressView!
+    
+    // maximum servings for each food group
+    var fruitMax = 3
+    var veggieMax = 4
+    var grainMax = 9
+    var proteinMax = 2
+    var dairyMax = 2
+    
     var fruits = ["Apple", "Banana", "Grapes", "Orange", "Strawberry"]
     var vegetables = ["Broccoli", "Carrot", "Cucumber", "Potato", "Spinach"]
     var proteins = ["Beef", "Chicken", "Egg", "Fish", "Pork"]
     var dairy = ["Milk", "Cheese", "Yogurt"]
     var grains = ["Bread", "Cereal", "Pasta", "Rice"]
-    
-    var maxFruitcount:Float = 3.0
-    var maxVegetablecount: Float = 4.0
-    var maxGrainscount: Float = 9.0
-    var maxProteincount: Float = 2.0
-    var maxDairycount: Float = 2.0
     
     var fruitsimage = [UIImage(named: "apple")!, UIImage(named: "banana")!, UIImage(named: "grapes")!, UIImage(named: "orange")!, UIImage(named: "strawberry")!]
     var vegetablesimage = [UIImage(named: "broccoli")!, UIImage(named: "carrot")!, UIImage(named: "cucumber")!, UIImage(named: "potato")!, UIImage(named: "spinach")!]
@@ -36,105 +43,121 @@ class FoodGroupViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        var fruitCount: Float = 0.0
-        for title in fruits{
-            
+        // initial fruit count
+        var fruitSum = 0
+        // Calculate sum of fruits
+        for title in fruits {
             let individualCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
-            fruitCount += Float(individualCount)
-            
-        }
-        if fruitCount == maxFruitcount{
-            
-            fruitprogressview.progressTintColor = UIColor.greenColor()
-        }
-        else if fruitCount > maxFruitcount{
-            fruitprogressview.progressTintColor = UIColor.redColor()
-        }
-        else {
-            fruitprogressview.progressTintColor = UIColor.blueColor()
+            fruitSum += Int(individualCount)
         }
         
-        fruitprogressview.progress = fruitCount / maxFruitcount
+        // Change color of fruit progress bar
+        // if fruit count is less than max servings, color is blue
+        if (fruitSum < fruitMax) {
+            fruitsProgress.progressTintColor = UIColor.blueColor()
+            // if fruit count is equal to max servings, color is green
+        } else if (fruitSum == fruitMax) {
+            fruitsProgress.progressTintColor = UIColor.greenColor()
+            // if fruit count is greater than max servings, color is red
+        } else {
+            fruitsProgress.progressTintColor = UIColor.redColor()
+        }
         
-        var vegetableCount: Float = 0.0
-        for title in vegetables{
-            
+        // Change fruit progress
+        fruitsProgress.progress = Float(fruitSum) / Float (fruitMax)
+        
+        // initial veggie count
+        var veggieSum = 0
+        // Calculate sum of vegetables
+        for title in vegetables {
             let individualCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
-            vegetableCount += Float(individualCount)
-            
-        }
-        if vegetableCount == maxVegetablecount{
-            
-            vegetableProgressView.progressTintColor = UIColor.greenColor()
-        }
-        else if vegetableCount > maxVegetablecount{
-            vegetableProgressView.progressTintColor = UIColor.redColor()
-        }
-        else {
-            vegetableProgressView.progressTintColor = UIColor.blueColor()
+            veggieSum += Int(individualCount)
         }
         
-        vegetableProgressView.progress = vegetableCount / maxVegetablecount
+        // Change color of veggie progress bar
+        // if veggie count is less than max servings, color is blue
+        if (veggieSum < veggieMax) {
+            veggiesProgress.progressTintColor = UIColor.blueColor()
+            // if veggies count is equal to max servings, color is green
+        } else if (veggieSum == veggieMax) {
+            veggiesProgress.progressTintColor = UIColor.greenColor()
+            // if veggie count is greater than max servings, color is red
+        } else {
+            veggiesProgress.progressTintColor = UIColor.redColor()
+        }
         
-        var grainsCount: Float = 0.0
-        for title in grains{
-            
+        // Change veggie progress
+        veggiesProgress.progress = Float(veggieSum) / Float (veggieMax)
+        
+        // initial grain count
+        var grainSum = 0
+        // Calculate sum of grains
+        for title in grains {
             let individualCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
-            grainsCount += Float(individualCount)
-            
-        }
-        if grainsCount == maxGrainscount{
-            
-            grainsProgressView.progressTintColor = UIColor.greenColor()
-        }
-        else if grainsCount > maxGrainscount{
-            grainsProgressView.progressTintColor = UIColor.redColor()
-        }
-        else {
-            grainsProgressView.progressTintColor = UIColor.blueColor()
+            grainSum += Int(individualCount)
         }
         
-        grainsProgressView.progress = grainsCount / maxGrainscount
+        // Change color of grain progress bar
+        // if grain count is less than max servings, color is blue
+        if (grainSum < grainMax) {
+            grainsProgress.progressTintColor = UIColor.blueColor()
+            // if grain count is equal to max servings, color is green
+        } else if (grainSum == grainMax) {
+            grainsProgress.progressTintColor = UIColor.greenColor()
+            // if grain count is greater than max servings, color is red
+        } else {
+            grainsProgress.progressTintColor = UIColor.redColor()
+        }
         
-        var proteinCount: Float = 0.0
-        for title in proteins{
-            
+        // Change grains progress
+        grainsProgress.progress = Float(grainSum) / Float (grainMax)
+        
+        // intial protein count
+        var proteinSum = 0
+        // Calculate sum of proteins
+        for title in proteins {
             let individualCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
-            proteinCount += Float(individualCount)
-            
-        }
-        if proteinCount == maxProteincount{
-            
-            proteinProgressView.progressTintColor = UIColor.greenColor()
-        }
-        else if proteinCount > maxProteincount{
-            proteinProgressView.progressTintColor = UIColor.redColor()
-        }
-        else {
-            proteinProgressView.progressTintColor = UIColor.blueColor()
+            proteinSum += Int(individualCount)
         }
         
-        proteinProgressView.progress = proteinCount / maxProteincount
+        // Change color of protein progress bar
+        // if protein count is less than max servings, color is blue
+        if (proteinSum < proteinMax) {
+            proteinProgress.progressTintColor = UIColor.blueColor()
+            // if protein count is equal to max servings, color is green
+        } else if (proteinSum == proteinMax) {
+            proteinProgress.progressTintColor = UIColor.greenColor()
+            // if protein count is greater than max servings, color is red
+        } else {
+            proteinProgress.progressTintColor = UIColor.redColor()
+        }
         
-        var dairyCount: Float = 0.0
-        for title in dairy{
-            
+        // Change protein progress
+        proteinProgress.progress = Float(proteinSum) / Float (proteinMax)
+        
+        // initial dairy count
+        var dairySum = 0
+        // Calculate sum of dairy
+        for title in dairy {
             let individualCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
-            dairyCount += Float(individualCount)
-            
-        }
-        if dairyCount == maxDairycount{
-            
-            dairyProgressView.progressTintColor = UIColor.greenColor()
-        }
-        else if dairyCount > maxDairycount{
-            dairyProgressView.progressTintColor = UIColor.redColor()
-        }
-        else {
-            dairyProgressView.progressTintColor = UIColor.blueColor()
+            dairySum += Int(individualCount)
         }
         
-        dairyProgressView.progress = dairyCount / maxDairycount
+        // Change color of dairy progress bar
+        // if dairy count is less than max servings, color is blue
+        if (dairySum < dairyMax) {
+            dairyProgress.progressTintColor = UIColor.blueColor()
+            // if dairy count is equal to max servings, color is green
+        } else if (dairySum == dairyMax) {
+            dairyProgress.progressTintColor = UIColor.greenColor()
+            // if dairy count is greater than max servings, color is red
+        } else {
+            dairyProgress.progressTintColor = UIColor.redColor()
+        }
+        
+        // Change dairy progress
+        dairyProgress.progress = Float(dairySum) / Float (dairyMax)
+        
     }
 
 
@@ -175,6 +198,7 @@ class FoodGroupViewController: UIViewController {
         
         let foods = sender as! [String]
         viewController.foods = foods
+        
         if foods == fruits {
             viewController.images = fruitsimage
         }
@@ -196,11 +220,6 @@ class FoodGroupViewController: UIViewController {
         }
         
     }
-    //fidel
-    @IBOutlet weak var fruitprogressview: UIProgressView!
-    @IBOutlet weak var vegetableProgressView: UIProgressView!
-    @IBOutlet weak var grainsProgressView: UIProgressView!
-    @IBOutlet weak var proteinProgressView: UIProgressView!
-    @IBOutlet weak var dairyProgressView: UIProgressView!
+    
 
 }

@@ -11,6 +11,19 @@ import UIKit
 class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var FoodTableView: UITableView!
+    
+    // maximum servings for each food group
+    var fruitMax = 3
+    var veggieMax = 4
+    var grainMax = 9
+    var proteinMax = 2
+    var dairyMax = 2
+    
+    var fruits = ["Apple", "Banana", "Grapes", "Orange", "Strawberry"]
+    var vegetables = ["Broccoli", "Carrot", "Cucumber", "Potato", "Spinach"]
+    var proteins = ["Beef", "Chicken", "Egg", "Fish", "Pork"]
+    var dairy = ["Milk", "Cheese", "Yogurt"]
+    var grains = ["Bread", "Cereal", "Pasta", "Rice"]
 
     var foods = [String]()
     var images = [UIImage]()
@@ -18,6 +31,156 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // if first entry in table is Apple (Fruit Table)
+        if (foods[0] == "Apple") {
+            // initial fruit count
+            var fruitSum = 0
+            // Calculate sum of fruits
+            for title in fruits {
+                let individualCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
+                fruitSum += Int(individualCount)
+            }
+            
+            // if fruit count is equal to max servings
+            if (fruitSum == fruitMax) {
+                // show alert if recommended servings met
+                let alert = UIAlertController(title: "Good job!", message: "You ate enough fruit today!", preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+                alert.addAction(okAction)
+                self.presentViewController(alert, animated: true, completion: nil)
+                return
+                // if fruit count is greater than max servings
+            } else if (fruitSum > fruitMax) {
+                // show alert if exceeded recommended servings
+                let alert = UIAlertController(title: "Oh no...", message: "You ate too much fruit today!", preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+                alert.addAction(okAction)
+                self.presentViewController(alert, animated: true, completion: nil)
+                return
+            }
+        }
+        
+        // if first entry in table is Broccoli (Vegetable Table)
+        if (foods[0] == "Broccoli") {
+            // initial veggie count
+            var veggieSum = 0
+            // Calculate sum of vegetables
+            for title in vegetables {
+                let individualCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
+                veggieSum += Int(individualCount)
+            }
+            
+            // if veggies count is equal to max servings
+            if (veggieSum == veggieMax) {
+                // show alert if recommended servings met
+                let alert = UIAlertController(title: "Good job!", message: "You ate enough vegetables today!", preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+                alert.addAction(okAction)
+                self.presentViewController(alert, animated: true, completion: nil)
+                return
+                // if veggies count is greater than max servings
+            } else if (veggieSum > veggieMax) {
+                // show alert if exceeded recommended servings
+                let alert = UIAlertController(title: "Oh no...", message: "You ate too much vegetables today!", preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+                alert.addAction(okAction)
+                self.presentViewController(alert, animated: true, completion: nil)
+                return
+            }
+        }
+        
+        // if first entry in table is Bread (Grain Table)
+        if (foods[0] == "Bread") {
+            // initial grain count
+            var grainSum = 0
+            // Calculate sum of grains
+            for title in grains {
+                let individualCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
+                grainSum += Int(individualCount)
+            }
+            
+            // if grain count is equal to max servings
+            if (grainSum == grainMax) {
+                // show alert if recommended servings met
+                let alert = UIAlertController(title: "Good job!", message: "You ate enough grains today!", preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+                alert.addAction(okAction)
+                self.presentViewController(alert, animated: true, completion: nil)
+                return
+                // if grain count is greater than max servings
+            } else if (grainSum > grainMax) {
+                // show alert if exceeded recommended servings
+                let alert = UIAlertController(title: "Oh no...", message: "You ate too much grains today!", preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+                alert.addAction(okAction)
+                self.presentViewController(alert, animated: true, completion: nil)
+                return
+            }
+        }
+        
+        // if first entry in table is Beef (Protein Table)
+        if (foods[0] == "Beef") {
+            // intial protein count
+            var proteinSum = 0
+            // Calculate sum of proteins
+            for title in proteins {
+                let individualCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
+                proteinSum += Int(individualCount)
+            }
+            
+            // if protein count is equal to max servings
+            if (proteinSum == proteinMax) {
+                // show alert if recommended servings met
+                let alert = UIAlertController(title: "Good job!", message: "You ate enough protein today!", preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+                alert.addAction(okAction)
+                self.presentViewController(alert, animated: true, completion: nil)
+                return
+                // if protein count is greater than max servings
+            } else if (proteinSum > proteinMax) {
+                // show alert if exceeded recommended servings
+                let alert = UIAlertController(title: "Oh no...", message: "You ate too much protein today!", preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+                alert.addAction(okAction)
+                self.presentViewController(alert, animated: true, completion: nil)
+                return
+            }
+        }
+        
+        // if first entry in table is Milk (Dairy Table)
+        if (foods[0] == "Milk") {
+            // initial dairy count
+            var dairySum = 0
+            // Calculate sum of dairy
+            for title in dairy {
+                let individualCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
+                dairySum += Int(individualCount)
+            }
+            
+            // if dairy count is equal to max servings
+            if (dairySum == dairyMax) {
+                // show alert if recommended servings met
+                let alert = UIAlertController(title: "Good job!", message: "You ate enough dairy today!", preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+                alert.addAction(okAction)
+                self.presentViewController(alert, animated: true, completion: nil)
+                return
+                // if dairy count is greater than max servings
+            } else if (dairySum > dairyMax) {
+                // show alert if exceeded recommended servings
+                let alert = UIAlertController(title: "Oh no...", message: "You ate too much dairy today!", preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+                alert.addAction(okAction)
+                self.presentViewController(alert, animated: true, completion: nil)
+                return
+            }
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {

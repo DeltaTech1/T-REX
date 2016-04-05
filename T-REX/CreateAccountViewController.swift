@@ -8,15 +8,48 @@
 
 import UIKit
 
-class CreateAccountViewController: UIViewController {
+class CreateAccountViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var usernameTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     @IBOutlet weak var confirmTextfield: UITextField!
     
+    // when username textfield is pressed, show keyboard
+    @IBAction func usernameKeyboard(sender: AnyObject) {
+        self.usernameTextfield.becomeFirstResponder()
+    }
+    
+    // when password textfield is pressed, show keyboard
+    @IBAction func passwordKeyboard(sender: AnyObject) {
+        self.passwordTextfield.becomeFirstResponder()
+    }
+    
+    // when confirm password textfield is pressed, show keyboard
+    @IBAction func confirmKeyboard(sender: AnyObject) {
+        self.confirmTextfield.becomeFirstResponder()
+    }
+    
+    // while keyboard is showing, touch outside textfields to dismiss keyboard
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.usernameTextfield.resignFirstResponder()
+        self.passwordTextfield.resignFirstResponder()
+        self.confirmTextfield.resignFirstResponder()
+    }
+    
+    // while keyboard is showing, tap return key to dismiss keyboard
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        usernameTextfield.resignFirstResponder()
+        passwordTextfield.resignFirstResponder()
+        confirmTextfield.resignFirstResponder()
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.usernameTextfield.delegate = self
+        self.passwordTextfield.delegate = self
+        self.confirmTextfield.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,14 +57,17 @@ class CreateAccountViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // action when create button is pressed
     @IBAction func createButton(sender: AnyObject) {
+        
+        // entered username, password, confirm password
         let username = usernameTextfield.text
         let password = passwordTextfield.text
         let confirm = confirmTextfield.text
         
         // Check for empty fields
         if (username!.isEmpty || password!.isEmpty || confirm!.isEmpty) {
-            // Display alert message
+            // Display alert message if there are empty fields
             let alert = UIAlertController(title: "Alert", message: "All fields are required", preferredStyle: UIAlertControllerStyle.Alert)
             let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
             alert.addAction(okAction)
@@ -39,9 +75,9 @@ class CreateAccountViewController: UIViewController {
             return
         }
         
-        // Check if passwords match
+        // Check if password matches confirm password
         if (password != confirm) {
-            // Display alert message
+            // Display alert message if passwords don't match
             let alert = UIAlertController(title: "Alert", message: "Passwords do not match", preferredStyle: UIAlertControllerStyle.Alert)
             let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
             alert.addAction(okAction)
@@ -49,7 +85,7 @@ class CreateAccountViewController: UIViewController {
             return
         }
         
-        // Store data
+        // Store username and password
         NSUserDefaults.standardUserDefaults().setObject(username, forKey: "username")
         NSUserDefaults.standardUserDefaults().setObject(password, forKey: "password")
         NSUserDefaults.standardUserDefaults().synchronize()

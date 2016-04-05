@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lZr-wa-5ds">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lZr-wa-5ds">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -88,29 +88,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background3" translatesAutoresizingMaskIntoConstraints="NO" id="vsF-7L-yNq">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eBP-0e-3BH" userLabel="Username">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="bWH-TZ-KQr">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="250"/>
-                                    </constraint>
-                                    <constraint firstAttribute="height" constant="30" id="pp9-tk-NLR"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="bWH-TZ-KQr"/>
-                                        <exclude reference="pp9-tk-NLR"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="bWH-TZ-KQr"/>
-                                        <include reference="pp9-tk-NLR"/>
-                                    </mask>
-                                </variation>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OOC-ya-grS" userLabel="Password">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <constraints>
@@ -120,7 +97,7 @@
                                     <constraint firstAttribute="height" constant="30" id="xOj-pH-rre"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="tWg-Tn-8wd"/>
@@ -133,6 +110,9 @@
                                         <include reference="xOj-pH-rre"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="passwordKeyboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JRb-9E-pDn"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdr-vT-2vw" userLabel="Login">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -188,6 +168,32 @@
                                     <segue destination="VdW-lP-Zw6" kind="show" id="auJ-8h-4Xy"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eBP-0e-3BH" userLabel="Username">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="bWH-TZ-KQr">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="250"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="30" id="pp9-tk-NLR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bWH-TZ-KQr"/>
+                                        <exclude reference="pp9-tk-NLR"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="bWH-TZ-KQr"/>
+                                        <include reference="pp9-tk-NLR"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="usernameKeyboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gjS-Pw-KiY"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="eBP-0e-3BH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2iA-GU-F9B"/>
@@ -206,10 +212,10 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="vsF-7L-yNq"/>
-                                <exclude reference="eBP-0e-3BH"/>
                                 <exclude reference="OOC-ya-grS"/>
                                 <exclude reference="Tdr-vT-2vw"/>
                                 <exclude reference="UEo-SN-YU3"/>
+                                <exclude reference="eBP-0e-3BH"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="Hbv-jl-sNP"/>
@@ -229,10 +235,10 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="vsF-7L-yNq"/>
-                                <include reference="eBP-0e-3BH"/>
                                 <include reference="OOC-ya-grS"/>
                                 <include reference="Tdr-vT-2vw"/>
                                 <include reference="UEo-SN-YU3"/>
+                                <include reference="eBP-0e-3BH"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Hbv-jl-sNP"/>
@@ -2231,7 +2237,7 @@
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="160" y="314" width="150" height="10"/>
+                                    <rect key="frame" x="160" y="311" width="150" height="10"/>
                                     <mask key="constraints">
                                         <include reference="qXc-Q8-gHG"/>
                                         <include reference="zwC-rx-iWq"/>
@@ -2349,7 +2355,9 @@
                             <constraint firstItem="Z2d-er-IQV" firstAttribute="centerX" secondItem="Vy6-yL-N2Q" secondAttribute="centerX" id="bhX-ah-s15"/>
                             <constraint firstItem="ZRa-W1-ME5" firstAttribute="centerY" secondItem="Vy6-yL-N2Q" secondAttribute="centerY" constant="17" id="bjX-rS-Ol6"/>
                             <constraint firstItem="kFe-D5-sbC" firstAttribute="centerX" secondItem="Vy6-yL-N2Q" secondAttribute="centerX" constant="-16" id="dQg-YF-vDK"/>
-                            <constraint firstItem="Gwq-XJ-rtn" firstAttribute="centerY" secondItem="Vy6-yL-N2Q" secondAttribute="centerY" constant="-81" id="e2D-j8-sMU"/>
+                            <constraint firstItem="Gwq-XJ-rtn" firstAttribute="centerY" secondItem="Vy6-yL-N2Q" secondAttribute="centerY" constant="-81" id="e2D-j8-sMU">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-84"/>
+                            </constraint>
                             <constraint firstItem="X2e-ES-Gqa" firstAttribute="centerY" secondItem="Vy6-yL-N2Q" secondAttribute="centerY" constant="-240" id="gPj-IF-TH2"/>
                             <constraint firstItem="3AZ-8s-exy" firstAttribute="centerX" secondItem="Vy6-yL-N2Q" secondAttribute="centerX" constant="-21" id="hLl-us-20D"/>
                             <constraint firstItem="5bA-jk-nNF" firstAttribute="centerX" secondItem="Vy6-yL-N2Q" secondAttribute="centerX" id="hou-dj-Uib"/>
@@ -2506,11 +2514,11 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="dairyProgressView" destination="7P8-eW-srW" id="1Tc-Xa-xn7"/>
-                        <outlet property="fruitprogressview" destination="Gwq-XJ-rtn" id="Pgq-wc-ODP"/>
-                        <outlet property="grainsProgressView" destination="9ix-JB-y9P" id="vRp-s8-GGb"/>
-                        <outlet property="proteinProgressView" destination="wXf-nb-gz0" id="nTj-Jy-was"/>
-                        <outlet property="vegetableProgressView" destination="ZRa-W1-ME5" id="YcP-Gf-4U0"/>
+                        <outlet property="dairyProgress" destination="7P8-eW-srW" id="Fl1-qt-TKR"/>
+                        <outlet property="fruitsProgress" destination="Gwq-XJ-rtn" id="wQh-DO-bfc"/>
+                        <outlet property="grainsProgress" destination="9ix-JB-y9P" id="OWo-E2-fLc"/>
+                        <outlet property="proteinProgress" destination="wXf-nb-gz0" id="RDk-wb-y6k"/>
+                        <outlet property="veggiesProgress" destination="ZRa-W1-ME5" id="eGa-te-rIa"/>
                         <segue destination="bVZ-kM-hJ6" kind="show" identifier="showTable" id="kls-Ey-cdy"/>
                     </connections>
                 </viewController>
@@ -2754,26 +2762,6 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hQJ-ru-jB3" userLabel="newUsername">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="im3-sC-bOd">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="250"/>
-                                    </constraint>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="im3-sC-bOd"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="im3-sC-bOd"/>
-                                    </mask>
-                                </variation>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6Om-e9-kMU" userLabel="newPassword">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <constraints>
@@ -2782,7 +2770,7 @@
                                     </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="MSB-tr-Dhe"/>
@@ -2793,6 +2781,9 @@
                                         <include reference="MSB-tr-Dhe"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="passwordKeyboard:" destination="VdW-lP-Zw6" eventType="touchUpInside" id="5DK-4n-Q1b"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vcr-fV-6PJ" userLabel="confirmPassword">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
@@ -2802,7 +2793,7 @@
                                     </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="xxc-AV-TUJ"/>
@@ -2813,6 +2804,9 @@
                                         <include reference="xxc-AV-TUJ"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="confirmKeyboard:" destination="VdW-lP-Zw6" eventType="touchUpInside" id="h7a-zz-Lcc"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dt-Lp-4dD" userLabel="Create New Account">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -2866,6 +2860,29 @@
                                     <action selector="cancelButton:" destination="VdW-lP-Zw6" eventType="touchUpInside" id="aYV-SQ-EKl"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hQJ-ru-jB3" userLabel="newUsername">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="im3-sC-bOd">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="250"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="im3-sC-bOd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="im3-sC-bOd"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="usernameKeyboard:" destination="VdW-lP-Zw6" eventType="touchUpInside" id="Psr-LL-eEq"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.56862745100000001" green="0.78039215689999997" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -2887,11 +2904,11 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="K97-Rg-TFH"/>
-                                <exclude reference="hQJ-ru-jB3"/>
                                 <exclude reference="6Om-e9-kMU"/>
                                 <exclude reference="vcr-fV-6PJ"/>
                                 <exclude reference="7dt-Lp-4dD"/>
                                 <exclude reference="8n0-JA-hUW"/>
+                                <exclude reference="hQJ-ru-jB3"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="Ed4-oh-uCQ"/>
@@ -2913,11 +2930,11 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="K97-Rg-TFH"/>
-                                <include reference="hQJ-ru-jB3"/>
                                 <include reference="6Om-e9-kMU"/>
                                 <include reference="vcr-fV-6PJ"/>
                                 <include reference="7dt-Lp-4dD"/>
                                 <include reference="8n0-JA-hUW"/>
+                                <include reference="hQJ-ru-jB3"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="Ed4-oh-uCQ"/>
