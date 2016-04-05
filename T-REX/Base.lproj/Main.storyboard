@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lZr-wa-5ds">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lZr-wa-5ds">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -836,14 +836,14 @@
                                 <exclude reference="D81-Rv-2Gp"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="G8Q-Yw-LJm"/>
+                                <exclude reference="MhI-zo-fwU"/>
                                 <exclude reference="3kO-Xj-raq"/>
                                 <exclude reference="mDa-Bd-qAr"/>
                                 <exclude reference="yUJ-cU-sC5"/>
                                 <exclude reference="iVG-mT-MmD"/>
                                 <exclude reference="obV-mR-dGH"/>
                                 <exclude reference="uBx-8w-ojh"/>
-                                <exclude reference="G8Q-Yw-LJm"/>
-                                <exclude reference="MhI-zo-fwU"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -852,14 +852,14 @@
                                 <include reference="D81-Rv-2Gp"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="G8Q-Yw-LJm"/>
+                                <include reference="MhI-zo-fwU"/>
                                 <include reference="3kO-Xj-raq"/>
                                 <include reference="mDa-Bd-qAr"/>
                                 <include reference="yUJ-cU-sC5"/>
                                 <include reference="iVG-mT-MmD"/>
                                 <include reference="obV-mR-dGH"/>
                                 <include reference="uBx-8w-ojh"/>
-                                <include reference="G8Q-Yw-LJm"/>
-                                <include reference="MhI-zo-fwU"/>
                             </mask>
                         </variation>
                     </view>
@@ -917,7 +917,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDK-bp-gVq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDK-bp-gVq" userLabel="Info Label">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="RKh-b5-MS6"/>
@@ -988,6 +988,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="IkM-2Y-2SC" id="na6-1G-ERv"/>
+                        <outlet property="infoLabel" destination="sDK-bp-gVq" id="DGC-Yd-ToB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vdi-zR-02R" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1394,14 +1395,11 @@
                         <viewControllerLayoutGuide type="bottom" id="crO-cW-ang"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Yfu-VD-7bF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background2" translatesAutoresizingMaskIntoConstraints="NO" id="fHE-AF-jLV">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
-                                </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="messagewithtyler" translatesAutoresizingMaskIntoConstraints="NO" id="KOu-sn-2q1">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>

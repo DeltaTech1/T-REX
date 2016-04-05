@@ -11,13 +11,18 @@ import UIKit
 class RequirementsViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var infoLabel: UILabel!
     
     var image = UIImage()
+    //fidel
+    var reqtext = ""
+    var trophyEarned = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.imageView.image = self.image
+        infoLabel?.text = reqtext
 
         // Do any additional setup after loading the view.
     }
