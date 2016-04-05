@@ -2499,7 +2499,6 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="infoPressed:" destination="c9J-Ma-KkC" eventType="touchUpInside" id="8Fm-4A-CcC"/>
                                     <segue destination="B9g-k9-llD" kind="show" identifier="showInfo" id="mdq-fQ-JZW"/>
                                 </connections>
                             </button>
@@ -2507,6 +2506,11 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="dairyProgressView" destination="7P8-eW-srW" id="1Tc-Xa-xn7"/>
+                        <outlet property="fruitprogressview" destination="Gwq-XJ-rtn" id="Pgq-wc-ODP"/>
+                        <outlet property="grainsProgressView" destination="9ix-JB-y9P" id="vRp-s8-GGb"/>
+                        <outlet property="proteinProgressView" destination="wXf-nb-gz0" id="nTj-Jy-was"/>
+                        <outlet property="vegetableProgressView" destination="ZRa-W1-ME5" id="YcP-Gf-4U0"/>
                         <segue destination="bVZ-kM-hJ6" kind="show" identifier="showTable" id="kls-Ey-cdy"/>
                     </connections>
                 </viewController>

@@ -202,4 +202,5 @@ class FoodGroupViewController: UIViewController {
     @IBOutlet weak var grainsProgressView: UIProgressView!
     @IBOutlet weak var proteinProgressView: UIProgressView!
     @IBOutlet weak var dairyProgressView: UIProgressView!
+
 }
