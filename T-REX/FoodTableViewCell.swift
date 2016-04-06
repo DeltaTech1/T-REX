@@ -9,11 +9,13 @@
 import UIKit
 
 class FoodTableViewCell: UITableViewCell {
-
+    
+    // Linking storyboard table view cell items to controller
     @IBOutlet weak var foodLabel: UILabel!
     @IBOutlet weak var foodImage: UIImageView!
     @IBOutlet weak var foodStepper: UIStepper!
     @IBOutlet weak var ServingLabel: UILabel!
+    // set empty string variable to convert
     var title = ""
     
     func loadItem(title title: String, image: UIImage) {
@@ -23,7 +25,7 @@ class FoodTableViewCell: UITableViewCell {
         self.title = title
         let value = NSUserDefaults.standardUserDefaults().doubleForKey(title)
         foodStepper.value = value
-        
+        // Convert Serving label value from string to integer
         ServingLabel.text = String(Int(value))
     }
     

@@ -9,13 +9,15 @@
 import UIKit
 
 class RequirementsViewController: UIViewController {
-
+    
+    // Link image and label text on storyboard to controller
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var infoLabel: UILabel!
-    
+    // set image var to image class
     var image = UIImage()
-    //fidel
+    // set variable to empty string
     var reqtext = ""
+    // set variable for unearned trophy
     var trophyEarned = false
     
     override func viewDidLoad() {

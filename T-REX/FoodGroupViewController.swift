@@ -9,7 +9,8 @@
 import UIKit
 
 class FoodGroupViewController: UIViewController {
-
+    
+    // Linking progress view bars from storyboard to controller
     @IBOutlet weak var fruitsProgress: UIProgressView!
     @IBOutlet weak var veggiesProgress: UIProgressView!
     @IBOutlet weak var grainsProgress: UIProgressView!
@@ -23,12 +24,14 @@ class FoodGroupViewController: UIViewController {
     var proteinMax = 2
     var dairyMax = 2
     
+    // array for each food group
     var fruits = ["Apple", "Banana", "Grapes", "Orange", "Strawberry"]
     var vegetables = ["Broccoli", "Carrot", "Cucumber", "Potato", "Spinach"]
     var proteins = ["Beef", "Chicken", "Egg", "Fish", "Pork"]
     var dairy = ["Milk", "Cheese", "Yogurt"]
     var grains = ["Bread", "Cereal", "Pasta", "Rice"]
     
+    // image array for each food group
     var fruitsimage = [UIImage(named: "apple")!, UIImage(named: "banana")!, UIImage(named: "grapes")!, UIImage(named: "orange")!, UIImage(named: "strawberry")!]
     var vegetablesimage = [UIImage(named: "broccoli")!, UIImage(named: "carrot")!, UIImage(named: "cucumber")!, UIImage(named: "potato")!, UIImage(named: "spinach")!]
     var proteinsimage = [UIImage(named: "steak")!, UIImage(named: "chicken")!, UIImage(named: "egg")!, UIImage(named: "fish")!, UIImage(named: "bacon")!]
@@ -160,7 +163,7 @@ class FoodGroupViewController: UIViewController {
         
     }
 
-
+    // Perform segue based on button pressed
     @IBAction func fruitsPressed(sender: AnyObject) {
         performSegueWithIdentifier("showTable", sender: fruits)
     }
@@ -181,45 +184,39 @@ class FoodGroupViewController: UIViewController {
         performSegueWithIdentifier("showTable", sender: dairy)
     }
     
-//    @IBAction func infoPressed(sender: AnyObject) {
-//        performSegueWithIdentifier("showInfo", sender: self)
-//    }
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    // Prepare actions in fuction before perfoming segue
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         let viewController = segue.destinationViewController as! FoodViewController
         
         let foods = sender as! [String]
         viewController.foods = foods
-        
+        // if foods var equals fruits send fruits image array
         if foods == fruits {
             viewController.images = fruitsimage
         }
-        
+        // if foods var equals vegetables send vegtables images array
         else if foods == vegetables {
             viewController.images = vegetablesimage
         }
-        
+        // if foods var equals grains send grains images array
         else if foods == grains {
             viewController.images = grainsimage
         }
-        
+        // if foods var equals proteins send proteins images array
         else if foods == proteins {
             viewController.images = proteinsimage
         }
-        
+        // otherwise send dairy images array
         else {
             viewController.images = dairyimage
         }
         
     }
-    
 
 }

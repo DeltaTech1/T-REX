@@ -10,6 +10,7 @@ import UIKit
 
 class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    // Table view connection to controller
     @IBOutlet weak var FoodTableView: UITableView!
     
     // maximum servings for each food group
@@ -19,6 +20,7 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var proteinMax = 2
     var dairyMax = 2
     
+    // Array for which is pulled into the table view
     var fruits = ["Apple", "Banana", "Grapes", "Orange", "Strawberry"]
     var vegetables = ["Broccoli", "Carrot", "Cucumber", "Potato", "Spinach"]
     var proteins = ["Beef", "Chicken", "Egg", "Fish", "Pork"]
@@ -188,10 +190,13 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
         // Dispose of any resources that can be recreated.
     }
     
+    // fuction to return the food count as integer
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return foods.count
     }
     
+    // Use reusable table view cell with foods & images
+    // Sending info to cell and returning values
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("FoodCell", forIndexPath: indexPath) as! FoodTableViewCell
         cell.loadItem(title: foods[indexPath.row], image: images[indexPath.row])
