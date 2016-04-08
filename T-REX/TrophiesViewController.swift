@@ -13,16 +13,19 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
     @IBOutlet weak var collectionView: UICollectionView!
     
     
-    let trophies = ["5-A-Day", "Strong Bones", "Superfoods!"]
-    let imageArray = [UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies")]
-    let reqImages = [UIImage(named: "apple"), UIImage(named: "milkbox"), UIImage(named: "broccoli")]
+    let trophies = ["5-A-Day", "Strong Bones", "Got Milk?", "Brain Power", "Super Vision", "Protein Pro"]
+    let imageArray = [UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies")]
+    let reqImages = [UIImage(named: "apple"), UIImage(named: "cheese"), UIImage(named: "milkbox"), UIImage(named: "fish"), UIImage(named: "carrot"), UIImage(named: "steak")]
     //fidel
-    let reqText = ["Eat 5 servings of fruits and vegetables", "Consume daily recomended Dairy", "Eat 3 superfoods"]
+    let reqText = ["Eat 5 total servings of fruits and vegetables", "Have 2 total servings of dairy", "Have a serving of milk", "Eat foods that sharpen your brain", "Eat foods that sharpen your vision", "Have 3 servings of protein"]
     var dairy = ["Milk", "Cheese", "Yogurt"]
     var fruits = ["Apple", "Banana", "Grapes", "Orange", "Strawberry"]
     var vegetables = ["Broccoli", "Carrot", "Cucumber", "Potato", "Spinach"]
     var grains = ["Bread", "Cereal", "Pasta", "Rice"]
     var proteins = ["Beef", "Chicken", "Egg", "Fish", "Pork"]
+    var gotMilk = ["Milk"]
+    var brainPower = ["Strawberry", "Spinach", "Rice", "Fish"]
+    var superVision = ["Broccoli", "Carrot", "Spinach", "Fish"]
 
     
     override func viewDidLoad() {
@@ -53,7 +56,7 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
                 let individualCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
                 dairyCount += Float(individualCount)
             }
-            if dairyCount > 2 {
+            if dairyCount >= 2.0 {
                 cell.imageView.alpha = 1.0
             }
             else {
@@ -70,7 +73,7 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
                 let veggieCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
                 fiveadayCount += Float(veggieCount)
             }
-            if fiveadayCount >= 5 {
+            if fiveadayCount >= 5.0 {
                 cell.imageView.alpha = 1.0
             }
             else {
@@ -78,12 +81,12 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
             }
         }
         else if indexPath.row == 2 {
-            var superCount:Float = 0.0
-            for title in vegetables{
+            var milkCount:Float = 0.0
+            for title in gotMilk{
                 let superFoodsCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
-                superCount += Float(superFoodsCount)
+                milkCount += Float(superFoodsCount)
             }
-            if superCount == 3 {
+            if milkCount == 1.0 {
                 cell.imageView.alpha = 1.0
             }
             else {

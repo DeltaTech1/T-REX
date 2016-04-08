@@ -59,7 +59,7 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 // if fruit count is greater than max servings
             } else if (fruitSum > fruitMax) {
                 // show alert if exceeded recommended servings
-                let alert = UIAlertController(title: "Oh no...", message: "You ate too much fruit today!", preferredStyle: UIAlertControllerStyle.Alert)
+                let alert = UIAlertController(title: "Watch out...", message: "You've had enough fruit today", preferredStyle: UIAlertControllerStyle.Alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
                 alert.addAction(okAction)
                 self.presentViewController(alert, animated: true, completion: nil)
@@ -88,7 +88,7 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 // if veggies count is greater than max servings
             } else if (veggieSum > veggieMax) {
                 // show alert if exceeded recommended servings
-                let alert = UIAlertController(title: "Oh no...", message: "You ate too much vegetables today!", preferredStyle: UIAlertControllerStyle.Alert)
+                let alert = UIAlertController(title: "Watch out...", message: "You've had enough vegetables today", preferredStyle: UIAlertControllerStyle.Alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
                 alert.addAction(okAction)
                 self.presentViewController(alert, animated: true, completion: nil)
@@ -117,7 +117,7 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 // if grain count is greater than max servings
             } else if (grainSum > grainMax) {
                 // show alert if exceeded recommended servings
-                let alert = UIAlertController(title: "Oh no...", message: "You ate too much grains today!", preferredStyle: UIAlertControllerStyle.Alert)
+                let alert = UIAlertController(title: "Watch out...", message: "You've had enough grains today", preferredStyle: UIAlertControllerStyle.Alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
                 alert.addAction(okAction)
                 self.presentViewController(alert, animated: true, completion: nil)
@@ -146,7 +146,7 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 // if protein count is greater than max servings
             } else if (proteinSum > proteinMax) {
                 // show alert if exceeded recommended servings
-                let alert = UIAlertController(title: "Oh no...", message: "You ate too much protein today!", preferredStyle: UIAlertControllerStyle.Alert)
+                let alert = UIAlertController(title: "Watch out...", message: "You've had enough protein today", preferredStyle: UIAlertControllerStyle.Alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
                 alert.addAction(okAction)
                 self.presentViewController(alert, animated: true, completion: nil)
@@ -175,7 +175,7 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 // if dairy count is greater than max servings
             } else if (dairySum > dairyMax) {
                 // show alert if exceeded recommended servings
-                let alert = UIAlertController(title: "Oh no...", message: "You ate too much dairy today!", preferredStyle: UIAlertControllerStyle.Alert)
+                let alert = UIAlertController(title: "Watch out...", message: "You've had enough dairy today", preferredStyle: UIAlertControllerStyle.Alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
                 alert.addAction(okAction)
                 self.presentViewController(alert, animated: true, completion: nil)
