@@ -17,7 +17,7 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
     let imageArray = [UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies")]
     let reqImages = [UIImage(named: "apple"), UIImage(named: "cheese"), UIImage(named: "milkbox"), UIImage(named: "fish"), UIImage(named: "carrot"), UIImage(named: "steak")]
     //fidel
-    let reqText = ["Eat 5 total servings of fruits and vegetables", "Have 2 total servings of dairy", "Have a serving of milk", "Eat foods that sharpen your brain", "Eat foods that sharpen your vision", "Have 3 servings of protein"]
+    let reqText = ["Eat 5 total servings of fruits and vegetables", "Have 2 total servings of dairy", "Have a serving of milk", "Eat 3 foods that sharpen your brain", "Eat 2 foods that sharpen your vision", "Have 3 servings of protein"]
     var dairy = ["Milk", "Cheese", "Yogurt"]
     var fruits = ["Apple", "Banana", "Grapes", "Orange", "Strawberry"]
     var vegetables = ["Broccoli", "Carrot", "Cucumber", "Potato", "Spinach"]
@@ -51,13 +51,17 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
         cell.titleLabel?.text = self.trophies[indexPath.row]
         if indexPath.row == 1 {
             var dairyCount:Float = 0.0
-            for title in dairy{
+            for title in dairy {
                 
                 let individualCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
                 dairyCount += Float(individualCount)
             }
             if dairyCount >= 2.0 {
                 cell.imageView.alpha = 1.0
+                let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked the Strong Bones Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+                alert.addAction(okAction)
+                self.presentViewController(alert, animated: true, completion: nil)
             }
             else {
                 cell.imageView.alpha = 0.5
@@ -75,6 +79,10 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
             }
             if fiveadayCount >= 5.0 {
                 cell.imageView.alpha = 1.0
+                let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked the 5-A-Day Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+                alert.addAction(okAction)
+                self.presentViewController(alert, animated: true, completion: nil)
             }
             else {
                 cell.imageView.alpha = 0.5
@@ -82,12 +90,67 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
         }
         else if indexPath.row == 2 {
             var milkCount:Float = 0.0
-            for title in gotMilk{
+            for title in gotMilk {
                 let superFoodsCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
                 milkCount += Float(superFoodsCount)
             }
             if milkCount == 1.0 {
                 cell.imageView.alpha = 1.0
+                let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked the Got Milk? Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+                alert.addAction(okAction)
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
+            else {
+                cell.imageView.alpha = 0.5
+            }
+        }
+        else if indexPath.row == 3 {
+            var brainCount: Float = 0.0
+            for title in brainPower {
+                let brainFoodsCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
+                brainCount += Float(brainFoodsCount)
+            }
+            if brainCount >= 3.0 {
+                cell.imageView.alpha = 1.0
+                let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked the Brain Power Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+                alert.addAction(okAction)
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
+            else {
+                cell.imageView.alpha = 0.5
+            }
+        }
+        else if indexPath.row == 4 {
+            var visionCount: Float = 0.0
+            for title in superVision {
+                let visionFoodsCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
+                visionCount += Float(visionFoodsCount)
+            }
+            if visionCount >= 2.0 {
+                cell.imageView.alpha = 1.0
+                let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked the Super Vision Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+                alert.addAction(okAction)
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
+            else {
+                cell.imageView.alpha = 0.5
+            }
+        }
+        else if indexPath.row == 5 {
+            var proteinCount: Float = 0.0
+            for title in proteins {
+                let proteinProCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
+                proteinCount += Float(proteinProCount)
+            }
+            if proteinCount >= 3.0 {
+                cell.imageView.alpha = 1.0
+                let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked the Protein Pro Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
+                alert.addAction(okAction)
+                self.presentViewController(alert, animated: true, completion: nil)
             }
             else {
                 cell.imageView.alpha = 0.5
