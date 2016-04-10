@@ -13,18 +13,22 @@ class RequirementsViewController: UIViewController {
     // Link image and label text on storyboard to controller
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet weak var infoText: UITextView!
+
     // set image var to image class
     var image = UIImage()
     // set variable to empty string
     var reqtext = ""
     // set variable for unearned trophy
     var trophyEarned = false
+    var informationText = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.imageView.image = self.image
         infoLabel?.text = reqtext
+        infoText.text = informationText
 
         // Do any additional setup after loading the view.
     }

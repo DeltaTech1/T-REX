@@ -17,7 +17,9 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
     let imageArray = [UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies")]
     let reqImages = [UIImage(named: "apple"), UIImage(named: "cheese"), UIImage(named: "milkbox"), UIImage(named: "fish"), UIImage(named: "carrot"), UIImage(named: "steak")]
     //fidel
-    let reqText = ["Eat 5 total servings of fruits and vegetables", "Have 2 total servings of dairy", "Have a serving of milk", "Eat 3 foods that sharpen your brain", "Eat 2 foods that sharpen your vision", "Have 3 servings of protein"]
+    let reqText = ["Eat 5 total servings of fruits and vegetables", "Have 2 total servings of dairy", "Have a serving of milk", "Eat 4 foods that sharpen your brain", "Eat 4 foods that sharpen your vision", "Have 3 servings of protein"]
+    let infoText = ["**It includes any selected fruits or vegetables", "**Dairy foods include Cheese, Milk, Yogurt", "**Drink 1 serving of milk", "**Brain Foods include Strawberries, Spinach, Rice, & Fish", "**Vision foods include Broccoli, Carrots, Spinach, & Fish", "**Protein foods include Chicken, Steak, Eggs, & Fish"]
+    
     var dairy = ["Milk", "Cheese", "Yogurt"]
     var fruits = ["Apple", "Banana", "Grapes", "Orange", "Strawberry"]
     var vegetables = ["Broccoli", "Carrot", "Cucumber", "Potato", "Spinach"]
@@ -111,7 +113,7 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
                 let brainFoodsCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
                 brainCount += Float(brainFoodsCount)
             }
-            if brainCount >= 3.0 {
+            if brainCount == 4.0 {
                 cell.imageView.alpha = 1.0
                 let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked the Brain Power Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
@@ -128,7 +130,7 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
                 let visionFoodsCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
                 visionCount += Float(visionFoodsCount)
             }
-            if visionCount >= 2.0 {
+            if visionCount == 4.0 {
                 cell.imageView.alpha = 1.0
                 let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked the Super Vision Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
@@ -162,6 +164,9 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
     @IBAction func fiveadayPressed(sender: AnyObject) {
         performSegueWithIdentifier("showRequirements", sender: reqText)
     }
+    @IBAction func infoTexPressed(sender: AnyObject) {
+        performSegueWithIdentifier("showRequirements", sender: infoText)
+    }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         self.performSegueWithIdentifier("showRequirements", sender: self)
@@ -177,6 +182,7 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
             viewController.image = self.reqImages[indexPath.row]!
             viewController.title = self.trophies[indexPath.row]
             viewController.reqtext = self.reqText[indexPath.row]
+            viewController.informationText = self.infoText[indexPath.row]
         }
     }
     
