@@ -17,6 +17,13 @@ class FoodGroupViewController: UIViewController {
     @IBOutlet weak var proteinProgress: UIProgressView!
     @IBOutlet weak var dairyProgress: UIProgressView!
     
+    // Food group progress number label
+    @IBOutlet weak var fruitLabel: UILabel!
+    @IBOutlet weak var veggieLabel: UILabel!
+    @IBOutlet weak var grainLabel: UILabel!
+    @IBOutlet weak var proteinLabel: UILabel!
+    @IBOutlet weak var dairyLabel: UILabel!
+    
     // maximum servings for each food group
     var fruitMax = 3
     var veggieMax = 4
@@ -68,6 +75,8 @@ class FoodGroupViewController: UIViewController {
         
         // Change fruit progress
         fruitsProgress.progress = Float(fruitSum) / Float (fruitMax)
+        // Show fruit progress number
+        fruitLabel.text = "\(fruitSum) / \(fruitMax)"
         
         // initial veggie count
         var veggieSum = 0
@@ -91,6 +100,8 @@ class FoodGroupViewController: UIViewController {
         
         // Change veggie progress
         veggiesProgress.progress = Float(veggieSum) / Float (veggieMax)
+        // Show veggie progress number
+        veggieLabel.text = "\(veggieSum) / \(veggieMax)"
         
         // initial grain count
         var grainSum = 0
@@ -114,6 +125,8 @@ class FoodGroupViewController: UIViewController {
         
         // Change grains progress
         grainsProgress.progress = Float(grainSum) / Float (grainMax)
+        // Show grain progress number
+        grainLabel.text = "\(grainSum) / \(grainMax)"
         
         // intial protein count
         var proteinSum = 0
@@ -137,6 +150,8 @@ class FoodGroupViewController: UIViewController {
         
         // Change protein progress
         proteinProgress.progress = Float(proteinSum) / Float (proteinMax)
+        // Show protein progress number
+        proteinLabel.text = "\(proteinSum) / \(proteinMax)"
         
         // initial dairy count
         var dairySum = 0
@@ -160,6 +175,8 @@ class FoodGroupViewController: UIViewController {
         
         // Change dairy progress
         dairyProgress.progress = Float(dairySum) / Float (dairyMax)
+        // Show dairy progress number
+        dairyLabel.text = "\(dairySum) / \(dairyMax)"
         
     }
 
