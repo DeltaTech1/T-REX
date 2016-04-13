@@ -209,29 +209,32 @@ class FoodGroupViewController: UIViewController {
     // Prepare actions in fuction before perfoming segue
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        let viewController = segue.destinationViewController as! FoodViewController
+        if (segue.identifier == "showTable") {
         
-        let foods = sender as! [String]
-        viewController.foods = foods
-        // if foods var equals fruits send fruits image array
-        if foods == fruits {
-            viewController.images = fruitsimage
-        }
-        // if foods var equals vegetables send vegtables images array
-        else if foods == vegetables {
-            viewController.images = vegetablesimage
-        }
-        // if foods var equals grains send grains images array
-        else if foods == grains {
-            viewController.images = grainsimage
-        }
-        // if foods var equals proteins send proteins images array
-        else if foods == proteins {
-            viewController.images = proteinsimage
-        }
-        // otherwise send dairy images array
-        else {
-            viewController.images = dairyimage
+            let viewController = segue.destinationViewController as! FoodViewController
+        
+            let foods = sender as! [String]
+            viewController.foods = foods
+            // if foods var equals fruits send fruits image array
+            if foods == fruits {
+                viewController.images = fruitsimage
+            }
+                // if foods var equals vegetables send vegtables images array
+            else if foods == vegetables {
+                viewController.images = vegetablesimage
+            }
+                // if foods var equals grains send grains images array
+            else if foods == grains {
+                viewController.images = grainsimage
+            }
+                // if foods var equals proteins send proteins images array
+            else if foods == proteins {
+                viewController.images = proteinsimage
+            }
+                // otherwise send dairy images array
+            else {
+                viewController.images = dairyimage
+            }
         }
         
     }
