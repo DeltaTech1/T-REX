@@ -16,6 +16,7 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
     let trophies = ["5-A-Day", "Strong Bones", "Got Milk?", "Brain Power", "Super Vision", "Protein Pro"]
     let imageArray = [UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies")]
     let reqImages = [UIImage(named: "apple"), UIImage(named: "cheese"), UIImage(named: "milkbox"), UIImage(named: "fish"), UIImage(named: "carrot"), UIImage(named: "steak")]
+    let lockedArray = [UIImage(named:"locked"), UIImage(named: "locked"), UIImage(named: "locked"), UIImage(named: "locked"), UIImage(named: "locked"), UIImage(named: "locked")]
     //fidel
     let reqText = ["Eat 5 total servings of fruits and vegetables", "Have 2 total servings of dairy", "Have a serving of milk", "Eat 4 foods that sharpen your brain", "Eat 4 foods that sharpen your vision", "Have 3 servings of protein"]
     let infoText = ["**It includes any selected fruits or vegetables", "**Dairy foods include Cheese, Milk, Yogurt", "**Drink 1 serving of milk", "**Brain Foods include Strawberries, Spinach, Rice, & Fish", "**Vision foods include Broccoli, Carrots, Spinach, & Fish", "**Protein foods include Chicken, Steak, Eggs, & Fish"]
@@ -60,12 +61,13 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
             }
             if dairyCount >= 2.0 {
                 cell.imageView.alpha = 1.0
-                let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked the Strong Bones Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
+                let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked a Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
                 alert.addAction(okAction)
                 self.presentViewController(alert, animated: true, completion: nil)
             }
             else {
+                cell.imageView.image = self.lockedArray[indexPath.row]
                 cell.imageView.alpha = 0.5
             }
         }
@@ -81,12 +83,13 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
             }
             if fiveadayCount >= 5.0 {
                 cell.imageView.alpha = 1.0
-                let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked the 5-A-Day Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
+                let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked a Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
                 alert.addAction(okAction)
                 self.presentViewController(alert, animated: true, completion: nil)
             }
             else {
+                cell.imageView.image = self.lockedArray[indexPath.row]
                 cell.imageView.alpha = 0.5
             }
         }
@@ -98,12 +101,13 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
             }
             if milkCount == 1.0 {
                 cell.imageView.alpha = 1.0
-                let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked the Got Milk? Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
+                let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked a Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
                 alert.addAction(okAction)
                 self.presentViewController(alert, animated: true, completion: nil)
             }
             else {
+                cell.imageView.image = self.lockedArray[indexPath.row]
                 cell.imageView.alpha = 0.5
             }
         }
@@ -115,12 +119,13 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
             }
             if brainCount == 4.0 {
                 cell.imageView.alpha = 1.0
-                let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked the Brain Power Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
+                let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked a Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
                 alert.addAction(okAction)
                 self.presentViewController(alert, animated: true, completion: nil)
             }
             else {
+                cell.imageView.image = self.lockedArray[indexPath.row]
                 cell.imageView.alpha = 0.5
             }
         }
@@ -132,12 +137,13 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
             }
             if visionCount == 4.0 {
                 cell.imageView.alpha = 1.0
-                let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked the Super Vision Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
+                let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked a Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
                 alert.addAction(okAction)
                 self.presentViewController(alert, animated: true, completion: nil)
             }
             else {
+                cell.imageView.image = self.lockedArray[indexPath.row]
                 cell.imageView.alpha = 0.5
             }
         }
@@ -149,12 +155,13 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
             }
             if proteinCount >= 3.0 {
                 cell.imageView.alpha = 1.0
-                let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked the Protein Pro Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
+                let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked a Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
                 alert.addAction(okAction)
                 self.presentViewController(alert, animated: true, completion: nil)
             }
             else {
+                cell.imageView.image = self.lockedArray[indexPath.row]
                 cell.imageView.alpha = 0.5
             }
         }
