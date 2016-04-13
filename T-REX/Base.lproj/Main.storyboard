@@ -667,8 +667,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locked" translatesAutoresizingMaskIntoConstraints="NO" id="sIz-mN-STe">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="IvR-05-6en"/>
-                                    <constraint firstAttribute="height" constant="120" id="cXj-KF-GFJ"/>
+                                    <constraint firstAttribute="width" constant="130" id="IvR-05-6en"/>
+                                    <constraint firstAttribute="height" constant="130" id="cXj-KF-GFJ"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -1042,7 +1042,7 @@
                                     <constraint firstAttribute="height" constant="128" id="r3s-tb-cCq"/>
                                 </constraints>
                                 <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -3246,7 +3246,7 @@
         <image name="fruitsbutton" width="330" height="120"/>
         <image name="grainsbutton" width="330" height="120"/>
         <image name="landing" width="1080" height="1920"/>
-        <image name="locked" width="1288" height="1292"/>
+        <image name="locked" width="330" height="330"/>
         <image name="logout" width="108" height="42"/>
         <image name="lunchbutton" width="330" height="120"/>
         <image name="message" width="430" height="330"/>

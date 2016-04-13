@@ -15,11 +15,11 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
     //Dyan added new trophies
     let trophies = ["5-A-Day", "Strong Bones", "Got Milk?", "Brain Power", "Super Vision", "Protein Pro"]
     let imageArray = [UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies"), UIImage(named: "trophies")]
-    let reqImages = [UIImage(named: "apple"), UIImage(named: "cheese"), UIImage(named: "milkbox"), UIImage(named: "fish"), UIImage(named: "carrot"), UIImage(named: "steak")]
+    let reqImages = [UIImage(named: "hand"), UIImage(named: "cheese"), UIImage(named: "milkbox"), UIImage(named: "brain"), UIImage(named: "eye"), UIImage(named: "egg")]
     let lockedArray = [UIImage(named:"locked"), UIImage(named: "locked"), UIImage(named: "locked"), UIImage(named: "locked"), UIImage(named: "locked"), UIImage(named: "locked")]
     //fidel
     let reqText = ["Eat 5 total servings of fruits and vegetables", "Have 2 total servings of dairy", "Have a serving of milk", "Eat 4 foods that sharpen your brain", "Eat 4 foods that sharpen your vision", "Have 3 servings of protein"]
-    let infoText = ["", "", "", "(These include strawberries, spinach, rice, and fish)", "(These include broccoli, carrots, spinach, and fish", ""]
+    let infoText = ["", "", "", "(These include strawberries, spinach, rice, and fish)", "(These include broccoli, carrots, spinach, and fish)", ""]
     
     var dairy = ["Milk", "Cheese", "Yogurt"]
     var fruits = ["Apple", "Banana", "Grapes", "Orange", "Strawberry"]
