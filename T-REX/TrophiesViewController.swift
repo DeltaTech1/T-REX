@@ -19,7 +19,7 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
     let lockedArray = [UIImage(named:"locked"), UIImage(named: "locked"), UIImage(named: "locked"), UIImage(named: "locked"), UIImage(named: "locked"), UIImage(named: "locked")]
     //fidel
     let reqText = ["Eat 5 total servings of fruits and vegetables", "Have 2 total servings of dairy", "Have a serving of milk", "Eat 4 foods that sharpen your brain", "Eat 4 foods that sharpen your vision", "Have 3 servings of protein"]
-    let infoText = ["**It includes any selected fruits or vegetables", "**Dairy foods include Cheese, Milk, Yogurt", "**Drink 1 serving of milk", "**Brain Foods include Strawberries, Spinach, Rice, & Fish", "**Vision foods include Broccoli, Carrots, Spinach, & Fish", "**Protein foods include Chicken, Steak, Eggs, & Fish"]
+    let infoText = ["", "", "", "(These include strawberries, spinach, rice, and fish)", "(These include broccoli, carrots, spinach, and fish", ""]
     
     var dairy = ["Milk", "Cheese", "Yogurt"]
     var fruits = ["Apple", "Banana", "Grapes", "Orange", "Strawberry"]
