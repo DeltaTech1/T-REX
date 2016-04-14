@@ -117,7 +117,7 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
                 let brainFoodsCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
                 brainCount += Float(brainFoodsCount)
             }
-            if brainCount == 4.0 {
+            if brainCount >= 4.0 {
                 cell.imageView.alpha = 1.0
                 let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked a Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
@@ -129,7 +129,7 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
                 cell.imageView.alpha = 0.5
             }
         }
-        else if indexPath.row == 4 {
+        else if indexPath.row >= 4 {
             var visionCount: Float = 0.0
             for title in superVision {
                 let visionFoodsCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)

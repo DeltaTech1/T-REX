@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lZr-wa-5ds">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lZr-wa-5ds">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -733,6 +733,9 @@
                                 <exclude reference="iGt-4a-qhU"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="cUS-yb-2MR"/>
+                                <exclude reference="6BB-I2-5DL"/>
+                                <exclude reference="wHg-my-vuk"/>
                                 <exclude reference="25E-IJ-fMD"/>
                                 <exclude reference="LIm-AB-4Zc"/>
                                 <exclude reference="W2h-fX-hL3"/>
@@ -742,13 +745,10 @@
                                 <exclude reference="wSm-XG-Lfg"/>
                                 <exclude reference="0gw-li-LP5"/>
                                 <exclude reference="IFJ-d8-JfO"/>
-                                <exclude reference="U9q-IW-Lgy"/>
-                                <exclude reference="YdZ-eI-1Xh"/>
                                 <exclude reference="Ew3-Mm-U6n"/>
                                 <exclude reference="FKD-vL-u4i"/>
-                                <exclude reference="6BB-I2-5DL"/>
-                                <exclude reference="wHg-my-vuk"/>
-                                <exclude reference="cUS-yb-2MR"/>
+                                <exclude reference="U9q-IW-Lgy"/>
+                                <exclude reference="YdZ-eI-1Xh"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -762,6 +762,9 @@
                                 <include reference="iGt-4a-qhU"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="cUS-yb-2MR"/>
+                                <include reference="6BB-I2-5DL"/>
+                                <include reference="wHg-my-vuk"/>
                                 <include reference="25E-IJ-fMD"/>
                                 <include reference="LIm-AB-4Zc"/>
                                 <include reference="W2h-fX-hL3"/>
@@ -771,13 +774,10 @@
                                 <include reference="wSm-XG-Lfg"/>
                                 <include reference="0gw-li-LP5"/>
                                 <include reference="IFJ-d8-JfO"/>
-                                <include reference="U9q-IW-Lgy"/>
-                                <include reference="YdZ-eI-1Xh"/>
                                 <include reference="Ew3-Mm-U6n"/>
                                 <include reference="FKD-vL-u4i"/>
-                                <include reference="6BB-I2-5DL"/>
-                                <include reference="wHg-my-vuk"/>
-                                <include reference="cUS-yb-2MR"/>
+                                <include reference="U9q-IW-Lgy"/>
+                                <include reference="YdZ-eI-1Xh"/>
                             </mask>
                         </variation>
                     </view>
