@@ -18,7 +18,7 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
     let reqImages = [UIImage(named: "hand"), UIImage(named: "cheese"), UIImage(named: "milkbox"), UIImage(named: "brain"), UIImage(named: "eye"), UIImage(named: "egg")]
     let lockedArray = [UIImage(named:"locked"), UIImage(named: "locked"), UIImage(named: "locked"), UIImage(named: "locked"), UIImage(named: "locked"), UIImage(named: "locked")]
     //fidel
-    let reqText = ["Eat 5 total servings of fruits and vegetables", "Have 2 total servings of dairy", "Have a serving of milk", "Eat 4 foods that sharpen your brain", "Eat 4 foods that sharpen your vision", "Have 3 servings of protein"]
+    let reqText = ["Eat 5 total servings of fruits and vegetables", "Have 2 total servings of dairy", "Have a serving of milk", "Eat 4 servings of foods that sharpen your brain", "Eat 4 servings of foods that sharpen your vision", "Have 2 servings of protein"]
     let infoText = ["", "", "", "(These include strawberries, spinach, rice, and fish)", "(These include broccoli, carrots, spinach, and fish)", ""]
     
     var dairy = ["Milk", "Cheese", "Yogurt"]
@@ -129,13 +129,13 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
                 cell.imageView.alpha = 0.5
             }
         }
-        else if indexPath.row >= 4 {
+        else if indexPath.row == 4 {
             var visionCount: Float = 0.0
             for title in superVision {
                 let visionFoodsCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
                 visionCount += Float(visionFoodsCount)
             }
-            if visionCount == 4.0 {
+            if visionCount >= 4.0 {
                 cell.imageView.alpha = 1.0
                 let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked a Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)
@@ -153,7 +153,7 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
                 let proteinProCount = NSUserDefaults.standardUserDefaults().doubleForKey(title)
                 proteinCount += Float(proteinProCount)
             }
-            if proteinCount >= 3.0 {
+            if proteinCount >= 2.0 {
                 cell.imageView.alpha = 1.0
                 let alert = UIAlertController(title: "Congratulations!", message: "You have unlocked a Trophy!", preferredStyle: UIAlertControllerStyle.Alert)
                 let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil)

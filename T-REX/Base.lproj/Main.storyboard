@@ -1015,10 +1015,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDK-bp-gVq" userLabel="Info Label">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="01h-V2-IMG"/>
+                                    <constraint firstAttribute="height" constant="21" id="01h-V2-IMG">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="63"/>
+                                    </constraint>
                                     <constraint firstAttribute="width" constant="360" id="ib2-Ma-c94"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
@@ -1062,7 +1064,9 @@
                         <constraints>
                             <constraint firstItem="IkM-2Y-2SC" firstAttribute="leading" secondItem="jbQ-e1-C43" secondAttribute="leadingMargin" constant="80" id="0JZ-7Q-nP1"/>
                             <constraint firstItem="Ia1-rJ-JCu" firstAttribute="leading" secondItem="jbQ-e1-C43" secondAttribute="leading" id="1m3-i3-DFE"/>
-                            <constraint firstItem="Ia1-rJ-JCu" firstAttribute="centerY" secondItem="sDK-bp-gVq" secondAttribute="centerY" id="BEm-Jh-o8n"/>
+                            <constraint firstItem="Ia1-rJ-JCu" firstAttribute="centerY" secondItem="sDK-bp-gVq" secondAttribute="centerY" id="BEm-Jh-o8n">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-21.5"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="Ia1-rJ-JCu" secondAttribute="trailing" id="Cj6-br-ZDY"/>
                             <constraint firstItem="Ia1-rJ-JCu" firstAttribute="top" secondItem="jbQ-e1-C43" secondAttribute="top" id="D8a-bf-SVg"/>
                             <constraint firstItem="IkM-2Y-2SC" firstAttribute="centerX" secondItem="sDK-bp-gVq" secondAttribute="centerX" id="Rfm-ZI-VNf"/>
