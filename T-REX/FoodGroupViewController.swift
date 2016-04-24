@@ -35,14 +35,14 @@ class FoodGroupViewController: UIViewController {
     var fruits = ["Apple", "Avocado", "Banana", "Cherry", "Coconut", "Grapes", "Mango", "Orange", "Pineapple", "Strawberry"]
     var vegetables = ["Bell Pepper", "Broccoli", "Cabbage", "Carrot", "Corn", "Cucumber", "Mushroom", "Potato", "Radish", "Spinach"]
     var proteins = ["Bacon", "Burger", "Chicken", "Egg", "Salmon", "Sausage", "Steak", "Tofu", "Tuna"]
-    var dairy = ["Milk", "Cheese", "Yogurt"]
+    var dairy = ["Milk", "Cheese", "Ice Cream", "Yogurt"]
     var grains = ["Bread", "Cereal", "Muffin", "Oats", "Pasta", "Popcorn", "Pretzel", "Rice"]
     
     // image array for each food group
     var fruitsimage = [UIImage(named: "apple")!, UIImage(named: "avocado")!, UIImage(named: "banana")!, UIImage(named: "cherry")!, UIImage(named: "coconut")!, UIImage(named: "grapes")!, UIImage(named: "mango")!, UIImage(named: "orange")!, UIImage(named: "pineapple")!, UIImage(named: "strawberry")!]
     var vegetablesimage = [UIImage(named: "bellpepper")!, UIImage(named: "broccoli")!, UIImage(named: "cabbage")!, UIImage(named: "carrot")!, UIImage(named: "corn")!, UIImage(named: "cucumber")!, UIImage(named: "mushroom")!, UIImage(named: "potato")!, UIImage(named: "radish")!, UIImage(named: "spinach")!]
     var proteinsimage = [UIImage(named: "bacon")!, UIImage(named: "burger")!, UIImage(named: "chicken")!, UIImage(named: "egg")!, UIImage(named: "salmon")!, UIImage(named: "sausage")!, UIImage(named: "steak")!, UIImage(named: "tofu")!, UIImage(named: "tuna")!]
-    var dairyimage = [UIImage(named: "milkbox")!, UIImage(named: "cheese")!, UIImage(named: "yogurt")!]
+    var dairyimage = [UIImage(named: "milkbox")!, UIImage(named: "cheese")!, UIImage(named:"icecream")!, UIImage(named: "yogurt")!]
     var grainsimage = [UIImage(named: "bread")!, UIImage(named: "cereal")!, UIImage(named: "muffin")!, UIImage(named: "oats")!, UIImage(named: "pasta")!, UIImage(named: "popcorn")!, UIImage(named: "pretzel")!, UIImage(named: "rice")!]
     
     override func viewDidLoad() {

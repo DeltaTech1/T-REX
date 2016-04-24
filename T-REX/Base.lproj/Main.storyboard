@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lZr-wa-5ds">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lZr-wa-5ds">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -2845,22 +2845,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="89"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8my-B0-vVn">
-                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="65" id="vnA-pE-EEC"/>
-                                                    </constraints>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="vnA-pE-EEC"/>
-                                                        </mask>
-                                                    </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
-                                                        <mask key="constraints">
-                                                            <include reference="vnA-pE-EEC"/>
-                                                        </mask>
-                                                    </variation>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcE-gv-e2O">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                     <constraints>
@@ -2884,9 +2868,6 @@
                                                     <rect key="frame" x="-47" y="-14" width="94" height="29"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="130" y="35" width="94" height="29"/>
-                                                    </variation>
                                                     <connections>
                                                         <action selector="StepperPressed:" destination="jY8-NN-9em" eventType="valueChanged" id="PO4-Kn-0ac"/>
                                                     </connections>
@@ -2913,14 +2894,34 @@
                                                         </mask>
                                                     </variation>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8my-B0-vVn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="65" id="vnA-pE-EEC"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="vnA-pE-EEC"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <mask key="constraints">
+                                                            <include reference="vnA-pE-EEC"/>
+                                                        </mask>
+                                                    </variation>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="VcE-gv-e2O" firstAttribute="leading" secondItem="eQ0-eZ-sps" secondAttribute="leading" id="0cp-lv-H07"/>
-                                                <constraint firstItem="4Mh-2g-jJW" firstAttribute="centerY" secondItem="8my-B0-vVn" secondAttribute="centerY" id="4LK-J4-FRJ"/>
+                                                <constraint firstItem="4Mh-2g-jJW" firstAttribute="centerY" secondItem="8my-B0-vVn" secondAttribute="centerY" id="4LK-J4-FRJ">
+                                                    <variation key="heightClass=regular-widthClass=compact" constant="5"/>
+                                                </constraint>
                                                 <constraint firstItem="8my-B0-vVn" firstAttribute="leading" secondItem="d3w-DF-Y5n" secondAttribute="leadingMargin" constant="3" id="9gn-Jk-bJw"/>
-                                                <constraint firstItem="8my-B0-vVn" firstAttribute="top" secondItem="d3w-DF-Y5n" secondAttribute="topMargin" constant="9" id="Dol-5C-1NF"/>
+                                                <constraint firstItem="8my-B0-vVn" firstAttribute="top" secondItem="d3w-DF-Y5n" secondAttribute="topMargin" constant="9" id="Dol-5C-1NF">
+                                                    <variation key="heightClass=regular-widthClass=compact" constant="4"/>
+                                                </constraint>
                                                 <constraint firstItem="4Mh-2g-jJW" firstAttribute="top" secondItem="d3w-DF-Y5n" secondAttribute="topMargin" constant="27" id="Kzd-w3-eRw"/>
                                                 <constraint firstItem="VcE-gv-e2O" firstAttribute="top" secondItem="eQ0-eZ-sps" secondAttribute="bottom" constant="18" id="LHY-Q8-shn"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="4Mh-2g-jJW" secondAttribute="trailing" constant="8" id="icv-wj-riJ"/>
@@ -2930,10 +2931,10 @@
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="subviews">
-                                                    <exclude reference="8my-B0-vVn"/>
                                                     <exclude reference="VcE-gv-e2O"/>
                                                     <exclude reference="4Mh-2g-jJW"/>
                                                     <exclude reference="eQ0-eZ-sps"/>
+                                                    <exclude reference="8my-B0-vVn"/>
                                                 </mask>
                                                 <mask key="constraints">
                                                     <exclude reference="0cp-lv-H07"/>
@@ -2950,10 +2951,10 @@
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
                                                 <mask key="subviews">
-                                                    <include reference="8my-B0-vVn"/>
                                                     <include reference="VcE-gv-e2O"/>
                                                     <include reference="4Mh-2g-jJW"/>
                                                     <include reference="eQ0-eZ-sps"/>
+                                                    <include reference="8my-B0-vVn"/>
                                                 </mask>
                                                 <mask key="constraints">
                                                     <include reference="0cp-lv-H07"/>
