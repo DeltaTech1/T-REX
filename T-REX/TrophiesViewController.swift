@@ -19,17 +19,17 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
     let reqImages = [UIImage(named: "fiveaday"), UIImage(named: "strongbones"), UIImage(named: "gotmilk"), UIImage(named: "brainpower"), UIImage(named: "supervision"), UIImage(named: "proteinpro")]
     let lockedArray = [UIImage(named:"locked"), UIImage(named: "locked"), UIImage(named: "locked"), UIImage(named: "locked"), UIImage(named: "locked"), UIImage(named: "locked")]
     //fidel
-    let reqText = ["Eat 5 total servings of fruits and vegetables", "Have 2 total servings of dairy", "Have a serving of milk", "Eat 4 servings of foods that sharpen your brain", "Eat 4 servings of foods that sharpen your vision", "Have 2 total servings of protein"]
-    let infoText = ["", "", "", "(These include strawberries, spinach, rice, and fish)", "(These include broccoli, carrots, spinach, and fish)", ""]
+    let reqText = ["Eat 5 total servings of fruits and/or vegetables", "Have 2 total servings of dairy", "Have a serving of milk", "Eat 4 servings of foods that sharpen your brain", "Eat 4 servings of foods that sharpen your vision", "Have 2 total servings of protein"]
+    let infoText = ["", "", "", "(These include avocado, berries, dark leafy greens, whole grain foods, and fatty fish)", "(These include carrots, dark leafy greens, citrus fruits, berries, eggs, and fatty fish)", ""]
     
-    var dairy = ["Milk", "Cheese", "Yogurt"]
-    var fruits = ["Apple", "Banana", "Grapes", "Orange", "Strawberry"]
-    var vegetables = ["Broccoli", "Carrot", "Cucumber", "Potato", "Spinach"]
-    var grains = ["Bread", "Cereal", "Pasta", "Rice"]
-    var proteins = ["Beef", "Chicken", "Egg", "Fish", "Pork"]
+    var dairy = ["Milk", "Cheese", "Ice Cream", "Yogurt"]
+    var fruits = ["Apple", "Avocado", "Banana", "Cherry", "Coconut", "Grapes", "Mango", "Orange", "Pineapple", "Strawberry"]
+    var vegetables = ["Bell Pepper", "Broccoli", "Cabbage", "Carrot", "Corn", "Cucumber", "Mushroom", "Potato", "Radish", "Spinach"]
+    var grains = ["Bread", "Cereal", "Muffin", "Oats", "Pasta", "Popcorn", "Pretzel", "Rice"]
+    var proteins = ["Bacon", "Burger", "Chicken", "Egg", "Salmon", "Sausage", "Steak", "Tofu", "Tuna"]
     var gotMilk = ["Milk"]
-    var brainPower = ["Strawberry", "Spinach", "Rice", "Fish"]
-    var superVision = ["Broccoli", "Carrot", "Spinach", "Fish"]
+    var brainPower = ["Avocado", "Broccoli", "Oats", "Salmon", "Spinach", "Strawberry", "Rice", "Tuna"]
+    var superVision = ["Broccoli", "Carrot", "Egg", "Orange", "Salmon", "Spinach", "Strawberry", "Tuna"]
 
     var percussiveHit : AVAudioPlayer?
     var buttonClick : AVAudioPlayer?
