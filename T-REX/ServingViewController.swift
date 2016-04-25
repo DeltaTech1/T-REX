@@ -7,13 +7,38 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ServingViewController: UIViewController {
+    
+    var percussiveHit : AVAudioPlayer?
+    
+    // setup audio player
+    func setupAudioPlayerWithFile(file:NSString, type:NSString) -> AVAudioPlayer?  {
+        // path to sound file
+        let path = NSBundle.mainBundle().pathForResource(file as String, ofType: type as String)
+        let url = NSURL.fileURLWithPath(path!)
+        
+        // create audio player, catch error if not created
+        var audioPlayer : AVAudioPlayer?
+        do {
+            try audioPlayer = AVAudioPlayer(contentsOfURL: url)
+        } catch {
+            print("Player not available")
+        }
+        
+        return audioPlayer
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // create percussive-hit player
+        if let percussiveHit = self.setupAudioPlayerWithFile("percussive-hit", type: "wav") {
+            self.percussiveHit = percussiveHit
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,14 +47,9 @@ class ServingViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func moreButton(sender: AnyObject) {
+        percussiveHit?.play()
     }
-    */
+    
 
 }

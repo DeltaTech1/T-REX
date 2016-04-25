@@ -1,17 +1,17 @@
 //
-//  MealViewController.swift
+//  LandingViewController.swift
 //  T-REX
 //
-//  Created by Elliot on 3/22/16.
+//  Created by Elliot on 4/24/16.
 //  Copyright © 2016 Delta Tech. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class MealViewController: UIViewController {
+class LandingViewController: UIViewController {
     
-    var buttonClick : AVAudioPlayer?
+    var percussiveHit : AVAudioPlayer?
     
     // setup audio player
     func setupAudioPlayerWithFile(file:NSString, type:NSString) -> AVAudioPlayer?  {
@@ -35,9 +35,9 @@ class MealViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        // create button-click player
-        if let buttonClick = self.setupAudioPlayerWithFile("button-click", type: "wav") {
-            self.buttonClick = buttonClick
+        // create percussive-hit player
+        if let percussiveHit = self.setupAudioPlayerWithFile("percussive-hit", type: "wav") {
+            self.percussiveHit = percussiveHit
         }
     }
 
@@ -46,20 +46,11 @@ class MealViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func breakfastButton(sender: AnyObject) {
-        buttonClick?.play()
-    }
-
-    @IBAction func lunchButton(sender: AnyObject) {
-        buttonClick?.play()
+    
+    @IBAction func startButton(sender: AnyObject) {
+        // play button sound
+        percussiveHit?.play()
     }
     
-    @IBAction func dinnerButton(sender: AnyObject) {
-        buttonClick?.play()
-    }
 
-    @IBAction func snackButton(sender: AnyObject) {
-        buttonClick?.play()
-    }
-    
 }

@@ -20,13 +20,13 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var proteinMax = 2
     var dairyMax = 2
     
-    // Array for which is pulled into the table view
-    var fruits = ["Apple", "Banana", "Grapes", "Orange", "Strawberry"]
-    var vegetables = ["Broccoli", "Carrot", "Cucumber", "Potato", "Spinach"]
-    var proteins = ["Beef", "Chicken", "Egg", "Fish", "Pork"]
-    var dairy = ["Milk", "Cheese", "Yogurt"]
-    var grains = ["Bread", "Cereal", "Pasta", "Rice"]
-
+    // array for each food group
+    var fruits = ["Apple", "Avocado", "Banana", "Cherry", "Coconut", "Grapes", "Mango", "Orange", "Pineapple", "Strawberry"]
+    var vegetables = ["Bell Pepper", "Broccoli", "Cabbage", "Carrot", "Corn", "Cucumber", "Mushroom", "Potato", "Radish", "Spinach"]
+    var grains = ["Bread", "Cereal", "Muffin", "Oats", "Pasta", "Popcorn", "Pretzel", "Rice"]
+    var proteins = ["Bacon", "Burger", "Chicken", "Egg", "Salmon", "Sausage", "Steak", "Tofu", "Tuna"]
+    var dairy = ["Milk", "Cheese", "Ice Cream", "Yogurt"]
+    
     var foods = [String]()
     var images = [UIImage]()
     
@@ -67,8 +67,8 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
             }
         }
         
-        // if first entry in table is Broccoli (Vegetable Table)
-        if (foods[0] == "Broccoli") {
+        // if first entry in table is Bell Pepper (Vegetable Table)
+        if (foods[0] == "Bell Pepper") {
             // initial veggie count
             var veggieSum = 0
             // Calculate sum of vegetables
@@ -125,8 +125,8 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
             }
         }
         
-        // if first entry in table is Beef (Protein Table)
-        if (foods[0] == "Beef") {
+        // if first entry in table is Bacon (Protein Table)
+        if (foods[0] == "Bacon") {
             // intial protein count
             var proteinSum = 0
             // Calculate sum of proteins
@@ -204,6 +204,7 @@ class FoodViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
     }
   
+    
 
 }
 

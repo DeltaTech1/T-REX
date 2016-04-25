@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CreateAccountViewController: UIViewController, UITextFieldDelegate {
 
@@ -44,12 +45,37 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    // audio player
+    var buttonClick : AVAudioPlayer?
+    
+    // setup audio player
+    func setupAudioPlayerWithFile(file:NSString, type:NSString) -> AVAudioPlayer?  {
+        // path to sound file
+        let path = NSBundle.mainBundle().pathForResource(file as String, ofType: type as String)
+        let url = NSURL.fileURLWithPath(path!)
+        
+        // create audio player, catch error if not created
+        var audioPlayer : AVAudioPlayer?
+        do {
+            try audioPlayer = AVAudioPlayer(contentsOfURL: url)
+        } catch {
+            print("Player not available")
+        }
+        
+        return audioPlayer
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.usernameTextfield.delegate = self
         self.passwordTextfield.delegate = self
         self.confirmTextfield.delegate = self
+        
+        // create button-click player
+        if let buttonClick = self.setupAudioPlayerWithFile("button-click", type: "wav") {
+            self.buttonClick = buttonClick
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,6 +85,9 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
 
     // action when create button is pressed
     @IBAction func createButton(sender: AnyObject) {
+        
+        // play button sound
+        buttonClick?.play()
         
         // entered username, password, confirm password
         let username = usernameTextfield.text
@@ -101,6 +130,8 @@ class CreateAccountViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func cancelButton(sender: AnyObject) {
+        // play button sound
+        buttonClick?.play()
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 

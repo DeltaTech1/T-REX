@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class FoodGroupViewController: UIViewController {
     
@@ -45,11 +46,41 @@ class FoodGroupViewController: UIViewController {
     var dairyimage = [UIImage(named: "milkbox")!, UIImage(named: "cheese")!, UIImage(named:"icecream")!, UIImage(named: "yogurt")!]
     var grainsimage = [UIImage(named: "bread")!, UIImage(named: "cereal")!, UIImage(named: "muffin")!, UIImage(named: "oats")!, UIImage(named: "pasta")!, UIImage(named: "popcorn")!, UIImage(named: "pretzel")!, UIImage(named: "rice")!]
     
+    var buttonClick : AVAudioPlayer?
+    var percussiveHit : AVAudioPlayer?
+    
+    // setup audio player
+    func setupAudioPlayerWithFile(file:NSString, type:NSString) -> AVAudioPlayer?  {
+        // path to sound file
+        let path = NSBundle.mainBundle().pathForResource(file as String, ofType: type as String)
+        let url = NSURL.fileURLWithPath(path!)
+        
+        // create audio player, catch error if not created
+        var audioPlayer : AVAudioPlayer?
+        do {
+            try audioPlayer = AVAudioPlayer(contentsOfURL: url)
+        } catch {
+            print("Player not available")
+        }
+        
+        return audioPlayer
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // create button-click player
+        if let buttonClick = self.setupAudioPlayerWithFile("button-click", type: "wav") {
+            self.buttonClick = buttonClick
+        }
+        // create percussive-hit player
+        if let percussiveHit = self.setupAudioPlayerWithFile("percussive-hit", type: "wav") {
+            self.percussiveHit = percussiveHit
+        }
     }
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -182,23 +213,32 @@ class FoodGroupViewController: UIViewController {
 
     // Perform segue based on button pressed
     @IBAction func fruitsPressed(sender: AnyObject) {
+        buttonClick?.play()
         performSegueWithIdentifier("showTable", sender: fruits)
     }
     
     @IBAction func vegetablesPressed(sender: AnyObject) {
+        buttonClick?.play()
         performSegueWithIdentifier("showTable", sender: vegetables)
     }
     
     @IBAction func grainsPressed(sender: AnyObject) {
+        buttonClick?.play()
         performSegueWithIdentifier("showTable", sender: grains)
     }
     
     @IBAction func proteinPressed(sender: AnyObject) {
+        buttonClick?.play()
         performSegueWithIdentifier("showTable", sender: proteins)
     }
     
     @IBAction func dairyPressed(sender: AnyObject) {
+        buttonClick?.play()
         performSegueWithIdentifier("showTable", sender: dairy)
+    }
+    
+    @IBAction func infoButton(sender: AnyObject) {
+        percussiveHit?.play()
     }
     
     

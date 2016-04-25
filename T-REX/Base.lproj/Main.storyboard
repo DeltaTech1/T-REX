@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lZr-wa-5ds">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lZr-wa-5ds">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -10,7 +10,7 @@
         <!--Landing-->
         <scene sceneID="YWO-7C-0aC">
             <objects>
-                <viewController title="Landing" id="lZr-wa-5ds" sceneMemberID="viewController">
+                <viewController title="Landing" id="lZr-wa-5ds" customClass="LandingViewController" customModule="T_REX" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1j9-69-cow"/>
                         <viewControllerLayoutGuide type="bottom" id="uXN-6l-bSR"/>
@@ -42,6 +42,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="startButton:" destination="lZr-wa-5ds" eventType="touchUpInside" id="op4-gI-OQo"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="sXO-8H-6Eg"/>
                                 </connections>
                             </button>
@@ -208,6 +209,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="newUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ea-4D-otA"/>
                                     <segue destination="VdW-lP-Zw6" kind="show" id="auJ-8h-4Xy"/>
                                 </connections>
                             </button>
@@ -297,31 +299,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background1" translatesAutoresizingMaskIntoConstraints="NO" id="a7x-HX-CNo">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FxB-oi-RWt">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="Lzs-3U-Wy3"/>
-                                    <constraint firstAttribute="width" constant="75" id="lU7-cL-CDV"/>
-                                </constraints>
-                                <state key="normal" title="Read" image="read">
-                                    <color key="titleColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Lzs-3U-Wy3"/>
-                                        <exclude reference="lU7-cL-CDV"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="Lzs-3U-Wy3"/>
-                                        <include reference="lU7-cL-CDV"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <segue destination="15m-iS-0sL" kind="show" id="5Jl-zR-baF"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afd-BA-e2F">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <constraints>
@@ -344,6 +321,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="eatButton:" destination="wpx-eU-9tS" eventType="touchUpInside" id="lYs-OZ-jj2"/>
                                     <segue destination="fB5-Si-Qzq" kind="show" id="h5P-pb-yRk"/>
                                 </connections>
                             </button>
@@ -369,6 +347,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="exerciseButton:" destination="wpx-eU-9tS" eventType="touchUpInside" id="Xx7-GW-KeE"/>
                                     <segue destination="15m-iS-0sL" kind="show" id="2cO-o8-DZP"/>
                                 </connections>
                             </button>
@@ -392,6 +371,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="trophyButton:" destination="wpx-eU-9tS" eventType="touchUpInside" id="baa-U0-zcK"/>
                                     <segue destination="Ham-bx-dSP" kind="show" id="ZWb-2m-3Qb"/>
                                 </connections>
                             </button>
@@ -481,6 +461,32 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FxB-oi-RWt">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Lzs-3U-Wy3"/>
+                                    <constraint firstAttribute="width" constant="75" id="lU7-cL-CDV"/>
+                                </constraints>
+                                <state key="normal" title="Read" image="read">
+                                    <color key="titleColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Lzs-3U-Wy3"/>
+                                        <exclude reference="lU7-cL-CDV"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Lzs-3U-Wy3"/>
+                                        <include reference="lU7-cL-CDV"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="readButton:" destination="wpx-eU-9tS" eventType="touchUpInside" id="lso-aV-Re3"/>
+                                    <segue destination="15m-iS-0sL" kind="show" id="5Jl-zR-baF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="FxB-oi-RWt" firstAttribute="centerX" secondItem="m3N-0X-etN" secondAttribute="centerX" constant="-100" id="0iK-as-o6Y"/>
@@ -507,7 +513,6 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="a7x-HX-CNo"/>
-                                <exclude reference="FxB-oi-RWt"/>
                                 <exclude reference="Afd-BA-e2F"/>
                                 <exclude reference="yZq-04-dlc"/>
                                 <exclude reference="D0m-Mo-FA6"/>
@@ -515,6 +520,7 @@
                                 <exclude reference="TZY-45-z8a"/>
                                 <exclude reference="jiB-Dw-Ouk"/>
                                 <exclude reference="N4Q-od-M5V"/>
+                                <exclude reference="FxB-oi-RWt"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="f4a-bm-Z3M"/>
@@ -542,7 +548,6 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="a7x-HX-CNo"/>
-                                <include reference="FxB-oi-RWt"/>
                                 <include reference="Afd-BA-e2F"/>
                                 <include reference="yZq-04-dlc"/>
                                 <include reference="D0m-Mo-FA6"/>
@@ -550,6 +555,7 @@
                                 <include reference="TZY-45-z8a"/>
                                 <include reference="jiB-Dw-Ouk"/>
                                 <include reference="N4Q-od-M5V"/>
+                                <include reference="FxB-oi-RWt"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="f4a-bm-Z3M"/>
@@ -575,7 +581,18 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="OGm-yD-Lvf"/>
+                    <navigationItem key="navigationItem" id="OGm-yD-Lvf">
+                        <barButtonItem key="leftBarButtonItem" title="Play Music" style="done" id="gN2-y2-Rwq">
+                            <connections>
+                                <action selector="playMusic:" destination="wpx-eU-9tS" id="20U-cO-yu8"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Stop Music" style="done" id="odp-BT-AD7">
+                            <connections>
+                                <action selector="stopMusic:" destination="wpx-eU-9tS" id="oB7-ip-vVx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m79-Dh-dab" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -980,6 +997,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
+                                    <action selector="infoButton:" destination="Ham-bx-dSP" eventType="touchUpInside" id="WV4-eL-rcl"/>
                                     <segue destination="cKt-DX-oYW" kind="show" id="LzE-hb-W5E"/>
                                 </connections>
                             </button>
@@ -1405,6 +1423,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="moreButton:" destination="B9g-k9-llD" eventType="touchUpInside" id="pvj-lX-Dln"/>
                                     <segue destination="B0u-Qx-X5l" kind="show" id="O2K-Va-QOx"/>
                                 </connections>
                             </button>
@@ -1984,6 +2003,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="breakfastButton:" destination="fB5-Si-Qzq" eventType="touchUpInside" id="81d-Ar-8bo"/>
                                     <segue destination="c9J-Ma-KkC" kind="show" id="Vc3-9S-IVi"/>
                                 </connections>
                             </button>
@@ -2007,6 +2027,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="lunchButton:" destination="fB5-Si-Qzq" eventType="touchUpInside" id="K0S-Sq-K7i"/>
                                     <segue destination="c9J-Ma-KkC" kind="show" id="i78-UV-gXl"/>
                                 </connections>
                             </button>
@@ -2030,6 +2051,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="dinnerButton:" destination="fB5-Si-Qzq" eventType="touchUpInside" id="Gcs-xl-IPV"/>
                                     <segue destination="c9J-Ma-KkC" kind="show" id="xNo-3L-udM"/>
                                 </connections>
                             </button>
@@ -2053,6 +2075,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
+                                    <action selector="snackButton:" destination="fB5-Si-Qzq" eventType="touchUpInside" id="egZ-OL-KbU"/>
                                     <segue destination="c9J-Ma-KkC" kind="show" id="qMP-gT-3Xf"/>
                                 </connections>
                             </button>
@@ -2793,6 +2816,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
+                                    <action selector="infoButton:" destination="c9J-Ma-KkC" eventType="touchUpInside" id="bZt-gs-AB7"/>
                                     <segue destination="B9g-k9-llD" kind="show" identifier="showInfo" id="RNU-yp-p9S"/>
                                 </connections>
                             </button>
@@ -2868,6 +2892,9 @@
                                                     <rect key="frame" x="-47" y="-14" width="94" height="29"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="130" y="35" width="94" height="29"/>
+                                                    </variation>
                                                     <connections>
                                                         <action selector="StepperPressed:" destination="jY8-NN-9em" eventType="valueChanged" id="PO4-Kn-0ac"/>
                                                     </connections>

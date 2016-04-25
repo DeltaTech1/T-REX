@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class TrophiesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
@@ -30,11 +31,39 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
     var brainPower = ["Strawberry", "Spinach", "Rice", "Fish"]
     var superVision = ["Broccoli", "Carrot", "Spinach", "Fish"]
 
+    var percussiveHit : AVAudioPlayer?
+    var buttonClick : AVAudioPlayer?
+    
+    // setup audio player
+    func setupAudioPlayerWithFile(file:NSString, type:NSString) -> AVAudioPlayer?  {
+        // path to sound file
+        let path = NSBundle.mainBundle().pathForResource(file as String, ofType: type as String)
+        let url = NSURL.fileURLWithPath(path!)
+        
+        // create audio player, catch error if not created
+        var audioPlayer : AVAudioPlayer?
+        do {
+            try audioPlayer = AVAudioPlayer(contentsOfURL: url)
+        } catch {
+            print("Player not available")
+        }
+        
+        return audioPlayer
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // create percussive-hit player
+        if let percussiveHit = self.setupAudioPlayerWithFile("percussive-hit", type: "wav") {
+            self.percussiveHit = percussiveHit
+        }
+        // create button-click player
+        if let buttonClick = self.setupAudioPlayerWithFile("button-click", type: "wav") {
+            self.buttonClick = buttonClick
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -176,6 +205,7 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        buttonClick?.play()
         self.performSegueWithIdentifier("showRequirements", sender: self)
     }
     
@@ -193,17 +223,9 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
         }
     }
     
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func infoButton(sender: AnyObject) {
+        percussiveHit?.play()
     }
-    */
+    
 
 }

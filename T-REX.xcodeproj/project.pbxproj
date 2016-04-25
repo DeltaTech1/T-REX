@@ -17,6 +17,10 @@
 		86D5DFE81CA0DB5B00CE8B2D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D5DFE71CA0DB5B00CE8B2D /* CollectionViewCell.swift */; };
 		86D5DFEA1CA0DB7F00CE8B2D /* RequirementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D5DFE91CA0DB7F00CE8B2D /* RequirementsViewController.swift */; };
 		86D5DFEC1CA0DBA200CE8B2D /* TrophiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D5DFEB1CA0DBA200CE8B2D /* TrophiesViewController.swift */; };
+		8B3B52671CCDE6D6002D3AB5 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3B52661CCDE6D6002D3AB5 /* LandingViewController.swift */; };
+		8B3B52691CCDE7D6002D3AB5 /* TREXsnip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8B3B52681CCDE7D6002D3AB5 /* TREXsnip.mp3 */; };
+		8B3B526B1CCDE7E1002D3AB5 /* button-click.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8B3B526A1CCDE7E1002D3AB5 /* button-click.wav */; };
+		8B3B526D1CCDE7EE002D3AB5 /* percussive-hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8B3B526C1CCDE7EE002D3AB5 /* percussive-hit.wav */; };
 		8B6EB96D1C883A72000B8737 /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6EB96C1C883A72000B8737 /* FoodViewController.swift */; };
 		8B9019BF1C89BD7100F66C41 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9019BE1C89BD7100F66C41 /* FoodTableViewCell.swift */; };
 		8BD15F271C5AA2BB0003C705 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD15F261C5AA2BB0003C705 /* LoginViewController.swift */; };
@@ -61,6 +65,10 @@
 		86D5DFE71CA0DB5B00CE8B2D /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		86D5DFE91CA0DB7F00CE8B2D /* RequirementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequirementsViewController.swift; sourceTree = "<group>"; };
 		86D5DFEB1CA0DBA200CE8B2D /* TrophiesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrophiesViewController.swift; sourceTree = "<group>"; };
+		8B3B52661CCDE6D6002D3AB5 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		8B3B52681CCDE7D6002D3AB5 /* TREXsnip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TREXsnip.mp3; sourceTree = "<group>"; };
+		8B3B526A1CCDE7E1002D3AB5 /* button-click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "button-click.wav"; sourceTree = "<group>"; };
+		8B3B526C1CCDE7EE002D3AB5 /* percussive-hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "percussive-hit.wav"; sourceTree = "<group>"; };
 		8B6EB96C1C883A72000B8737 /* FoodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		8B9019BE1C89BD7100F66C41 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 		8BD15F261C5AA2BB0003C705 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -119,23 +127,27 @@
 		86BB14691C46033000BBF582 /* T-REX */ = {
 			isa = PBXGroup;
 			children = (
-				86BB146A1C46033000BBF582 /* AppDelegate.swift */,
-				86BB146C1C46033000BBF582 /* HomeViewController.swift */,
 				86BB146E1C46033000BBF582 /* Main.storyboard */,
-				FB91F1141CA23D4E006A7C3C /* ServingViewController.swift */,
-				FB91F1121CA22459006A7C3C /* StatusViewController.swift */,
-				86BB14711C46033000BBF582 /* Assets.xcassets */,
 				86BB14731C46033000BBF582 /* LaunchScreen.storyboard */,
+				86BB14711C46033000BBF582 /* Assets.xcassets */,
 				86BB14761C46033000BBF582 /* Info.plist */,
+				86BB146A1C46033000BBF582 /* AppDelegate.swift */,
+				8B3B52661CCDE6D6002D3AB5 /* LandingViewController.swift */,
 				8BD15F261C5AA2BB0003C705 /* LoginViewController.swift */,
 				8BD15F281C5AA2CF0003C705 /* CreateAccountViewController.swift */,
+				86BB146C1C46033000BBF582 /* HomeViewController.swift */,
+				8BEF59D91CA2757500120F9B /* MealViewController.swift */,
+				FBE7282F1C98B287000E4EE4 /* FoodGroupViewController.swift */,
 				8B6EB96C1C883A72000B8737 /* FoodViewController.swift */,
 				8B9019BE1C89BD7100F66C41 /* FoodTableViewCell.swift */,
-				FBE7282F1C98B287000E4EE4 /* FoodGroupViewController.swift */,
 				86D5DFE71CA0DB5B00CE8B2D /* CollectionViewCell.swift */,
 				86D5DFE91CA0DB7F00CE8B2D /* RequirementsViewController.swift */,
 				86D5DFEB1CA0DBA200CE8B2D /* TrophiesViewController.swift */,
-				8BEF59D91CA2757500120F9B /* MealViewController.swift */,
+				FB91F1141CA23D4E006A7C3C /* ServingViewController.swift */,
+				FB91F1121CA22459006A7C3C /* StatusViewController.swift */,
+				8B3B52681CCDE7D6002D3AB5 /* TREXsnip.mp3 */,
+				8B3B526A1CCDE7E1002D3AB5 /* button-click.wav */,
+				8B3B526C1CCDE7EE002D3AB5 /* percussive-hit.wav */,
 			);
 			path = "T-REX";
 			sourceTree = "<group>";
@@ -264,8 +276,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				86BB14751C46033000BBF582 /* LaunchScreen.storyboard in Resources */,
+				8B3B526B1CCDE7E1002D3AB5 /* button-click.wav in Resources */,
 				86BB14721C46033000BBF582 /* Assets.xcassets in Resources */,
 				86BB14701C46033000BBF582 /* Main.storyboard in Resources */,
+				8B3B52691CCDE7D6002D3AB5 /* TREXsnip.mp3 in Resources */,
+				8B3B526D1CCDE7EE002D3AB5 /* percussive-hit.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +313,7 @@
 				8B6EB96D1C883A72000B8737 /* FoodViewController.swift in Sources */,
 				8BD15F271C5AA2BB0003C705 /* LoginViewController.swift in Sources */,
 				FB91F1151CA23D4E006A7C3C /* ServingViewController.swift in Sources */,
+				8B3B52671CCDE6D6002D3AB5 /* LandingViewController.swift in Sources */,
 				86BB146D1C46033000BBF582 /* HomeViewController.swift in Sources */,
 				8BEF59DA1CA2757600120F9B /* MealViewController.swift in Sources */,
 				86BB146B1C46033000BBF582 /* AppDelegate.swift in Sources */,
@@ -445,7 +461,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "T-REX/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "T-REX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -461,7 +477,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "T-REX/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "T-REX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
