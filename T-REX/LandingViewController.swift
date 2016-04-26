@@ -46,7 +46,7 @@ class LandingViewController: UIViewController {
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        UIView.animateWithDuration(2) {
+        UIView.animateWithDuration(1.5) {
             self.tylerView.center.x = self.tylerView.center.x + self.view.frame.width
             
         }

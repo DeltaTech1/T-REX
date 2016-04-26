@@ -196,7 +196,6 @@ class TrophiesViewController: UIViewController, UICollectionViewDelegate, UIColl
         }
         return cell
     }
-    //fidel
     @IBAction func fiveadayPressed(sender: AnyObject) {
         performSegueWithIdentifier("showRequirements", sender: reqText)
     }

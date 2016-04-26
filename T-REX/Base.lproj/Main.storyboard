@@ -58,8 +58,7 @@
                                         <exclude reference="bJd-Po-3CK"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="-155" y="179" width="350" height="350"/>
+                                <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
                                         <include reference="aJ6-Ik-UoK"/>
                                         <include reference="bJd-Po-3CK"/>
@@ -85,14 +84,14 @@
                                 <exclude reference="f7b-pa-rwH"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="w6g-8h-eEk"/>
+                                <exclude reference="0Tl-Se-7Ho"/>
+                                <exclude reference="gQJ-AO-ujY"/>
                                 <exclude reference="NTK-gt-E7K"/>
                                 <exclude reference="PCN-1I-C17"/>
                                 <exclude reference="QVn-JL-Mis"/>
                                 <exclude reference="Ihx-mI-jzH"/>
                                 <exclude reference="JUK-RP-P18"/>
-                                <exclude reference="0Tl-Se-7Ho"/>
-                                <exclude reference="gQJ-AO-ujY"/>
-                                <exclude reference="w6g-8h-eEk"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -102,14 +101,14 @@
                                 <include reference="f7b-pa-rwH"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="w6g-8h-eEk"/>
+                                <include reference="0Tl-Se-7Ho"/>
+                                <include reference="gQJ-AO-ujY"/>
                                 <include reference="NTK-gt-E7K"/>
                                 <include reference="PCN-1I-C17"/>
                                 <include reference="QVn-JL-Mis"/>
                                 <include reference="Ihx-mI-jzH"/>
                                 <include reference="JUK-RP-P18"/>
-                                <include reference="0Tl-Se-7Ho"/>
-                                <include reference="gQJ-AO-ujY"/>
-                                <include reference="w6g-8h-eEk"/>
                             </mask>
                         </variation>
                     </view>
@@ -1146,6 +1145,7 @@
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                     <mask key="constraints">
                                         <include reference="Bql-zp-CRX"/>
                                     </mask>
