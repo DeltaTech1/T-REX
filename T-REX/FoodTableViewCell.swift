@@ -2,7 +2,7 @@
 //  FoodTableViewCell.swift
 //  T-REX
 //
-//  Created by Elliot on 3/4/16.
+//  Created by Fidel, Dyan, Elliot
 //  Copyright © 2016 Delta Tech. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  LandingViewController.swift
 //  T-REX
 //
-//  Created by Elliot on 4/24/16.
+//  Created by Fidel, Dyan, Elliot
 //  Copyright © 2016 Delta Tech. All rights reserved.
 //
 
@@ -40,6 +40,17 @@ class LandingViewController: UIViewController {
             self.percussiveHit = percussiveHit
         }
     }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tylerView.center.x = tylerView.center.x - self.view.frame.width
+    }
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animateWithDuration(2) {
+            self.tylerView.center.x = self.tylerView.center.x + self.view.frame.width
+            
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -52,5 +63,6 @@ class LandingViewController: UIViewController {
         percussiveHit?.play()
     }
     
+    @IBOutlet weak var tylerView: UIImageView!
 
 }

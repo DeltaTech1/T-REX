@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  T-REX
 //
-//  Created by Elliot on 1/28/16.
+//  Created by Fidel, Dyan, Elliot
 //  Copyright © 2016 Delta Tech. All rights reserved.
 //
 

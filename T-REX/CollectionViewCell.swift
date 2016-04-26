@@ -2,7 +2,7 @@
 //  CollectionViewCell.swift
 //  T-REX
 //
-//  Created by Dyan Abad on 3/21/16.
+//  Created by Fidel, Dyan, Elliot
 //  Copyright © 2016 Delta Tech. All rights reserved.
 //
 

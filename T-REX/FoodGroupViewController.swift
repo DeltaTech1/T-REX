@@ -2,7 +2,7 @@
 //  FoodGroupViewController.swift
 //  T-REX
 //
-//  Created by Fidel Gonzalez on 3/15/16.
+//  Created by Fidel, Dyan, Elliot
 //  Copyright © 2016 Delta Tech. All rights reserved.
 //
 
